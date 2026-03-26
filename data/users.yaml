@@ -1,0 +1,11 @@
+users:
+  admin:
+    name: Administrador
+    email: admin@dashboard.com
+    password: "$2b$12$LJ3m4ks9Qk8V8v5C3z1234567890abcdefghijklmnopqr"
+    role: admin
+    approved: true
+cookie:
+  name: dashboard_credito_global_auth
+  key: dashboard_credito_global_secret_2026
+  expiry_days: 30
