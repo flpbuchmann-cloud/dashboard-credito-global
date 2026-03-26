@@ -16,7 +16,7 @@ import time
 import requests
 from datetime import datetime, timedelta
 from .tag_mapping import (
-    DRE_TAGS, BPA_TAGS, BPP_TAGS, DFC_TAGS, resolve_tag
+    DRE_TAGS, BPA_TAGS, BPP_TAGS, DFC_TAGS, MATURITY_TAGS, resolve_tag
 )
 
 
@@ -307,6 +307,74 @@ class ColetorEDGAR:
         return entries
 
     # ------------------------------------------------------------------
+    # Debt Maturity Schedule (Cronograma via XBRL)
+    # ------------------------------------------------------------------
+
+    def extrair_cronograma_xbrl(self, facts: dict) -> list[dict]:
+        """
+        Extrai cronograma de amortização diretamente das tags XBRL.
+
+        Muitas empresas reportam LongTermDebtMaturitiesRepaymentsOfPrincipal*
+        diretamente no XBRL, sem necessidade de parsear HTML.
+        """
+        usgaap = facts.get("facts", {}).get("us-gaap", {})
+
+        # Buscar por 10-K mais recente
+        cronogramas = []
+
+        # Descobrir qual 10-K tem dados de maturidade
+        tag_test = "LongTermDebtMaturitiesRepaymentsOfPrincipalInNextTwelveMonths"
+        if tag_test not in usgaap:
+            return []
+
+        test_entries = usgaap[tag_test].get("units", {}).get("USD", [])
+        # Agrupar por período (end date) do 10-K
+        periodos_10k = {}
+        for e in test_entries:
+            if e.get("form") in ("10-K", "10-K/A"):
+                end = e["end"]
+                periodos_10k[end] = e
+
+        for end_date in sorted(periodos_10k.keys(), reverse=True)[:3]:
+            vencimentos = {}
+            ano_base = int(end_date[:4])
+
+            for label, tags in MATURITY_TAGS.items():
+                for tag in tags:
+                    tag_data = usgaap.get(tag, {})
+                    entries = tag_data.get("units", {}).get("USD", [])
+                    match = [e for e in entries if e.get("end") == end_date
+                             and e.get("form") in ("10-K", "10-K/A")]
+                    if match:
+                        val = match[-1]["val"]
+                        # Map label to year
+                        if label == "next_12_months":
+                            vencimentos[str(ano_base + 1)] = val
+                        elif label == "year_two":
+                            vencimentos[str(ano_base + 2)] = val
+                        elif label == "year_three":
+                            vencimentos[str(ano_base + 3)] = val
+                        elif label == "year_four":
+                            vencimentos[str(ano_base + 4)] = val
+                        elif label == "year_five":
+                            vencimentos[str(ano_base + 5)] = val
+                        elif label == "thereafter":
+                            vencimentos["longo_prazo"] = val
+                        break
+
+            if len(vencimentos) >= 3:
+                cronogramas.append({
+                    "data_referencia": end_date,
+                    "caixa": None,
+                    "vencimentos": vencimentos,
+                    "divida_total": sum(vencimentos.values()),
+                    "arquivo": f"XBRL 10-K ({end_date})",
+                })
+                self._log(f"Cronograma XBRL {end_date}: {len(vencimentos)} buckets")
+
+        return cronogramas
+
+    # ------------------------------------------------------------------
     # Main orchestration
     # ------------------------------------------------------------------
 
@@ -335,7 +403,12 @@ class ColetorEDGAR:
         # 3. Extrair contas
         contas = self.extrair_contas_chave(facts, ano_inicio)
 
-        # 4. Salvar
+        # 4. Extrair cronograma via XBRL
+        cronogramas = self.extrair_cronograma_xbrl(facts)
+        if cronogramas:
+            self._log(f"{len(cronogramas)} cronogramas extraídos via XBRL")
+
+        # 5. Salvar
         if pasta_destino:
             dados_dir = os.path.join(pasta_destino, "Dados_EDGAR")
             os.makedirs(dados_dir, exist_ok=True)
@@ -344,10 +417,17 @@ class ColetorEDGAR:
                 json.dump(contas, f, ensure_ascii=False, indent=2, default=str)
             self._log(f"Contas salvas em {caminho}")
 
+            if cronogramas:
+                caminho_cron = os.path.join(dados_dir, "cronogramas.json")
+                with open(caminho_cron, "w", encoding="utf-8") as f:
+                    json.dump(cronogramas, f, ensure_ascii=False, indent=2, default=str)
+                self._log(f"Cronogramas salvos em {caminho_cron}")
+
         self._log(f"=== Concluído: {len(contas)} registros ===")
 
         return {
             "empresa": empresa,
             "contas": contas,
+            "cronogramas": cronogramas,
             "n_registros": len(contas),
         }

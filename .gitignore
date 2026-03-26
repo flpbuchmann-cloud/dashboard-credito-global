@@ -1,8 +1,7 @@
 __pycache__/
 *.pyc
 .env
+*.egg-info/
 data/raw/
 .streamlit/secrets.toml
 service_account.json
-secrets_to_paste.txt
-

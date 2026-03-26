@@ -47,6 +47,7 @@ DRE_TAGS = {
     "despesas_financeiras": [
         "InterestExpense",
         "InterestExpenseDebt",
+        "InterestAndDebtExpense",
         "InterestExpenseBorrowings",
         "InterestIncomeExpenseNet",
     ],
@@ -128,6 +129,7 @@ BPP_TAGS = {
     "emprestimos_cp": [
         "DebtCurrent",
         "LongTermDebtCurrent",
+        "LongTermDebtAndCapitalLeaseObligationsCurrent",
         "ShortTermBorrowings",
         "CommercialPaper",
         "LinesOfCreditCurrent",
@@ -191,6 +193,30 @@ DFC_TAGS = {
     "juros_pagos": [
         "InterestPaidNet",
         "InterestPaid",
+    ],
+}
+
+# ---- Debt Maturity Schedule (Cronograma) ----
+# Tags XBRL que muitas empresas preenchem diretamente
+MATURITY_TAGS = {
+    "next_12_months": [
+        "LongTermDebtMaturitiesRepaymentsOfPrincipalInNextTwelveMonths",
+    ],
+    "year_two": [
+        "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearTwo",
+    ],
+    "year_three": [
+        "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearThree",
+    ],
+    "year_four": [
+        "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFour",
+    ],
+    "year_five": [
+        "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFive",
+    ],
+    "thereafter": [
+        "LongTermDebtMaturitiesRepaymentsOfPrincipalAfterYearFive",
+        "LongTermDebtMaturitiesRepaymentsOfPrincipalRemainderOfFiscalYear",
     ],
 }
 
