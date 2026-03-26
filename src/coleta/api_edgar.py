@@ -150,18 +150,75 @@ class ColetorEDGAR:
     # Extract contas_chave
     # ------------------------------------------------------------------
 
+    def _resolve_flow_item(self, usgaap: dict, candidates: list[str],
+                           form: str, period_end: str, fp: str) -> float | None:
+        """
+        Resolve um item de fluxo (DRE ou DFC) preferindo dados trimestrais.
+
+        Para 10-Q: prefere o entry com start mais próximo do end (trimestral),
+        não o YTD que começa em jan/01.
+        Para 10-K: pega o entry anual completo.
+        """
+        for tag in candidates:
+            tag_data = usgaap.get(tag)
+            if not tag_data:
+                continue
+
+            units = tag_data.get("units", {})
+            usd_data = units.get("USD")
+            if not usd_data:
+                continue
+
+            # Filtrar por end date e form type
+            matches = []
+            for entry in usd_data:
+                if entry.get("end") != period_end:
+                    continue
+                entry_form = entry.get("form", "")
+                if form == "10-K" and entry_form not in ("10-K", "10-K/A"):
+                    continue
+                if form == "10-Q" and entry_form not in ("10-Q", "10-Q/A"):
+                    continue
+                if "start" in entry:
+                    matches.append(entry)
+
+            if not matches:
+                continue
+
+            if form == "10-Q" and len(matches) > 1:
+                # Preferir dados YTD (maior duração) para consistência
+                # O indicadores.py desacumula automaticamente (mesmo padrão CVM)
+                from datetime import datetime
+                for m in matches:
+                    try:
+                        start_dt = datetime.strptime(m["start"], "%Y-%m-%d")
+                        end_dt = datetime.strptime(m["end"], "%Y-%m-%d")
+                        m["_duration"] = (end_dt - start_dt).days
+                    except (ValueError, KeyError):
+                        m["_duration"] = 0
+
+                # Preferir maior duração (YTD)
+                matches.sort(key=lambda x: -x.get("_duration", 0))
+                return matches[0]["val"]
+            elif matches:
+                return matches[0]["val"]
+
+        return None
+
     def _descobrir_periodos(self, facts: dict, ano_inicio: int) -> list[dict]:
         """
         Descobre os períodos disponíveis a partir dos facts.
 
-        Returns:
-            Lista de {"end": "2023-12-31", "form": "10-K", "fp": "FY", "fy": 2023}
+        Para 10-K: período anual (FY)
+        Para 10-Q: período trimestral (Q1, Q2, Q3) — prefere dados
+        trimestrais (start próximo do end) vs YTD.
         """
         usgaap = facts.get("facts", {}).get("us-gaap", {})
 
-        # Usar Assets (quase sempre presente) para descobrir períodos
-        periodos = set()
-        for tag in ["Assets", "Revenues", "NetIncomeLoss", "CashAndCashEquivalentsAtCarryingValue"]:
+        # Usar Assets (balance sheet, point-in-time) para descobrir end dates
+        end_dates = {}
+        for tag in ["Assets", "CashAndCashEquivalentsAtCarryingValue",
+                     "StockholdersEquity", "LiabilitiesCurrent"]:
             tag_data = usgaap.get(tag, {})
             for unit_data in tag_data.get("units", {}).values():
                 for entry in unit_data:
@@ -171,20 +228,18 @@ class ColetorEDGAR:
                     form = entry.get("form", "")
                     if form not in ("10-K", "10-Q", "10-K/A", "10-Q/A"):
                         continue
-                    fp = entry.get("fp", "")
                     end = entry.get("end", "")
-                    start = entry.get("start", "")
+                    fp = entry.get("fp", "")
+                    form_clean = form.replace("/A", "")
                     if end:
-                        periodos.add((end, form.replace("/A", ""), fp, fy, start))
+                        key = (end, form_clean)
+                        if key not in end_dates:
+                            end_dates[key] = {
+                                "end": end, "form": form_clean,
+                                "fp": fp, "fy": fy,
+                            }
 
-        # Deduplicate: para cada (end, form), pegar o mais completo
-        por_end_form = {}
-        for end, form, fp, fy, start in periodos:
-            key = (end, form)
-            if key not in por_end_form:
-                por_end_form[key] = {"end": end, "form": form, "fp": fp, "fy": fy, "start": start}
-
-        resultado = sorted(por_end_form.values(), key=lambda x: x["end"])
+        resultado = sorted(end_dates.values(), key=lambda x: x["end"])
         return resultado
 
     def extrair_contas_chave(self, facts: dict, ano_inicio: int = 2021) -> list[dict]:
@@ -214,14 +269,23 @@ class ColetorEDGAR:
                 prefix = "ITR"
 
             # ---- DRE ----
+            # Para 10-Q, buscar dados trimestrais (não YTD)
             dre = {}
             for conta, tags in DRE_TAGS.items():
-                val = resolve_tag(usgaap, tags, form, end, start)
+                val = self._resolve_flow_item(usgaap, tags, form, end, fp)
                 dre[conta] = val * 1.0 if val is not None else 0.0
 
             # Calcular resultado_bruto se não disponível
             if dre.get("resultado_bruto", 0) == 0 and dre.get("receita_liquida", 0) != 0:
                 dre["resultado_bruto"] = dre["receita_liquida"] + dre.get("custo", 0)
+
+            # Calcular EBIT se não disponível
+            if dre.get("ebit", 0) == 0 and dre.get("lucro_antes_ir", 0) != 0:
+                # EBIT = Lucro antes IR - Resultado financeiro
+                # Ou: Lucro antes IR + Despesas financeiras
+                desp_fin = abs(dre.get("despesas_financeiras", 0))
+                rec_fin = dre.get("receitas_financeiras", 0)
+                dre["ebit"] = dre["lucro_antes_ir"] + desp_fin - rec_fin
 
             # Calcular despesas_operacionais
             dre["despesas_operacionais"] = (
@@ -288,7 +352,7 @@ class ColetorEDGAR:
             # ---- DFC (Cash Flow) ----
             dfc = {}
             for conta, tags in DFC_TAGS.items():
-                val = resolve_tag(usgaap, tags, form, end, start)
+                val = self._resolve_flow_item(usgaap, tags, form, end, fp)
                 dfc[conta] = val * 1.0 if val is not None else 0.0
 
             dfc["caixa_gerado_operacoes"] = dfc.get("fco", 0)

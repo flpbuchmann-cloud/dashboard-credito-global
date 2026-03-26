@@ -441,12 +441,7 @@ def main():
     caminho_json = os.path.join(pasta, "Dados_EDGAR", "contas_chave.json")
 
     if not os.path.exists(caminho_json):
-        if IS_DEPLOYED:
-            st.error(f"Data not found for ticker **{ticker}**.")
-            st.info("This company has not been collected yet. Run the collector locally first.")
-            return
-
-        # Auto-collect data
+        # Auto-collect data from SEC EDGAR (works both locally and deployed)
         st.info(f"Data not found for **{ticker}**. Fetching from SEC EDGAR...")
         with st.spinner(f"Collecting data for {ticker}..."):
             try:
