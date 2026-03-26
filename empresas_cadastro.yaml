@@ -1,0 +1,18 @@
+# ============================================================================
+# CADASTRO DE EMPRESAS — Dashboard de Crédito Global
+# ============================================================================
+# Empresas com filings na SEC (10-K / 10-Q)
+# ============================================================================
+
+empresas:
+
+  # ---- Template ----
+  # - nome: "Company Name"
+  #   ticker: "TICK"
+  #   cik: "0001234567"
+  #   setor: "Sector"
+  #   currency: "USD"
+  #   fiscal_year_end: "12-31"
+  #   pasta: "G:/Meu Drive/Análise de Crédito Global/Company Name"
+  #   ano_inicio: 2021
+  #   status: "ativo"
