@@ -1,0 +1,30 @@
+[
+  {
+    "id": "20260404_144727",
+    "data": "2026-04-04",
+    "categoria": "Guidance",
+    "titulo": "Analise setorial",
+    "corpo": "",
+    "arquivos": [
+      {
+        "nome": "LARGE_20260402_0732.pdf",
+        "caminho": "atualizacoes\\20260404_144727\\LARGE_20260402_0732.pdf",
+        "tipo": "application/pdf",
+        "tamanho": 1462794
+      },
+      {
+        "nome": "BROKERS_20260323_0401.pdf",
+        "caminho": "atualizacoes\\20260404_144727\\BROKERS_20260323_0401.pdf",
+        "tipo": "application/pdf",
+        "tamanho": 192775
+      },
+      {
+        "nome": "BROKERS_20260204_0501.pdf",
+        "caminho": "atualizacoes\\20260404_144727\\BROKERS_20260204_0501.pdf",
+        "tipo": "application/pdf",
+        "tamanho": 361969
+      }
+    ],
+    "criado_em": "2026-04-04T14:47:27.297980"
+  }
+]

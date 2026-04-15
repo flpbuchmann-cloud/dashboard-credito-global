@@ -1,0 +1,40 @@
+[
+  {
+    "id": "20260404_142456",
+    "data": "2026-04-04",
+    "categoria": "Outros",
+    "titulo": "Analise setorial",
+    "corpo": "",
+    "arquivos": [
+      {
+        "nome": "LARGE_20260402_0732.pdf",
+        "caminho": "atualizacoes\\20260404_142456\\LARGE_20260402_0732.pdf",
+        "tipo": "application/pdf",
+        "tamanho": 1462794
+      },
+      {
+        "nome": "BROKERS_20260204_0501.pdf",
+        "caminho": "atualizacoes\\20260404_142456\\BROKERS_20260204_0501.pdf",
+        "tipo": "application/pdf",
+        "tamanho": 361969
+      }
+    ],
+    "criado_em": "2026-04-04T14:24:56.044425"
+  },
+  {
+    "id": "20260404_142404",
+    "data": "2026-04-04",
+    "categoria": "Update Research",
+    "titulo": "MS update 4t/25",
+    "corpo": "",
+    "arquivos": [
+      {
+        "nome": "APOLLO_20260210_0501.pdf",
+        "caminho": "atualizacoes\\20260404_142404\\APOLLO_20260210_0501.pdf",
+        "tipo": "application/pdf",
+        "tamanho": 1227749
+      }
+    ],
+    "criado_em": "2026-04-04T14:24:04.512873"
+  }
+]
