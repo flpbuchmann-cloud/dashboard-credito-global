@@ -1,0 +1,17 @@
+[
+  {
+    "data_referencia": "2025-12-31",
+    "caixa": null,
+    "vencimentos": {
+      "2026": 113700000000.0,
+      "2027": 57200000000.0,
+      "2028": 26533333333.333332,
+      "2029": 26533333333.333332,
+      "2030": 26533333333.333332,
+      "longo_prazo": 141700000000.0
+    },
+    "divida_total": 392200000000.0,
+    "arquivo": "UBS 20-F (4Q25)",
+    "fonte": "UBS Annual Report 20-F Note 23b - Maturity analysis of financial liabilities"
+  }
+]

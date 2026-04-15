@@ -1,0 +1,872 @@
+[
+  {
+    "periodo": "2021-12-31",
+    "trimestre": "4Q21",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "UBS Group Quarterly Report",
+    "income_statement": {
+      "total_income": 8705.0,
+      "total_revenues": 8705.0,
+      "nii": null,
+      "credit_impairment": -27.0,
+      "operating_costs": 7003.0,
+      "total_opex": 7003.0,
+      "profit_before_tax": 1729.0,
+      "net_income": 1348.0
+    },
+    "balance_sheet": {
+      "total_assets": 1117182.0,
+      "equity": 60662.0
+    },
+    "yields_rates": {
+      "rote": 0.1,
+      "roe": 0.08900000000000001,
+      "rocet1": 0.11900000000000001,
+      "cost_income_ratio": 0.805,
+      "efficiency_ratio": 0.805,
+      "nim": null,
+      "nim_bps": null
+    },
+    "avg_balances": {
+      "customer_deposits_usd_bn": null,
+      "loans_gross_usd_bn": null,
+      "avg_total_deposits": null,
+      "avg_loans": null
+    },
+    "capital": {
+      "cet1_ratio": 0.15,
+      "cet1_capital": 45281.0,
+      "rwa_standardized": 302209.0,
+      "slr": 0.0424,
+      "lcr": 1.55,
+      "nsfr": 1.19,
+      "total_capital_ratio": 0.2,
+      "total_leverage_exposure": 1068862.0,
+      "hqla_pool": 335155.0
+    },
+    "credit_quality": {}
+  },
+  {
+    "periodo": "2022-03-31",
+    "trimestre": "1Q22",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "UBS Group Quarterly Report",
+    "income_statement": {
+      "total_income": 9382.0,
+      "total_revenues": 9382.0,
+      "nii": null,
+      "credit_impairment": 18.0,
+      "operating_costs": 6634.0,
+      "total_opex": 6634.0,
+      "profit_before_tax": 2729.0,
+      "net_income": 2136.0
+    },
+    "balance_sheet": {
+      "total_assets": 1139922.0,
+      "equity": 58855.0
+    },
+    "yields_rates": {
+      "rote": 0.16,
+      "roe": 0.14300000000000002,
+      "rocet1": 0.19,
+      "cost_income_ratio": 0.7070000000000001,
+      "efficiency_ratio": 0.7070000000000001,
+      "nim": null,
+      "nim_bps": null
+    },
+    "avg_balances": {
+      "customer_deposits_usd_bn": null,
+      "loans_gross_usd_bn": null,
+      "avg_total_deposits": null,
+      "avg_loans": null
+    },
+    "capital": {
+      "cet1_ratio": 0.14300000000000002,
+      "cet1_capital": 44593.0,
+      "rwa_standardized": 312037.0,
+      "slr": 0.0416,
+      "lcr": 1.5959999999999999,
+      "nsfr": 1.217,
+      "total_capital_ratio": 0.192,
+      "total_leverage_exposure": 1072953.0,
+      "hqla_pool": 341977.0
+    },
+    "credit_quality": {}
+  },
+  {
+    "periodo": "2022-06-30",
+    "trimestre": "2Q22",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "UBS Group Quarterly Report",
+    "income_statement": {
+      "total_income": 8917.0,
+      "total_revenues": 8917.0,
+      "nii": 522.0,
+      "credit_impairment": 7.0,
+      "operating_costs": 6295.0,
+      "total_opex": 6295.0,
+      "profit_before_tax": 2615.0,
+      "net_income": 2108.0
+    },
+    "balance_sheet": {
+      "total_assets": 1113193.0,
+      "equity": 56845.0
+    },
+    "yields_rates": {
+      "rote": 0.16399999999999998,
+      "roe": 0.146,
+      "rocet1": 0.18899999999999997,
+      "cost_income_ratio": 0.706,
+      "efficiency_ratio": 0.706,
+      "nim": 0.0139,
+      "nim_bps": 139.0
+    },
+    "avg_balances": {
+      "customer_deposits_usd_bn": 167.8,
+      "loans_gross_usd_bn": 148.2,
+      "avg_total_deposits": 167800.0,
+      "avg_loans": 148200.0
+    },
+    "capital": {
+      "cet1_ratio": 0.142,
+      "cet1_capital": 44798.0,
+      "rwa_standardized": 315685.0,
+      "slr": 0.0437,
+      "lcr": 1.61,
+      "nsfr": 1.21,
+      "total_capital_ratio": 0.19,
+      "total_leverage_exposure": 1025422.0,
+      "hqla_pool": 333958.0
+    },
+    "credit_quality": {}
+  },
+  {
+    "periodo": "2022-09-30",
+    "trimestre": "3Q22",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "UBS Group Quarterly Report",
+    "income_statement": {
+      "total_income": 8236.0,
+      "total_revenues": 8236.0,
+      "nii": 502.0,
+      "credit_impairment": -3.0,
+      "operating_costs": 5916.0,
+      "total_opex": 5916.0,
+      "profit_before_tax": 2323.0,
+      "net_income": 1733.0
+    },
+    "balance_sheet": {
+      "total_assets": 1111753.0,
+      "equity": 55756.0
+    },
+    "yields_rates": {
+      "rote": 0.139,
+      "roe": 0.12300000000000001,
+      "rocet1": 0.155,
+      "cost_income_ratio": 0.718,
+      "efficiency_ratio": 0.718,
+      "nim": 0.0137,
+      "nim_bps": 137.0
+    },
+    "avg_balances": {
+      "customer_deposits_usd_bn": 164.6,
+      "loans_gross_usd_bn": 144.6,
+      "avg_total_deposits": 164600.0,
+      "avg_loans": 144600.0
+    },
+    "capital": {
+      "cet1_ratio": 0.14400000000000002,
+      "cet1_capital": 44664.0,
+      "rwa_standardized": 310615.0,
+      "slr": 0.0451,
+      "lcr": 1.6269999999999998,
+      "nsfr": 1.204,
+      "total_capital_ratio": 0.191,
+      "total_leverage_exposure": 989787.0,
+      "hqla_pool": 333526.0
+    },
+    "credit_quality": {}
+  },
+  {
+    "periodo": "2022-12-31",
+    "trimestre": "4Q22",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "UBS Group Quarterly Report",
+    "income_statement": {
+      "total_income": 8029.0,
+      "total_revenues": 8029.0,
+      "nii": null,
+      "credit_impairment": 7.0,
+      "operating_costs": 6085.0,
+      "total_opex": 6085.0,
+      "profit_before_tax": 1937.0,
+      "net_income": 1653.0
+    },
+    "balance_sheet": {
+      "total_assets": 1104364.0,
+      "equity": 56876.0
+    },
+    "yields_rates": {
+      "rote": 0.132,
+      "roe": 0.11699999999999999,
+      "rocet1": 0.147,
+      "cost_income_ratio": 0.758,
+      "efficiency_ratio": 0.758,
+      "nim": null,
+      "nim_bps": null
+    },
+    "avg_balances": {
+      "customer_deposits_usd_bn": null,
+      "loans_gross_usd_bn": null,
+      "avg_total_deposits": null,
+      "avg_loans": null
+    },
+    "capital": {
+      "cet1_ratio": 0.142,
+      "cet1_capital": 45457.0,
+      "rwa_standardized": 319585.0,
+      "slr": 0.044199999999999996,
+      "lcr": 1.6369999999999998,
+      "nsfr": 1.198,
+      "total_capital_ratio": 0.182,
+      "total_leverage_exposure": 1028461.0,
+      "hqla_pool": 331309.0
+    },
+    "credit_quality": {}
+  },
+  {
+    "periodo": "2023-03-31",
+    "trimestre": "1Q23",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "UBS Group Quarterly Report",
+    "income_statement": {
+      "total_income": 8744.0,
+      "total_revenues": 8744.0,
+      "nii": 705.0,
+      "credit_impairment": 38.0,
+      "operating_costs": 7210.0,
+      "total_opex": 7210.0,
+      "profit_before_tax": 1495.0,
+      "net_income": 1029.0
+    },
+    "balance_sheet": {
+      "total_assets": 1053134.0,
+      "equity": 56754.0
+    },
+    "yields_rates": {
+      "rote": 0.081,
+      "roe": 0.07200000000000001,
+      "rocet1": 0.091,
+      "cost_income_ratio": 0.825,
+      "efficiency_ratio": 0.825,
+      "nim": 0.0181,
+      "nim_bps": 181.0
+    },
+    "avg_balances": {
+      "customer_deposits_usd_bn": 180.5,
+      "loans_gross_usd_bn": 157.6,
+      "avg_total_deposits": 180500.0,
+      "avg_loans": 157600.0
+    },
+    "capital": {
+      "cet1_ratio": 0.139,
+      "cet1_capital": 44590.0,
+      "rwa_standardized": 321660.0,
+      "slr": 0.044000000000000004,
+      "lcr": 1.619,
+      "nsfr": 1.177,
+      "total_capital_ratio": 0.179,
+      "total_leverage_exposure": 1014446.0,
+      "hqla_pool": 315940.0
+    },
+    "credit_quality": {}
+  },
+  {
+    "periodo": "2023-06-30",
+    "trimestre": "2Q23",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "UBS Group Quarterly Report",
+    "income_statement": {
+      "total_income": 9540.0,
+      "total_revenues": 9540.0,
+      "nii": 812.0,
+      "credit_impairment": 740.0,
+      "operating_costs": 8486.0,
+      "total_opex": 8486.0,
+      "profit_before_tax": 29239.0,
+      "net_income": 28875.0
+    },
+    "balance_sheet": {
+      "total_assets": 1678780.0,
+      "equity": 86999.0
+    },
+    "yields_rates": {
+      "rote": 1.778,
+      "roe": 1.607,
+      "rocet1": 1.85,
+      "cost_income_ratio": 0.889,
+      "efficiency_ratio": 0.889,
+      "nim": 0.0203,
+      "nim_bps": 203.0
+    },
+    "avg_balances": {
+      "customer_deposits_usd_bn": 183.7,
+      "loans_gross_usd_bn": 162.5,
+      "avg_total_deposits": 183700.0,
+      "avg_loans": 162500.0
+    },
+    "capital": {
+      "cet1_ratio": 0.14400000000000002,
+      "cet1_capital": 80258.0,
+      "rwa_standardized": 556603.0,
+      "slr": 0.0478,
+      "lcr": 1.7519999999999998,
+      "nsfr": 1.176,
+      "total_capital_ratio": 0.168,
+      "total_leverage_exposure": 1677877.0,
+      "hqla_pool": 503634.0
+    },
+    "credit_quality": {}
+  },
+  {
+    "periodo": "2023-09-30",
+    "trimestre": "3Q23",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "UBS Group Quarterly Report",
+    "income_statement": {
+      "total_income": 11695.0,
+      "total_revenues": 11695.0,
+      "nii": null,
+      "credit_impairment": 306.0,
+      "operating_costs": 11644.0,
+      "total_opex": 11644.0,
+      "profit_before_tax": -255.0,
+      "net_income": -785.0
+    },
+    "balance_sheet": {
+      "total_assets": 1644522.0,
+      "equity": 84856.0
+    },
+    "yields_rates": {
+      "rote": -0.04,
+      "roe": -0.037000000000000005,
+      "rocet1": -0.04,
+      "cost_income_ratio": 0.996,
+      "efficiency_ratio": 0.996,
+      "nim": null,
+      "nim_bps": null
+    },
+    "avg_balances": {
+      "customer_deposits_usd_bn": null,
+      "loans_gross_usd_bn": null,
+      "avg_total_deposits": null,
+      "avg_loans": null
+    },
+    "capital": {
+      "cet1_ratio": 0.14400000000000002,
+      "cet1_capital": 78587.0,
+      "rwa_standardized": 546491.0,
+      "slr": 0.049,
+      "lcr": 1.965,
+      "nsfr": 1.207,
+      "total_capital_ratio": 0.168,
+      "total_leverage_exposure": 1615817.0,
+      "hqla_pool": 493357.0
+    },
+    "credit_quality": {}
+  },
+  {
+    "periodo": "2023-12-31",
+    "trimestre": "4Q23",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "UBS Group Quarterly Report",
+    "income_statement": {
+      "total_income": 10855.0,
+      "total_revenues": 10855.0,
+      "nii": null,
+      "credit_impairment": 136.0,
+      "operating_costs": 11470.0,
+      "total_opex": 11470.0,
+      "profit_before_tax": -751.0,
+      "net_income": -279.0
+    },
+    "balance_sheet": {
+      "total_assets": 1717569.0,
+      "equity": 87285.0
+    },
+    "yields_rates": {
+      "rote": -0.013999999999999999,
+      "roe": -0.013000000000000001,
+      "rocet1": -0.013999999999999999,
+      "cost_income_ratio": 1.057,
+      "efficiency_ratio": 1.057,
+      "nim": null,
+      "nim_bps": null
+    },
+    "avg_balances": {
+      "customer_deposits_usd_bn": null,
+      "loans_gross_usd_bn": null,
+      "avg_total_deposits": null,
+      "avg_loans": null
+    },
+    "capital": {
+      "cet1_ratio": 0.145,
+      "cet1_capital": 79263.0,
+      "rwa_standardized": 546505.0,
+      "slr": 0.047,
+      "lcr": 2.157,
+      "nsfr": 1.2409999999999999,
+      "total_capital_ratio": 0.17,
+      "total_leverage_exposure": 1695403.0,
+      "hqla_pool": 515271.0
+    },
+    "credit_quality": {}
+  },
+  {
+    "periodo": "2024-03-31",
+    "trimestre": "1Q24",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "UBS Group Quarterly Report",
+    "income_statement": {
+      "total_income": 12739.0,
+      "total_revenues": 12739.0,
+      "nii": null,
+      "credit_impairment": 106.0,
+      "operating_costs": 10257.0,
+      "total_opex": 10257.0,
+      "profit_before_tax": 2376.0,
+      "net_income": 1755.0
+    },
+    "balance_sheet": {
+      "total_assets": 1607120.0,
+      "equity": 85260.0
+    },
+    "yields_rates": {
+      "rote": 0.09,
+      "roe": 0.08199999999999999,
+      "rocet1": 0.09,
+      "cost_income_ratio": 0.805,
+      "efficiency_ratio": 0.805,
+      "nim": null,
+      "nim_bps": null
+    },
+    "avg_balances": {
+      "customer_deposits_usd_bn": null,
+      "loans_gross_usd_bn": null,
+      "avg_total_deposits": null,
+      "avg_loans": null
+    },
+    "capital": {
+      "cet1_ratio": 0.14800000000000002,
+      "cet1_capital": 78147.0,
+      "rwa_standardized": 526437.0,
+      "slr": 0.049,
+      "lcr": 2.202,
+      "nsfr": 1.264,
+      "total_capital_ratio": 0.17800000000000002,
+      "total_leverage_exposure": 1599646.0,
+      "hqla_pool": 482136.0
+    },
+    "credit_quality": {}
+  },
+  {
+    "periodo": "2024-06-30",
+    "trimestre": "2Q24",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "UBS Group Quarterly Report",
+    "income_statement": {
+      "total_income": 11904.0,
+      "total_revenues": 11904.0,
+      "nii": 1350.0,
+      "credit_impairment": 95.0,
+      "operating_costs": 10340.0,
+      "total_opex": 10340.0,
+      "profit_before_tax": 1469.0,
+      "net_income": 1136.0
+    },
+    "balance_sheet": {
+      "total_assets": 1560976.0,
+      "equity": 83683.0
+    },
+    "yields_rates": {
+      "rote": 0.059000000000000004,
+      "roe": 0.054000000000000006,
+      "rocet1": 0.059000000000000004,
+      "cost_income_ratio": 0.8690000000000001,
+      "efficiency_ratio": 0.8690000000000001,
+      "nim": 0.0194,
+      "nim_bps": 194.0
+    },
+    "avg_balances": {
+      "customer_deposits_usd_bn": 283.4,
+      "loans_gross_usd_bn": 277.6,
+      "avg_total_deposits": 283400.0,
+      "avg_loans": 277600.0
+    },
+    "capital": {
+      "cet1_ratio": 0.149,
+      "cet1_capital": 76104.0,
+      "rwa_standardized": 511376.0,
+      "slr": 0.049,
+      "lcr": 2.12,
+      "nsfr": 1.28,
+      "total_capital_ratio": 0.18,
+      "total_leverage_exposure": 1564201.0,
+      "hqla_pool": 468293.0
+    },
+    "credit_quality": {}
+  },
+  {
+    "periodo": "2024-09-30",
+    "trimestre": "3Q24",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "UBS Group Quarterly Report",
+    "income_statement": {
+      "total_income": 12334.0,
+      "total_revenues": 12334.0,
+      "nii": 1429.0,
+      "credit_impairment": 121.0,
+      "operating_costs": 10283.0,
+      "total_opex": 10283.0,
+      "profit_before_tax": 1929.0,
+      "net_income": 1425.0
+    },
+    "balance_sheet": {
+      "total_assets": 1623941.0,
+      "equity": 87025.0
+    },
+    "yields_rates": {
+      "rote": 0.073,
+      "roe": 0.067,
+      "rocet1": 0.076,
+      "cost_income_ratio": 0.8340000000000001,
+      "efficiency_ratio": 0.8340000000000001,
+      "nim": 0.0202,
+      "nim_bps": 202.0
+    },
+    "avg_balances": {
+      "customer_deposits_usd_bn": 297.9,
+      "loans_gross_usd_bn": 288.4,
+      "avg_total_deposits": 297900.0,
+      "avg_loans": 288400.0
+    },
+    "capital": {
+      "cet1_ratio": 0.14300000000000002,
+      "cet1_capital": 74213.0,
+      "rwa_standardized": 519363.0,
+      "slr": 0.046,
+      "lcr": 1.992,
+      "nsfr": 1.2690000000000001,
+      "total_capital_ratio": 0.175,
+      "total_leverage_exposure": 1608341.0,
+      "hqla_pool": 487182.0
+    },
+    "credit_quality": {}
+  },
+  {
+    "periodo": "2024-12-31",
+    "trimestre": "4Q24",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "UBS Group Quarterly Report",
+    "income_statement": {
+      "total_income": 11635.0,
+      "total_revenues": 11635.0,
+      "nii": null,
+      "credit_impairment": 229.0,
+      "operating_costs": 10359.0,
+      "total_opex": 10359.0,
+      "profit_before_tax": 1047.0,
+      "net_income": 770.0
+    },
+    "balance_sheet": {
+      "total_assets": 1565028.0,
+      "equity": 85079.0
+    },
+    "yields_rates": {
+      "rote": 0.039,
+      "roe": 0.036000000000000004,
+      "rocet1": 0.042,
+      "cost_income_ratio": 0.89,
+      "efficiency_ratio": 0.89,
+      "nim": null,
+      "nim_bps": null
+    },
+    "avg_balances": {
+      "customer_deposits_usd_bn": null,
+      "loans_gross_usd_bn": null,
+      "avg_total_deposits": null,
+      "avg_loans": null
+    },
+    "capital": {
+      "cet1_ratio": 0.14300000000000002,
+      "cet1_capital": 71367.0,
+      "rwa_standardized": 498538.0,
+      "slr": 0.047,
+      "lcr": 1.8840000000000001,
+      "nsfr": 1.255,
+      "total_capital_ratio": 0.17600000000000002,
+      "total_leverage_exposure": 1519477.0,
+      "hqla_pool": 469508.0
+    },
+    "credit_quality": {
+      "npl_ratio": 0.01
+    }
+  },
+  {
+    "periodo": "2025-03-31",
+    "trimestre": "1Q25",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "UBS Group Quarterly Report",
+    "income_statement": {
+      "total_income": 12557.0,
+      "total_revenues": 12557.0,
+      "nii": 1239.0,
+      "credit_impairment": 100.0,
+      "operating_costs": 10324.0,
+      "total_opex": 10324.0,
+      "profit_before_tax": 2132.0,
+      "net_income": 1692.0
+    },
+    "balance_sheet": {
+      "total_assets": 1543363.0,
+      "equity": 87185.0
+    },
+    "yields_rates": {
+      "rote": 0.085,
+      "roe": 0.079,
+      "rocet1": 0.096,
+      "cost_income_ratio": 0.8220000000000001,
+      "efficiency_ratio": 0.8220000000000001,
+      "nim": 0.0181,
+      "nim_bps": 181.0
+    },
+    "avg_balances": {
+      "customer_deposits_usd_bn": 284.0,
+      "loans_gross_usd_bn": 281.4,
+      "avg_total_deposits": 284000.0,
+      "avg_loans": 281400.0
+    },
+    "capital": {
+      "cet1_ratio": 0.14300000000000002,
+      "cet1_capital": 69152.0,
+      "rwa_standardized": 483276.0,
+      "slr": 0.044000000000000004,
+      "lcr": 1.81,
+      "nsfr": 1.242,
+      "total_capital_ratio": 0.182,
+      "total_leverage_exposure": 1561583.0,
+      "hqla_pool": 463009.0
+    },
+    "credit_quality": {
+      "npl_ratio": 0.01
+    }
+  },
+  {
+    "periodo": "2025-06-30",
+    "trimestre": "2Q25",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "UBS Group Quarterly Report",
+    "income_statement": {
+      "total_income": 12112.0,
+      "total_revenues": 12112.0,
+      "nii": 1367.0,
+      "credit_impairment": 163.0,
+      "operating_costs": 9756.0,
+      "total_opex": 9756.0,
+      "profit_before_tax": 2193.0,
+      "net_income": 2395.0
+    },
+    "balance_sheet": {
+      "total_assets": 1669991.0,
+      "equity": 89277.0
+    },
+    "yields_rates": {
+      "rote": 0.11800000000000001,
+      "roe": 0.109,
+      "rocet1": 0.135,
+      "cost_income_ratio": 0.805,
+      "efficiency_ratio": 0.805,
+      "nim": 0.0184,
+      "nim_bps": 184.0
+    },
+    "avg_balances": {
+      "customer_deposits_usd_bn": 314.1,
+      "loans_gross_usd_bn": 313.4,
+      "avg_total_deposits": 314100.0,
+      "avg_loans": 313400.0
+    },
+    "capital": {
+      "cet1_ratio": 0.14400000000000002,
+      "cet1_capital": 72709.0,
+      "rwa_standardized": 504500.0,
+      "slr": 0.044000000000000004,
+      "lcr": 1.8230000000000002,
+      "nsfr": 1.224,
+      "total_capital_ratio": 0.182,
+      "total_leverage_exposure": 1658089.0,
+      "hqla_pool": 500997.0
+    },
+    "credit_quality": {
+      "npl_ratio": 0.009000000000000001
+    }
+  },
+  {
+    "periodo": "2025-09-30",
+    "trimestre": "3Q25",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "UBS Group Quarterly Report",
+    "income_statement": {
+      "total_income": 12760.0,
+      "total_revenues": 12760.0,
+      "nii": 1395.0,
+      "credit_impairment": 102.0,
+      "operating_costs": 9831.0,
+      "total_opex": 9831.0,
+      "profit_before_tax": 2828.0,
+      "net_income": 2481.0
+    },
+    "balance_sheet": {
+      "total_assets": 1632251.0,
+      "equity": 89899.0
+    },
+    "yields_rates": {
+      "rote": 0.12,
+      "roe": 0.111,
+      "rocet1": 0.135,
+      "cost_income_ratio": 0.77,
+      "efficiency_ratio": 0.77,
+      "nim": 0.0179,
+      "nim_bps": 179.0
+    },
+    "avg_balances": {
+      "customer_deposits_usd_bn": 309.8,
+      "loans_gross_usd_bn": 310.6,
+      "avg_total_deposits": 309800.0,
+      "avg_loans": 310600.0
+    },
+    "capital": {
+      "cet1_ratio": 0.14800000000000002,
+      "cet1_capital": 74655.0,
+      "rwa_standardized": 504897.0,
+      "slr": 0.046,
+      "lcr": 1.821,
+      "nsfr": 1.197,
+      "total_capital_ratio": 0.188,
+      "total_leverage_exposure": 1640464.0,
+      "hqla_pool": 489675.0
+    },
+    "credit_quality": {
+      "npl_ratio": 0.009000000000000001
+    }
+  },
+  {
+    "periodo": "2025-12-31",
+    "trimestre": "4Q25",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "UBS Group Quarterly Report",
+    "income_statement": {
+      "total_income": 12145.0,
+      "total_revenues": 12145.0,
+      "nii": 1322.0,
+      "credit_impairment": 159.0,
+      "operating_costs": 10286.0,
+      "total_opex": 10286.0,
+      "profit_before_tax": 1700.0,
+      "net_income": 1199.0
+    },
+    "balance_sheet": {
+      "total_assets": 1617427.0,
+      "equity": 90213.0
+    },
+    "yields_rates": {
+      "rote": 0.057999999999999996,
+      "roe": 0.053,
+      "rocet1": 0.066,
+      "cost_income_ratio": 0.847,
+      "efficiency_ratio": 0.847,
+      "nim": 0.017,
+      "nim_bps": 170.0
+    },
+    "avg_balances": {
+      "customer_deposits_usd_bn": 313.5,
+      "loans_gross_usd_bn": 310.2,
+      "avg_total_deposits": 313500.0,
+      "avg_loans": 310200.0
+    },
+    "capital": {
+      "cet1_ratio": 0.14400000000000002,
+      "cet1_capital": 71262.0,
+      "rwa_standardized": 493397.0,
+      "slr": 0.044000000000000004,
+      "lcr": 1.8259999999999998,
+      "nsfr": 1.161,
+      "total_capital_ratio": 0.185,
+      "total_leverage_exposure": 1622438.0,
+      "hqla_pool": 485228.0
+    },
+    "credit_quality": {
+      "npl_ratio": 0.009000000000000001
+    },
+    "cronograma_divida": {
+      "data_referencia": "2025-12-31",
+      "moeda": "USD",
+      "faixas": [
+        {
+          "faixa": "Due within 1 month",
+          "valor_usd_bn": 23.8,
+          "valor_usd_m": 23800.0
+        },
+        {
+          "faixa": "Due between 1 and 3 months",
+          "valor_usd_bn": 19.7,
+          "valor_usd_m": 19700.0
+        },
+        {
+          "faixa": "Due between 3 and 12 months",
+          "valor_usd_bn": 70.2,
+          "valor_usd_m": 70200.0
+        },
+        {
+          "faixa": "Due between 1 and 2 years",
+          "valor_usd_bn": 57.2,
+          "valor_usd_m": 57200.0
+        },
+        {
+          "faixa": "Due between 2 and 5 years",
+          "valor_usd_bn": 79.6,
+          "valor_usd_m": 79600.0
+        },
+        {
+          "faixa": "Due over 5 years",
+          "valor_usd_bn": 124.1,
+          "valor_usd_m": 124100.0
+        },
+        {
+          "faixa": "Perpetual / Not applicable",
+          "valor_usd_bn": 17.6,
+          "valor_usd_m": 17600.0
+        }
+      ],
+      "total_usd_bn": 392.2,
+      "total_usd_m": 392200.0,
+      "fonte": "UBS 20-F Note 23b - Maturity analysis of financial liabilities"
+    }
+  }
+]

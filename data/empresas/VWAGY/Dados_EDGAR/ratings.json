@@ -1,0 +1,19 @@
+{
+  "empresa": "Volkswagen AG",
+  "ticker": "VWAGY",
+  "ratings_atuais": {
+    "Moodys": {
+      "rating": "A3",
+      "outlook": "Stable"
+    },
+    "SP": {
+      "rating": "BBB+",
+      "outlook": "Stable"
+    },
+    "Fitch": {
+      "rating": "A-",
+      "outlook": "Stable"
+    }
+  },
+  "fonte": "Public ratings agencies"
+}

@@ -1,0 +1,777 @@
+[
+  {
+    "periodo": "2021-06-30",
+    "trimestre": "2Q21",
+    "fonte": "financial-supplement-2Q22.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 2341800.0,
+      "avg_total_deposits": 1321300.0
+    },
+    "yields_rates": {},
+    "capital": {
+      "cet1_capital": 150378.0,
+      "rwa_standardized": 1277234.0,
+      "slr": 0.0584,
+      "tier1_capital": 169636.0,
+      "total_leverage_exposure": 2903760.0,
+      "lcr": 1.13,
+      "nsfr": null,
+      "cet1_ratio": 0.1177,
+      "total_capital_ratio": 0.1558,
+      "tier1_ratio": 0.13281513019540664
+    },
+    "credit_quality": {
+      "nco_total": 1320.0,
+      "acl_loans": 19238.0,
+      "acl_pct_loans": 0.0288,
+      "acl_total": 21311.0,
+      "npa": 4382.0
+    }
+  },
+  {
+    "periodo": "2021-09-30",
+    "trimestre": "3Q21",
+    "fonte": "financial-supplement-3Q22.xlsx",
+    "avg_balances": {
+      "avg_earning_assets": 2143777.0,
+      "avg_loans": 668487.0,
+      "avg_ib_deposits": 1097790.0,
+      "avg_total_ib_liabilities": 1713940.0,
+      "avg_total_assets": 2346000.0,
+      "avg_total_deposits": 1343000.0,
+      "avg_nib_deposits": 245210.0
+    },
+    "yields_rates": {
+      "avg_earning_assets_yield": 0.0235,
+      "avg_loans_yield": 0.0528,
+      "avg_ib_deposits_rate": 0.0026,
+      "avg_total_ib_liabilities_rate": 0.0045,
+      "nim": 0.0199,
+      "nii_fte": 10737.0,
+      "interest_spread": 0.019
+    },
+    "capital": {
+      "cet1_capital": 149631.0,
+      "rwa_standardized": 1284316.0,
+      "slr": 0.058,
+      "tier1_capital": 168902.0,
+      "total_leverage_exposure": 2911050.0,
+      "lcr": 1.15,
+      "nsfr": null,
+      "cet1_ratio": 0.1165,
+      "total_capital_ratio": 0.1537,
+      "tier1_ratio": 0.1315112480106142,
+      "hqla_pool": 643133.0
+    },
+    "credit_quality": {
+      "nco_total": 961.0,
+      "acl_loans": 17715.0,
+      "acl_pct_loans": 0.0269,
+      "acl_total": 19778.0,
+      "npa": 3989.0
+    }
+  },
+  {
+    "periodo": "2021-12-31",
+    "trimestre": "4Q21",
+    "fonte": "financial-supplement-4Q22.xlsx",
+    "avg_balances": {
+      "avg_earning_assets": 2171851.0,
+      "avg_loans": 667408.0,
+      "avg_ib_deposits": 1111944.0,
+      "avg_total_ib_liabilities": 1727452.0,
+      "avg_total_assets": 2386200.0,
+      "avg_total_deposits": 1370300.0,
+      "avg_nib_deposits": 258356.0
+    },
+    "yields_rates": {
+      "avg_earning_assets_yield": 0.0235,
+      "avg_loans_yield": 0.0532,
+      "avg_ib_deposits_rate": 0.0028,
+      "avg_total_ib_liabilities_rate": 0.0046,
+      "nim": 0.0198,
+      "nii_fte": 10861.0,
+      "interest_spread": 0.0189
+    },
+    "capital": {
+      "cet1_capital": 149305.0,
+      "rwa_standardized": 1219175.0,
+      "slr": 0.0573,
+      "tier1_capital": 169568.0,
+      "total_leverage_exposure": 2957764.0,
+      "lcr": 1.15,
+      "nsfr": null,
+      "cet1_ratio": 0.1225,
+      "total_capital_ratio": 0.1604,
+      "tier1_ratio": 0.13908421678594132,
+      "hqla_pool": 651555.0
+    },
+    "credit_quality": {
+      "nco_total": 866.0,
+      "acl_loans": 16455.0,
+      "acl_pct_loans": 0.0249,
+      "acl_total": 18326.0,
+      "npa": 3379.0
+    }
+  },
+  {
+    "periodo": "2022-03-31",
+    "trimestre": "1Q22",
+    "fonte": "financial-supplement-4Q22.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 2374000.0,
+      "avg_total_deposits": 1334300.0
+    },
+    "yields_rates": {},
+    "capital": {
+      "cet1_capital": 143749.0,
+      "rwa_standardized": 1263298.0,
+      "slr": 0.0558,
+      "tier1_capital": 164015.0,
+      "total_leverage_exposure": 2939533.0,
+      "lcr": 1.16,
+      "nsfr": null,
+      "cet1_ratio": 0.1138,
+      "total_capital_ratio": 0.1484,
+      "tier1_ratio": 0.1298308079328868
+    },
+    "credit_quality": {
+      "nco_total": 872.0,
+      "acl_loans": 15393.0,
+      "acl_pct_loans": 0.0235,
+      "acl_total": 17736.0,
+      "npa": 3383.0
+    }
+  },
+  {
+    "periodo": "2022-06-30",
+    "trimestre": "2Q22",
+    "fonte": "financial-supplement-4Q22.xlsx",
+    "avg_balances": {
+      "avg_earning_assets": 2151532.0,
+      "avg_loans": 657487.0,
+      "avg_ib_deposits": 1068002.0,
+      "avg_total_ib_liabilities": 1724174.0,
+      "avg_total_assets": 2380100.0,
+      "avg_total_deposits": 1322500.0,
+      "avg_nib_deposits": 254498.0
+    },
+    "yields_rates": {
+      "avg_earning_assets_yield": 0.0292,
+      "avg_loans_yield": 0.0581,
+      "avg_ib_deposits_rate": 0.0053,
+      "avg_total_ib_liabilities_rate": 0.0085,
+      "nim": 0.0224,
+      "nii_fte": 12008.0,
+      "interest_spread": 0.0207
+    },
+    "capital": {
+      "cet1_capital": 144886.0,
+      "rwa_standardized": 1220000.0,
+      "slr": 0.056,
+      "tier1_capital": 165151.0,
+      "total_leverage_exposure": 2936894.0,
+      "lcr": 1.15,
+      "nsfr": null,
+      "cet1_ratio": 0.119,
+      "total_capital_ratio": 0.151,
+      "tier1_ratio": 0.13536967213114753,
+      "hqla_pool": 645460.0
+    },
+    "credit_quality": {
+      "nco_total": 850.0,
+      "acl_loans": 15952.0,
+      "acl_pct_loans": 0.0244,
+      "acl_total": 18145.0,
+      "npa": 3035.0
+    }
+  },
+  {
+    "periodo": "2022-09-30",
+    "trimestre": "3Q22",
+    "fonte": "financial-supplement-4Q22.xlsx",
+    "avg_balances": {
+      "avg_earning_assets": 2169910.0,
+      "avg_loans": 654718.0,
+      "avg_ib_deposits": 1075359.0,
+      "avg_total_ib_liabilities": 1734725.0,
+      "avg_total_assets": 2399400.0,
+      "avg_total_deposits": 1315900.0,
+      "avg_nib_deposits": 240541.0
+    },
+    "yields_rates": {
+      "avg_earning_assets_yield": 0.0365,
+      "avg_loans_yield": 0.0655,
+      "avg_ib_deposits_rate": 0.0121,
+      "avg_total_ib_liabilities_rate": 0.0168,
+      "nim": 0.0231,
+      "nii_fte": 12609.0,
+      "interest_spread": 0.0197
+    },
+    "capital": {
+      "cet1_capital": 144567.0,
+      "rwa_standardized": 1176749.0,
+      "slr": 0.0571,
+      "tier1_capital": 164830.0,
+      "total_leverage_exposure": 2888535.0,
+      "lcr": 1.17,
+      "nsfr": null,
+      "cet1_ratio": 0.1229,
+      "total_capital_ratio": 0.1509,
+      "tier1_ratio": 0.14007235187792808,
+      "hqla_pool": 650973.0
+    },
+    "credit_quality": {
+      "nco_total": 887.0,
+      "acl_loans": 16309.0,
+      "acl_pct_loans": 0.0254,
+      "acl_total": 18398.0,
+      "npa": 2886.0
+    }
+  },
+  {
+    "periodo": "2022-12-31",
+    "trimestre": "4Q22",
+    "fonte": "financial-supplement-4Q22.xlsx",
+    "avg_balances": {
+      "avg_earning_assets": 2211250.0,
+      "avg_loans": 652502.0,
+      "avg_ib_deposits": 1131425.0,
+      "avg_total_ib_liabilities": 1780954.0,
+      "avg_total_assets": 2430600.0,
+      "avg_total_deposits": 1361100.0,
+      "avg_nib_deposits": 229675.0
+    },
+    "yields_rates": {
+      "avg_earning_assets_yield": 0.0462,
+      "avg_loans_yield": 0.0746,
+      "avg_ib_deposits_rate": 0.021,
+      "avg_total_ib_liabilities_rate": 0.0277,
+      "nim": 0.0239,
+      "nii_fte": 13303.0,
+      "interest_spread": 0.0185
+    },
+    "capital": {
+      "cet1_capital": 148930.0,
+      "rwa_standardized": 1142985.0,
+      "slr": 0.0582,
+      "tier1_capital": 169145.0,
+      "total_leverage_exposure": 2906773.0,
+      "lcr": 1.18,
+      "nsfr": null,
+      "cet1_ratio": 0.1303,
+      "total_capital_ratio": 0.1546,
+      "tier1_ratio": 0.14798531914242094,
+      "hqla_pool": 663375.0
+    },
+    "credit_quality": {
+      "nco_total": 1180.0,
+      "acl_loans": 16974.0,
+      "acl_pct_loans": 0.026,
+      "acl_total": 19125.0,
+      "npa": 2439.0
+    }
+  },
+  {
+    "periodo": "2023-03-31",
+    "trimestre": "1Q23",
+    "fonte": "financial-supplement-3Q23.xlsx",
+    "avg_balances": {
+      "avg_earning_assets": 2253033.0,
+      "avg_loans": 653737.0,
+      "avg_ib_deposits": 1147176.0,
+      "avg_total_ib_liabilities": 1814800.0,
+      "avg_total_assets": 2462200.0,
+      "avg_total_deposits": 1363200.0,
+      "avg_nib_deposits": 216024.0
+    },
+    "yields_rates": {
+      "avg_earning_assets_yield": 0.053,
+      "avg_loans_yield": 0.0826,
+      "avg_ib_deposits_rate": 0.0272,
+      "avg_total_ib_liabilities_rate": 0.0359,
+      "nim": 0.0241,
+      "nii_fte": 13392.0,
+      "interest_spread": 0.0171
+    },
+    "capital": {
+      "cet1_capital": 153753.0,
+      "rwa_standardized": 1144359.0,
+      "slr": 0.0596,
+      "tier1_capital": 175249.0,
+      "total_leverage_exposure": 2939744.0,
+      "lcr": 1.2,
+      "nsfr": null,
+      "cet1_ratio": 0.1344,
+      "total_capital_ratio": 0.1557,
+      "tier1_ratio": 0.15314162775842197,
+      "hqla_pool": 675910.0
+    },
+    "credit_quality": {
+      "nco_total": 1302.0,
+      "acl_loans": 17169.0,
+      "acl_pct_loans": 0.0265,
+      "acl_total": 19128.0,
+      "npa": 2608.0
+    }
+  },
+  {
+    "periodo": "2023-06-30",
+    "trimestre": "2Q23",
+    "fonte": "financial-supplement-3Q23.xlsx",
+    "avg_balances": {
+      "avg_earning_assets": 2251603.0,
+      "avg_loans": 653591.0,
+      "avg_ib_deposits": 1132211.0,
+      "avg_total_ib_liabilities": 1811773.0,
+      "avg_total_assets": 2465600.0,
+      "avg_total_deposits": 1338200.0,
+      "avg_nib_deposits": 205989.0
+    },
+    "yields_rates": {
+      "avg_earning_assets_yield": 0.0582,
+      "avg_loans_yield": 0.0863,
+      "avg_ib_deposits_rate": 0.0309,
+      "avg_total_ib_liabilities_rate": 0.0415,
+      "nim": 0.0248,
+      "nii_fte": 13913.0,
+      "interest_spread": 0.0167
+    },
+    "capital": {
+      "cet1_capital": 154214.0,
+      "rwa_standardized": 1155949.0,
+      "slr": 0.06,
+      "tier1_capital": 175714.0,
+      "total_leverage_exposure": 2942736.0,
+      "lcr": 1.19,
+      "nsfr": null,
+      "cet1_ratio": 0.133,
+      "total_capital_ratio": 0.161,
+      "tier1_ratio": 0.15200843635835146,
+      "hqla_pool": 675481.0
+    },
+    "credit_quality": {
+      "nco_total": 1504.0,
+      "acl_loans": 17496.0,
+      "acl_pct_loans": 0.0267,
+      "acl_total": 19358.0,
+      "npa": 2582.0
+    }
+  },
+  {
+    "periodo": "2023-09-30",
+    "trimestre": "3Q23",
+    "fonte": "financial-supplement-3Q23.xlsx",
+    "avg_balances": {
+      "avg_earning_assets": 2206171.0,
+      "avg_loans": 662286.0,
+      "avg_ib_deposits": 1121163.0,
+      "avg_total_ib_liabilities": 1783573.0,
+      "avg_total_assets": 2413800.0,
+      "avg_total_deposits": 1315100.0,
+      "avg_nib_deposits": 193937.0
+    },
+    "yields_rates": {
+      "avg_earning_assets_yield": 0.0627,
+      "avg_loans_yield": 0.0902,
+      "avg_ib_deposits_rate": 0.0341,
+      "avg_total_ib_liabilities_rate": 0.0467,
+      "nim": 0.0249,
+      "nii_fte": 13851.0,
+      "interest_spread": 0.016
+    },
+    "capital": {
+      "cet1_capital": 156134.0,
+      "rwa_standardized": 1152735.0,
+      "slr": 0.06,
+      "tier1_capital": 176878.0,
+      "total_leverage_exposure": 2928295.0,
+      "lcr": 1.17,
+      "nsfr": null,
+      "cet1_ratio": 0.135,
+      "total_capital_ratio": 0.157,
+      "tier1_ratio": 0.15344203134284984,
+      "hqla_pool": 661851.0
+    },
+    "credit_quality": {
+      "nco_total": 1637.0,
+      "acl_loans": 17629.0,
+      "acl_pct_loans": 0.0268,
+      "acl_total": 19435.0,
+      "npa": 3277.0
+    }
+  },
+  {
+    "periodo": "2023-12-31",
+    "trimestre": "4Q23",
+    "fonte": "financial-supplement-4Q24.xlsx",
+    "avg_balances": {
+      "avg_earning_assets": 2230298.0,
+      "avg_loans": 674672.0,
+      "avg_ib_deposits": 1124798.0,
+      "avg_total_ib_liabilities": 1800744.0,
+      "avg_total_assets": 2427300.0,
+      "avg_total_deposits": 1319700.0,
+      "avg_nib_deposits": 194902.0
+    },
+    "yields_rates": {
+      "avg_earning_assets_yield": 0.0648,
+      "avg_loans_yield": 0.0912,
+      "avg_ib_deposits_rate": 0.0361,
+      "avg_total_ib_liabilities_rate": 0.0497,
+      "nim": 0.0246,
+      "nii_fte": 13845.0,
+      "interest_spread": 0.0151
+    },
+    "capital": {
+      "cet1_ratio": 0.1337,
+      "cet1_capital": 153595.0,
+      "rwa_standardized": 1148608.0,
+      "slr": 0.0582,
+      "tier1_capital": 172504.0,
+      "total_leverage_exposure": 2964954.0,
+      "lcr": 1.16,
+      "nsfr": null,
+      "total_capital_ratio": 0.1513,
+      "tier1_ratio": 0.15018526773276872,
+      "hqla_pool": 669089.0
+    },
+    "credit_quality": {
+      "nco_total": 1994.0,
+      "acl_loans": 18145.0,
+      "acl_pct_loans": 0.0266,
+      "acl_total": 19873.0,
+      "npa": 3197.0
+    }
+  },
+  {
+    "periodo": "2024-03-31",
+    "trimestre": "1Q24",
+    "fonte": "financial-supplement-4Q24.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 2450300.0,
+      "avg_total_deposits": 1326400.0
+    },
+    "yields_rates": {},
+    "capital": {
+      "cet1_ratio": 0.1345,
+      "cet1_capital": 153142.0,
+      "rwa_standardized": 1138546.0,
+      "slr": 0.0584,
+      "tier1_capital": 172065.0,
+      "total_leverage_exposure": 2948323.0,
+      "lcr": 1.17,
+      "nsfr": null,
+      "total_capital_ratio": 0.1517,
+      "tier1_ratio": 0.15112696368877498
+    },
+    "credit_quality": {
+      "nco_total": 2303.0,
+      "acl_loans": 18296.0,
+      "acl_pct_loans": 0.0275,
+      "acl_total": 19925.0,
+      "npa": 2770.0
+    }
+  },
+  {
+    "periodo": "2024-06-30",
+    "trimestre": "2Q24",
+    "fonte": "financial-supplement-4Q24.xlsx",
+    "avg_balances": {
+      "avg_earning_assets": 2256924.0,
+      "avg_loans": 679621.0,
+      "avg_ib_deposits": 1108733.0,
+      "avg_total_ib_liabilities": 1825454.0,
+      "avg_total_assets": 2456500.0,
+      "avg_total_deposits": 1309900.0,
+      "avg_nib_deposits": 201167.0
+    },
+    "yields_rates": {
+      "avg_earning_assets_yield": 0.0642,
+      "avg_loans_yield": 0.0917,
+      "avg_ib_deposits_rate": 0.0371,
+      "avg_total_ib_liabilities_rate": 0.0496,
+      "nim": 0.0241,
+      "nii_fte": 13515.0,
+      "interest_spread": 0.0146
+    },
+    "capital": {
+      "cet1_ratio": 0.1359,
+      "cet1_capital": 154357.0,
+      "rwa_standardized": 1135750.0,
+      "slr": 0.0589,
+      "tier1_capital": 173783.0,
+      "total_leverage_exposure": 2949534.0,
+      "lcr": 1.17,
+      "nsfr": null,
+      "total_capital_ratio": 0.1541,
+      "tier1_ratio": 0.1530116662998019,
+      "hqla_pool": 677077.0
+    },
+    "credit_quality": {
+      "nco_total": 2283.0,
+      "acl_loans": 18216.0,
+      "acl_pct_loans": 0.0268,
+      "acl_total": 19835.0,
+      "npa": 2250.0
+    }
+  },
+  {
+    "periodo": "2024-09-30",
+    "trimestre": "3Q24",
+    "fonte": "financial-supplement-4Q24.xlsx",
+    "avg_balances": {
+      "avg_earning_assets": 2282116.0,
+      "avg_loans": 686512.0,
+      "avg_ib_deposits": 1109067.0,
+      "avg_total_ib_liabilities": 1841919.0,
+      "avg_total_assets": 2492100.0,
+      "avg_total_deposits": 1311100.0,
+      "avg_nib_deposits": 202033.0
+    },
+    "yields_rates": {
+      "avg_earning_assets_yield": 0.0636,
+      "avg_loans_yield": 0.0917,
+      "avg_ib_deposits_rate": 0.037,
+      "avg_total_ib_liabilities_rate": 0.0499,
+      "nim": 0.0233,
+      "nii_fte": 13386.0,
+      "interest_spread": 0.0137
+    },
+    "capital": {
+      "cet1_ratio": 0.1371,
+      "cet1_capital": 158106.0,
+      "rwa_standardized": 1153150.0,
+      "slr": 0.0585,
+      "tier1_capital": 175788.0,
+      "total_leverage_exposure": 3005709.0,
+      "lcr": 1.17,
+      "nsfr": 1.18,
+      "total_capital_ratio": 0.1521,
+      "tier1_ratio": 0.1524415730824264,
+      "hqla_pool": 684635.0
+    },
+    "credit_quality": {
+      "nco_total": 2172.0,
+      "acl_loans": 18356.0,
+      "acl_pct_loans": 0.027,
+      "acl_total": 20081.0,
+      "npa": 2166.0
+    }
+  },
+  {
+    "periodo": "2024-12-31",
+    "trimestre": "4Q24",
+    "fonte": "financial-supplement-4Q25.xlsx",
+    "avg_balances": {
+      "avg_earning_assets": 2260823.0,
+      "avg_loans": 688007.0,
+      "avg_ib_deposits": 1116527.0,
+      "avg_total_ib_liabilities": 1826085.0,
+      "avg_total_assets": 2474800.0,
+      "avg_total_deposits": 1320400.0,
+      "avg_nib_deposits": 203873.0
+    },
+    "yields_rates": {
+      "avg_earning_assets_yield": 0.0617,
+      "avg_loans_yield": 0.0884,
+      "avg_ib_deposits_rate": 0.0334,
+      "avg_total_ib_liabilities_rate": 0.0464,
+      "nim": 0.0242,
+      "nii_fte": 13758.0,
+      "interest_spread": 0.0153
+    },
+    "capital": {
+      "cet1_ratio": 0.1363,
+      "cet1_capital": 155363.0,
+      "rwa_standardized": 1139988.0,
+      "slr": 0.0585,
+      "tier1_capital": 174527.0,
+      "total_leverage_exposure": 2985418.0,
+      "lcr": 1.16,
+      "nsfr": 1.2,
+      "total_capital_ratio": 0.1542,
+      "tier1_ratio": 0.1530954711803984,
+      "hqla_pool": 678247.0
+    },
+    "credit_quality": {
+      "nco_total": 2242.0,
+      "acl_loans": 18574.0,
+      "acl_pct_loans": 0.0271,
+      "acl_total": 20175.0,
+      "npa": 2687.0
+    }
+  },
+  {
+    "periodo": "2025-03-31",
+    "trimestre": "1Q25",
+    "fonte": "financial-supplement-4Q25.xlsx",
+    "avg_balances": {
+      "avg_earning_assets": 2306157.0,
+      "avg_loans": 690737.0,
+      "avg_ib_deposits": 1103768.0,
+      "avg_total_ib_liabilities": 1872805.0,
+      "avg_total_assets": 2517100.0,
+      "avg_total_deposits": 1305000.0,
+      "avg_nib_deposits": 201232.0
+    },
+    "yields_rates": {
+      "avg_earning_assets_yield": 0.0592,
+      "avg_loans_yield": 0.0866,
+      "avg_ib_deposits_rate": 0.031,
+      "avg_total_ib_liabilities_rate": 0.0426,
+      "nim": 0.0247,
+      "nii_fte": 14038.0,
+      "interest_spread": 0.0166
+    },
+    "capital": {
+      "cet1_ratio": 0.1341,
+      "cet1_capital": 155839.0,
+      "rwa_standardized": 1162306.0,
+      "slr": 0.0579,
+      "tier1_capital": 175514.0,
+      "total_leverage_exposure": 3033450.0,
+      "lcr": 1.17,
+      "nsfr": 1.18,
+      "total_capital_ratio": 0.1541,
+      "tier1_ratio": 0.15100498491791317,
+      "hqla_pool": 691847.0
+    },
+    "credit_quality": {
+      "nco_total": 2459.0,
+      "acl_loans": 18726.0,
+      "acl_pct_loans": 0.027,
+      "acl_total": 20446.0,
+      "npa": 2704.0
+    }
+  },
+  {
+    "periodo": "2025-06-30",
+    "trimestre": "2Q25",
+    "fonte": "financial-supplement-4Q25.xlsx",
+    "avg_balances": {
+      "avg_earning_assets": 2425332.0,
+      "avg_loans": 712176.0,
+      "avg_ib_deposits": 1138996.0,
+      "avg_total_ib_liabilities": 1987716.0,
+      "avg_total_assets": 2647800.0,
+      "avg_total_deposits": 1342800.0,
+      "avg_nib_deposits": 203804.0
+    },
+    "yields_rates": {
+      "avg_earning_assets_yield": 0.0593,
+      "avg_loans_yield": 0.0844,
+      "avg_ib_deposits_rate": 0.0306,
+      "avg_total_ib_liabilities_rate": 0.0417,
+      "nim": 0.0251,
+      "nii_fte": 15203.0,
+      "interest_spread": 0.0176
+    },
+    "capital": {
+      "cet1_ratio": 0.135,
+      "cet1_capital": 158932.0,
+      "rwa_standardized": 1180963.0,
+      "slr": 0.055,
+      "tier1_capital": 176606.0,
+      "total_leverage_exposure": 3193388.0,
+      "lcr": 1.15,
+      "nsfr": 1.17,
+      "total_capital_ratio": 0.153,
+      "tier1_ratio": 0.1495440585352801,
+      "hqla_pool": 727600.0
+    },
+    "credit_quality": {
+      "nco_total": 2234.0,
+      "acl_loans": 19123.0,
+      "acl_pct_loans": 0.0267,
+      "acl_total": 20844.0,
+      "npa": 3354.0
+    }
+  },
+  {
+    "periodo": "2025-09-30",
+    "trimestre": "3Q25",
+    "fonte": "financial-supplement-4Q25.xlsx",
+    "avg_balances": {
+      "avg_earning_assets": 2472065.0,
+      "avg_loans": 725019.0,
+      "avg_ib_deposits": 1180367.0,
+      "avg_total_ib_liabilities": 2024518.0,
+      "avg_total_assets": 2688800.0,
+      "avg_total_deposits": 1382200.0,
+      "avg_nib_deposits": 201833.0
+    },
+    "yields_rates": {
+      "avg_earning_assets_yield": 0.0589,
+      "avg_loans_yield": 0.0843,
+      "avg_ib_deposits_rate": 0.0308,
+      "avg_total_ib_liabilities_rate": 0.0426,
+      "nim": 0.024,
+      "nii_fte": 14967.0,
+      "interest_spread": 0.0163
+    },
+    "capital": {
+      "cet1_ratio": 0.132,
+      "cet1_capital": 158461.0,
+      "rwa_standardized": 1197575.0,
+      "slr": 0.055,
+      "tier1_capital": 178772.0,
+      "total_leverage_exposure": 3238996.0,
+      "lcr": 1.15,
+      "nsfr": 1.17,
+      "total_capital_ratio": 0.153,
+      "tier1_ratio": 0.1492783332985408,
+      "hqla_pool": 741620.0
+    },
+    "credit_quality": {
+      "nco_total": 2214.0,
+      "acl_loans": 19206.0,
+      "acl_pct_loans": 0.0265,
+      "acl_total": 21026.0,
+      "npa": 3678.0
+    }
+  },
+  {
+    "periodo": "2025-12-31",
+    "trimestre": "4Q25",
+    "fonte": "financial-supplement-4Q25.xlsx",
+    "avg_balances": {
+      "avg_earning_assets": 2503447.0,
+      "avg_loans": 736714.0,
+      "avg_ib_deposits": 1218253.0,
+      "avg_total_ib_liabilities": 2048820.0,
+      "avg_total_assets": 2722500.0,
+      "avg_total_deposits": 1422300.0,
+      "avg_nib_deposits": 204047.0
+    },
+    "yields_rates": {
+      "avg_earning_assets_yield": 0.0581,
+      "avg_loans_yield": 0.083,
+      "avg_ib_deposits_rate": 0.0283,
+      "avg_total_ib_liabilities_rate": 0.0406,
+      "nim": 0.0249,
+      "nii_fte": 15690.0,
+      "interest_spread": 0.0175
+    },
+    "capital": {
+      "cet1_ratio": 0.132,
+      "cet1_capital": 157076.0,
+      "rwa_standardized": 1192528.0,
+      "slr": 0.055,
+      "tier1_capital": 179736.0,
+      "total_leverage_exposure": 3275264.0,
+      "lcr": 1.15,
+      "nsfr": 1.17,
+      "total_capital_ratio": 0.157,
+      "tier1_ratio": 0.1507184736962151,
+      "hqla_pool": 751034.0
+    },
+    "credit_quality": {
+      "nco_total": 2190.0,
+      "acl_loans": 19247.0,
+      "acl_pct_loans": 0.0258,
+      "acl_total": 21080.0,
+      "npa": 3619.0
+    }
+  }
+]

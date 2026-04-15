@@ -1,0 +1,762 @@
+[
+  {
+    "periodo": "2020-09-30",
+    "trimestre": "3Q20",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 13266.0,
+      "ebit": 718.0,
+      "depreciacao_amortizacao": 739.0,
+      "ebitda": null,
+      "net_income": null,
+      "net_interest": -106.0,
+      "equity_income": 100.0,
+      "ebt": null,
+      "tax": null
+    },
+    "balance_sheet": {
+      "cash": null,
+      "trade_receivables": null,
+      "inventories": null,
+      "current_assets": null,
+      "ppe": null,
+      "intangibles": null,
+      "total_assets": null,
+      "st_debt": null,
+      "trade_payables": null,
+      "current_liab": null,
+      "lt_debt": null,
+      "total_equity": null
+    },
+    "cash_flow": {
+      "fco": 1770.0,
+      "capex": -520.0,
+      "fci": null,
+      "dividends_paid": -312.0,
+      "buyback": -13.0,
+      "fcf": null,
+      "dep_amort": null
+    }
+  },
+  {
+    "periodo": "2021-03-31",
+    "trimestre": "1Q21",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 16193.0,
+      "ebit": 2641.0,
+      "depreciacao_amortizacao": 601.0,
+      "ebitda": null,
+      "net_income": 2285.0,
+      "net_interest": -91.0,
+      "equity_income": 453.0,
+      "ebt": 2809.0,
+      "tax": -404.0
+    },
+    "balance_sheet": {
+      "cash": 5474.0,
+      "trade_receivables": 3783.0,
+      "inventories": 13228.0,
+      "current_assets": 30499.0,
+      "ppe": 29498.0,
+      "intangibles": 4212.0,
+      "total_assets": 83649.0,
+      "st_debt": 2813.0,
+      "trade_payables": 12231.0,
+      "current_liab": 24044.0,
+      "lt_debt": 8552.0,
+      "total_equity": 41982.0
+    },
+    "cash_flow": {
+      "fco": 997.0,
+      "capex": -619.0,
+      "fci": null,
+      "dividends_paid": -157.0,
+      "buyback": -650.0,
+      "fcf": null,
+      "dep_amort": null
+    }
+  },
+  {
+    "periodo": "2021-06-30",
+    "trimestre": "2Q21",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 19343.0,
+      "ebit": 4432.0,
+      "depreciacao_amortizacao": 620.0,
+      "ebitda": null,
+      "net_income": 4005.0,
+      "net_interest": -76.0,
+      "equity_income": 590.0,
+      "ebt": 4713.0,
+      "tax": -542.0
+    },
+    "balance_sheet": {
+      "cash": 4184.0,
+      "trade_receivables": 5586.0,
+      "inventories": 16286.0,
+      "current_assets": 29400.0,
+      "ppe": 30229.0,
+      "intangibles": 4557.0,
+      "total_assets": 85424.0,
+      "st_debt": 2639.0,
+      "trade_payables": 14076.0,
+      "current_liab": 22916.0,
+      "lt_debt": 6589.0,
+      "total_equity": 46325.0
+    },
+    "cash_flow": {
+      "fco": 2312.0,
+      "capex": -569.0,
+      "fci": null,
+      "dividends_paid": -332.0,
+      "buyback": -997.0,
+      "fcf": null,
+      "dep_amort": null
+    }
+  },
+  {
+    "periodo": "2021-09-30",
+    "trimestre": "3Q21",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 20229.0,
+      "ebit": 5345.0,
+      "depreciacao_amortizacao": 590.0,
+      "ebitda": null,
+      "net_income": 4621.0,
+      "net_interest": -62.0,
+      "equity_income": 778.0,
+      "ebt": 5722.0,
+      "tax": -882.0
+    },
+    "balance_sheet": {
+      "cash": 4381.0,
+      "trade_receivables": 5572.0,
+      "inventories": 18806.0,
+      "current_assets": 33180.0,
+      "ppe": 29599.0,
+      "intangibles": 4309.0,
+      "total_assets": 88091.0,
+      "st_debt": 1796.0,
+      "trade_payables": 14108.0,
+      "current_liab": 23431.0,
+      "lt_debt": 6453.0,
+      "total_equity": 49321.0
+    },
+    "cash_flow": {
+      "fco": 2442.0,
+      "capex": -675.0,
+      "fci": null,
+      "dividends_paid": -332.0,
+      "buyback": -1703.0,
+      "fcf": null,
+      "dep_amort": null
+    }
+  },
+  {
+    "periodo": "2021-12-31",
+    "trimestre": "4Q21",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 20806.0,
+      "ebit": 4558.0,
+      "depreciacao_amortizacao": 712.0,
+      "ebitda": null,
+      "net_income": 4045.0,
+      "net_interest": -49.0,
+      "equity_income": 383.0,
+      "ebt": 4781.0,
+      "tax": -632.0
+    },
+    "balance_sheet": {
+      "cash": 4371.0,
+      "trade_receivables": 5143.0,
+      "inventories": 19858.0,
+      "current_assets": 34939.0,
+      "ppe": 30075.0,
+      "intangibles": 4425.0,
+      "total_assets": 90512.0,
+      "st_debt": 1913.0,
+      "trade_payables": 15093.0,
+      "current_liab": 24167.0,
+      "lt_debt": 6488.0,
+      "total_equity": 51344.0
+    },
+    "cash_flow": {
+      "fco": 4154.0,
+      "capex": -1145.0,
+      "fci": -1235.0,
+      "dividends_paid": -29.0,
+      "buyback": -1820.0,
+      "fcf": null,
+      "dep_amort": 494.0
+    }
+  },
+  {
+    "periodo": "2022-03-31",
+    "trimestre": "1Q22",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 21836.0,
+      "ebit": 4433.0,
+      "depreciacao_amortizacao": 647.0,
+      "ebitda": null,
+      "net_income": 4125.0,
+      "net_interest": -51.0,
+      "equity_income": 559.0,
+      "ebt": 4801.0,
+      "tax": -555.0
+    },
+    "balance_sheet": {
+      "cash": 5570.0,
+      "trade_receivables": 6353.0,
+      "inventories": 22171.0,
+      "current_assets": 40581.0,
+      "ppe": 30161.0,
+      "intangibles": 4564.0,
+      "total_assets": 97499.0,
+      "st_debt": 2413.0,
+      "trade_payables": 16200.0,
+      "current_liab": 26104.0,
+      "lt_debt": 6309.0,
+      "total_equity": 56195.0
+    },
+    "cash_flow": {
+      "fco": 2034.0,
+      "capex": -529.0,
+      "fci": -606.0,
+      "dividends_paid": -166.0,
+      "buyback": -504.0,
+      "fcf": null,
+      "dep_amort": 647.0
+    }
+  },
+  {
+    "periodo": "2022-06-30",
+    "trimestre": "2Q22",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 22142.0,
+      "ebit": 4494.0,
+      "depreciacao_amortizacao": 669.0,
+      "ebitda": null,
+      "net_income": 3923.0,
+      "net_interest": -53.0,
+      "equity_income": 578.0,
+      "ebt": 4836.0,
+      "tax": -826.0
+    },
+    "balance_sheet": {
+      "cash": 4565.0,
+      "trade_receivables": 5931.0,
+      "inventories": 23303.0,
+      "current_assets": 40988.0,
+      "ppe": 29542.0,
+      "intangibles": 4307.0,
+      "total_assets": 97026.0,
+      "st_debt": 2719.0,
+      "trade_payables": 16736.0,
+      "current_liab": 25969.0,
+      "lt_debt": 6069.0,
+      "total_equity": 56446.0
+    },
+    "cash_flow": {
+      "fco": 2554.0,
+      "capex": -655.0,
+      "fci": -1541.0,
+      "dividends_paid": -185.0,
+      "buyback": -1496.0,
+      "fcf": null,
+      "dep_amort": 669.0
+    }
+  },
+  {
+    "periodo": "2022-09-30",
+    "trimestre": "3Q22",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 18975.0,
+      "ebit": 1651.0,
+      "depreciacao_amortizacao": 628.0,
+      "ebitda": null,
+      "net_income": 993.0,
+      "net_interest": -37.0,
+      "equity_income": 59.0,
+      "ebt": 1426.0,
+      "tax": -371.0
+    },
+    "balance_sheet": {
+      "cash": 5067.0,
+      "trade_receivables": 4677.0,
+      "inventories": 20566.0,
+      "current_assets": 36424.0,
+      "ppe": 28515.0,
+      "intangibles": 4035.0,
+      "total_assets": 91216.0,
+      "st_debt": 2580.0,
+      "trade_payables": 13384.0,
+      "current_liab": 22520.0,
+      "lt_debt": 6414.0,
+      "total_equity": 53917.0
+    },
+    "cash_flow": {
+      "fco": 1981.0,
+      "capex": -784.0,
+      "fci": -803.0,
+      "dividends_paid": -332.0,
+      "buyback": -649.0,
+      "fcf": null,
+      "dep_amort": 628.0
+    }
+  },
+  {
+    "periodo": "2022-12-31",
+    "trimestre": "4Q22",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 16891.0,
+      "ebit": -306.0,
+      "depreciacao_amortizacao": 636.0,
+      "ebitda": null,
+      "net_income": 261.0,
+      "net_interest": -72.0,
+      "equity_income": 121.0,
+      "ebt": 192.0,
+      "tax": null
+    },
+    "balance_sheet": {
+      "cash": 9414.0,
+      "trade_receivables": 3839.0,
+      "inventories": 20087.0,
+      "current_assets": 37118.0,
+      "ppe": 30167.0,
+      "intangibles": 4903.0,
+      "total_assets": 94547.0,
+      "st_debt": 2583.0,
+      "trade_payables": 13532.0,
+      "current_liab": 22398.0,
+      "lt_debt": 9067.0,
+      "total_equity": 55590.0
+    },
+    "cash_flow": {
+      "fco": 3634.0,
+      "capex": -1500.0,
+      "fci": -1533.0,
+      "dividends_paid": -332.0,
+      "buyback": -288.0,
+      "fcf": null,
+      "dep_amort": 1662.0
+    }
+  },
+  {
+    "periodo": "2023-03-31",
+    "trimestre": "1Q23",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 18501.0,
+      "ebit": 1192.0,
+      "depreciacao_amortizacao": 630.0,
+      "ebitda": 2140.0,
+      "net_income": 1096.0,
+      "net_interest": -64.0,
+      "equity_income": 318.0,
+      "ebt": 1329.0,
+      "tax": -189.0
+    },
+    "balance_sheet": {
+      "cash": 6290.0,
+      "trade_receivables": 4989.0,
+      "inventories": 19820.0,
+      "current_assets": 35754.0,
+      "ppe": 32900.0,
+      "intangibles": 5023.0,
+      "total_assets": 95260.0,
+      "st_debt": 2827.0,
+      "trade_payables": 13312.0,
+      "current_liab": 22826.0,
+      "lt_debt": 8650.0,
+      "total_equity": 56121.0
+    },
+    "cash_flow": {
+      "fco": 949.0,
+      "capex": -938.0,
+      "fci": -2869.0,
+      "dividends_paid": -66.0,
+      "buyback": -477.0,
+      "fcf": -42.0,
+      "dep_amort": 630.0
+    }
+  },
+  {
+    "periodo": "2023-06-30",
+    "trimestre": "2Q23",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 18606.0,
+      "ebit": 1925.0,
+      "depreciacao_amortizacao": 680.0,
+      "ebitda": 2998.0,
+      "net_income": 1860.0,
+      "net_interest": -47.0,
+      "equity_income": 393.0,
+      "ebt": 2138.0,
+      "tax": -231.0
+    },
+    "balance_sheet": {
+      "cash": 5943.0,
+      "trade_receivables": 4774.0,
+      "inventories": 20036.0,
+      "current_assets": 34389.0,
+      "ppe": 33682.0,
+      "intangibles": 5074.0,
+      "total_assets": 95423.0,
+      "st_debt": 1809.0,
+      "trade_payables": 13454.0,
+      "current_liab": 21054.0,
+      "lt_debt": 8651.0,
+      "total_equity": 57909.0
+    },
+    "cash_flow": {
+      "fco": 2087.0,
+      "capex": -1060.0,
+      "fci": -1015.0,
+      "dividends_paid": -200.0,
+      "buyback": -227.0,
+      "fcf": 1015.0,
+      "dep_amort": null
+    }
+  },
+  {
+    "periodo": "2023-09-30",
+    "trimestre": "3Q23",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 16616.0,
+      "ebit": 1203.0,
+      "depreciacao_amortizacao": 662.0,
+      "ebitda": 2150.0,
+      "net_income": 929.0,
+      "net_interest": -31.0,
+      "equity_income": 285.0,
+      "ebt": 1233.0,
+      "tax": -272.0
+    },
+    "balance_sheet": {
+      "cash": 6289.0,
+      "trade_receivables": 4479.0,
+      "inventories": 18852.0,
+      "current_assets": 33125.0,
+      "ppe": 33494.0,
+      "intangibles": 4885.0,
+      "total_assets": 93739.0,
+      "st_debt": 2310.0,
+      "trade_payables": 12315.0,
+      "current_liab": 20451.0,
+      "lt_debt": 8233.0,
+      "total_equity": 57539.0
+    },
+    "cash_flow": {
+      "fco": 1281.0,
+      "capex": -1165.0,
+      "fci": -978.0,
+      "dividends_paid": -185.0,
+      "buyback": -38.0,
+      "fcf": 50.0,
+      "dep_amort": 662.0
+    }
+  },
+  {
+    "periodo": "2023-12-31",
+    "trimestre": "4Q23",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 14552.0,
+      "ebit": -1980.0,
+      "depreciacao_amortizacao": 703.0,
+      "ebitda": 1454.0,
+      "net_income": null,
+      "net_interest": -3.0,
+      "equity_income": 188.0,
+      "ebt": -3440.0,
+      "tax": null
+    },
+    "balance_sheet": {
+      "cash": 7783.0,
+      "trade_receivables": 3661.0,
+      "inventories": 18759.0,
+      "current_assets": 33240.0,
+      "ppe": 33656.0,
+      "intangibles": 5102.0,
+      "total_assets": 93917.0,
+      "st_debt": 2312.0,
+      "trade_payables": 13605.0,
+      "current_liab": 21769.0,
+      "lt_debt": 8369.0,
+      "total_equity": 56068.0
+    },
+    "cash_flow": {
+      "fco": 3328.0,
+      "capex": -1450.0,
+      "fci": -986.0,
+      "dividends_paid": -393.0,
+      "buyback": -466.0,
+      "fcf": 1847.0,
+      "dep_amort": 815.0
+    }
+  },
+  {
+    "periodo": "2024-03-31",
+    "trimestre": "1Q24",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 16282.0,
+      "ebit": 1072.0,
+      "depreciacao_amortizacao": 642.0,
+      "ebitda": 1956.0,
+      "net_income": 938.0,
+      "net_interest": -63.0,
+      "equity_income": 242.0,
+      "ebt": 1171.0,
+      "tax": -197.0
+    },
+    "balance_sheet": {
+      "cash": 5437.0,
+      "trade_receivables": 4403.0,
+      "inventories": 18372.0,
+      "current_assets": 31674.0,
+      "ppe": 33477.0,
+      "intangibles": 5016.0,
+      "total_assets": 91947.0,
+      "st_debt": 1873.0,
+      "trade_payables": 12674.0,
+      "current_liab": 20437.0,
+      "lt_debt": 8348.0,
+      "total_equity": 55657.0
+    },
+    "cash_flow": {
+      "fco": -100.0,
+      "capex": -1236.0,
+      "fci": -962.0,
+      "dividends_paid": -85.0,
+      "buyback": -597.0,
+      "fcf": -1413.0,
+      "dep_amort": 642.0
+    }
+  },
+  {
+    "periodo": "2024-06-30",
+    "trimestre": "2Q24",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 16249.0,
+      "ebit": 1046.0,
+      "depreciacao_amortizacao": 635.0,
+      "ebitda": 1862.0,
+      "net_income": 504.0,
+      "net_interest": -7.0,
+      "equity_income": 181.0,
+      "ebt": 787.0,
+      "tax": -275.0
+    },
+    "balance_sheet": {
+      "cash": 5903.0,
+      "trade_receivables": 4186.0,
+      "inventories": 17690.0,
+      "current_assets": 31008.0,
+      "ppe": 33142.0,
+      "intangibles": 4947.0,
+      "total_assets": 90847.0,
+      "st_debt": 2357.0,
+      "trade_payables": 12493.0,
+      "current_liab": 20306.0,
+      "lt_debt": 8770.0,
+      "total_equity": 54299.0
+    },
+    "cash_flow": {
+      "fco": 1073.0,
+      "capex": -985.0,
+      "fci": -1042.0,
+      "dividends_paid": -210.0,
+      "buyback": -293.0,
+      "fcf": 81.0,
+      "dep_amort": 635.0
+    }
+  },
+  {
+    "periodo": "2024-09-30",
+    "trimestre": "3Q24",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 15196.0,
+      "ebit": 663.0,
+      "depreciacao_amortizacao": 646.0,
+      "ebitda": 1581.0,
+      "net_income": 287.0,
+      "net_interest": -8.0,
+      "equity_income": 162.0,
+      "ebt": 614.0,
+      "tax": -315.0
+    },
+    "balance_sheet": {
+      "cash": 5094.0,
+      "trade_receivables": 4238.0,
+      "inventories": 18474.0,
+      "current_assets": 31061.0,
+      "ppe": 34535.0,
+      "intangibles": 4762.0,
+      "total_assets": 93168.0,
+      "st_debt": 2356.0,
+      "trade_payables": 13164.0,
+      "current_liab": 21281.0,
+      "lt_debt": 8903.0,
+      "total_equity": 55364.0
+    },
+    "cash_flow": {
+      "fco": 1411.0,
+      "capex": -1051.0,
+      "fci": -1865.0,
+      "dividends_paid": -30.0,
+      "buyback": -277.0,
+      "fcf": 275.0,
+      "dep_amort": 682.0
+    }
+  },
+  {
+    "periodo": "2024-12-31",
+    "trimestre": "4Q24",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 14714.0,
+      "ebit": 529.0,
+      "depreciacao_amortizacao": 709.0,
+      "ebitda": 1654.0,
+      "net_income": null,
+      "net_interest": -32.0,
+      "equity_income": 194.0,
+      "ebt": 343.0,
+      "tax": -748.0
+    },
+    "balance_sheet": {
+      "cash": 6484.0,
+      "trade_receivables": 3375.0,
+      "inventories": 16501.0,
+      "current_assets": 29382.0,
+      "ppe": 33311.0,
+      "intangibles": 4453.0,
+      "total_assets": 89385.0,
+      "st_debt": 2748.0,
+      "trade_payables": 12921.0,
+      "current_liab": 21825.0,
+      "lt_debt": 8815.0,
+      "total_equity": 51286.0
+    },
+    "cash_flow": {
+      "fco": 2468.0,
+      "capex": -1133.0,
+      "fci": -1118.0,
+      "dividends_paid": -200.0,
+      "buyback": -133.0,
+      "fcf": 1317.0,
+      "dep_amort": 789.0
+    }
+  },
+  {
+    "periodo": "2025-03-31",
+    "trimestre": "1Q25",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 14798.0,
+      "ebit": 825.0,
+      "depreciacao_amortizacao": 656.0,
+      "ebitda": 1580.0,
+      "net_income": 805.0,
+      "net_interest": -48.0,
+      "equity_income": 99.0,
+      "ebt": 991.0,
+      "tax": -169.0
+    },
+    "balance_sheet": {
+      "cash": 5319.0,
+      "trade_receivables": 4108.0,
+      "inventories": 16877.0,
+      "current_assets": 29666.0,
+      "ppe": 34705.0,
+      "intangibles": 4599.0,
+      "total_assets": 91452.0,
+      "st_debt": 3456.0,
+      "trade_payables": 11884.0,
+      "current_liab": 21996.0,
+      "lt_debt": 8591.0,
+      "total_equity": 53299.0
+    },
+    "cash_flow": {
+      "fco": -354.0,
+      "capex": -967.0,
+      "fci": -1029.0,
+      "dividends_paid": -200.0,
+      "buyback": -94.0,
+      "fcf": -1351.0,
+      "dep_amort": 656.0
+    }
+  },
+  {
+    "periodo": "2025-06-30",
+    "trimestre": "2Q25",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "income_statement": {
+      "total_income": 15926.0,
+      "ebit": 1932.0,
+      "depreciacao_amortizacao": 697.0,
+      "ebitda": 1860.0,
+      "net_income": 1793.0,
+      "net_interest": -73.0,
+      "equity_income": 199.0,
+      "ebt": 2114.0,
+      "tax": -285.0
+    },
+    "balance_sheet": {
+      "cash": 5443.0,
+      "trade_receivables": 4628.0,
+      "inventories": 19126.0,
+      "current_assets": 32972.0,
+      "ppe": 39621.0,
+      "intangibles": 5343.0,
+      "total_assets": 98878.0,
+      "st_debt": 3173.0,
+      "trade_payables": 12741.0,
+      "current_liab": 23600.0,
+      "lt_debt": 10559.0,
+      "total_equity": 56470.0
+    },
+    "cash_flow": {
+      "fco": 1416.0,
+      "capex": -886.0,
+      "fci": -763.0,
+      "dividends_paid": -210.0,
+      "buyback": -168.0,
+      "fcf": 514.0,
+      "dep_amort": 891.0
+    }
+  }
+]

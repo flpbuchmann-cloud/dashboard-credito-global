@@ -1,0 +1,19 @@
+{
+  "empresa": "Mercedes-Benz Group AG",
+  "ticker": "MBG",
+  "ratings_atuais": {
+    "Moodys": {
+      "rating": "A2",
+      "outlook": "Stable"
+    },
+    "SP": {
+      "rating": "A",
+      "outlook": "Stable"
+    },
+    "Fitch": {
+      "rating": "A",
+      "outlook": "Stable"
+    }
+  },
+  "fonte": "Public ratings agencies"
+}

@@ -1,0 +1,2612 @@
+[
+  {
+    "periodo": "2020-03-31",
+    "tipo": "ITR_dre",
+    "ano": 2020,
+    "contas": {
+      "receita_liquida": 13686000000.0,
+      "nii": 7612000000.0,
+      "receita_juros": 7612000000.0,
+      "receita_nao_juros": 6074000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 0,
+      "provisao_credito": 3026000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 3229000000.0,
+      "lucro_antes_ir": 3229000000.0,
+      "ir_csll": 721000000.0,
+      "lucro_liquido": 2508000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2020-03-31",
+    "tipo": "ITR_bpa",
+    "ano": 2020,
+    "contas": {
+      "ativo_total": 2917810000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 0,
+      "emprestimos_concedidos": 1050667000000.0,
+      "carteira_credito_bruta": 1050667000000.0,
+      "provisao_acumulada": 0,
+      "npl": 0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 0.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2020-03-31",
+    "tipo": "ITR_bpp",
+    "ano": 2020,
+    "contas": {
+      "passivo_total": 2792592000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1178914000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 125218000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2020-03-31",
+    "tipo": "ITR_dfc",
+    "ano": 2020,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2020-03-31",
+    "tipo": "ITR_psd",
+    "ano": 2020,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2020-06-30",
+    "tipo": "ITR_dre",
+    "ano": 2020,
+    "contas": {
+      "receita_liquida": 13059000000.0,
+      "nii": 6897000000.0,
+      "receita_juros": 6897000000.0,
+      "receita_nao_juros": 6162000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 0,
+      "provisao_credito": 3832000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 1089000000.0,
+      "lucro_antes_ir": 1089000000.0,
+      "ir_csll": 472000000.0,
+      "lucro_liquido": 617000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2020-06-30",
+    "tipo": "ITR_bpa",
+    "ano": 2020,
+    "contas": {
+      "ativo_total": 2922798000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 0,
+      "emprestimos_concedidos": 1031908000000.0,
+      "carteira_credito_bruta": 1031908000000.0,
+      "provisao_acumulada": 0,
+      "npl": 0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 0.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2020-06-30",
+    "tipo": "ITR_bpp",
+    "ano": 2020,
+    "contas": {
+      "passivo_total": 2794352000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1228367000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 128446000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2020-06-30",
+    "tipo": "ITR_dfc",
+    "ano": 2020,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2020-06-30",
+    "tipo": "ITR_psd",
+    "ano": 2020,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2020-09-30",
+    "tipo": "ITR_dre",
+    "ano": 2020,
+    "contas": {
+      "receita_liquida": 11927000000.0,
+      "nii": 6450000000.0,
+      "receita_juros": 6450000000.0,
+      "receita_nao_juros": 5477000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 0,
+      "provisao_credito": 785000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 3074000000.0,
+      "lucro_antes_ir": 3074000000.0,
+      "ir_csll": 1035000000.0,
+      "lucro_liquido": 2039000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2020-09-30",
+    "tipo": "ITR_bpa",
+    "ano": 2020,
+    "contas": {
+      "ativo_total": 2955935000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 0,
+      "emprestimos_concedidos": 1055043000000.0,
+      "carteira_credito_bruta": 1055043000000.0,
+      "provisao_acumulada": 0,
+      "npl": 0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 0.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2020-09-30",
+    "tipo": "ITR_bpp",
+    "ano": 2020,
+    "contas": {
+      "passivo_total": 2822552000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1289726000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 133383000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2020-09-30",
+    "tipo": "ITR_dfc",
+    "ano": 2020,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2020-09-30",
+    "tipo": "ITR_psd",
+    "ano": 2020,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2020-12-31",
+    "tipo": "ITR_dre",
+    "ano": 2020,
+    "contas": {
+      "receita_liquida": 11757000000.0,
+      "nii": 6619000000.0,
+      "receita_juros": 6619000000.0,
+      "receita_nao_juros": 5138000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 9864000000.0,
+      "provisao_credito": 1174000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 1385000000.0,
+      "lucro_antes_ir": 1385000000.0,
+      "ir_csll": 450000000.0,
+      "lucro_liquido": 935000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2020-12-31",
+    "tipo": "ITR_bpa",
+    "ano": 2020,
+    "contas": {
+      "ativo_total": 2984164000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 0,
+      "emprestimos_concedidos": 1052478000000.0,
+      "carteira_credito_bruta": 1052478000000.0,
+      "provisao_acumulada": 0,
+      "npl": 0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 0.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2020-12-31",
+    "tipo": "ITR_bpp",
+    "ano": 2020,
+    "contas": {
+      "passivo_total": 2848114000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1318889000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 136050000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2020-12-31",
+    "tipo": "ITR_dfc",
+    "ano": 2020,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2020-12-31",
+    "tipo": "ITR_psd",
+    "ano": 2020,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2021-03-31",
+    "tipo": "ITR_dre",
+    "ano": 2021,
+    "contas": {
+      "receita_liquida": 12986000000.0,
+      "nii": 6514000000.0,
+      "receita_juros": 6514000000.0,
+      "receita_nao_juros": 6472000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 8527000000.0,
+      "provisao_credito": 435000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 5779000000.0,
+      "lucro_antes_ir": 5779000000.0,
+      "ir_csll": 1211000000.0,
+      "lucro_liquido": 4568000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2021-03-31",
+    "tipo": "ITR_bpa",
+    "ano": 2021,
+    "contas": {
+      "ativo_total": 2958629000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 0,
+      "emprestimos_concedidos": 1053790000000.0,
+      "carteira_credito_bruta": 1053790000000.0,
+      "provisao_acumulada": 13583000000.0,
+      "npl": 19248000000.0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 0.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2021-03-31",
+    "tipo": "ITR_bpp",
+    "ano": 2021,
+    "contas": {
+      "passivo_total": 2824148000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1343405000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 134481000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2021-03-31",
+    "tipo": "ITR_dfc",
+    "ano": 2021,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2021-03-31",
+    "tipo": "ITR_psd",
+    "ano": 2021,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2021-06-30",
+    "tipo": "ITR_dre",
+    "ano": 2021,
+    "contas": {
+      "receita_liquida": 12565000000.0,
+      "nii": 6584000000.0,
+      "receita_juros": 6584000000.0,
+      "receita_nao_juros": 5981000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 8560000000.0,
+      "provisao_credito": 284000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 5060000000.0,
+      "lucro_antes_ir": 5060000000.0,
+      "ir_csll": 1206000000.0,
+      "lucro_liquido": 3854000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2021-06-30",
+    "tipo": "ITR_bpa",
+    "ano": 2021,
+    "contas": {
+      "ativo_total": 2976005000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 0,
+      "emprestimos_concedidos": 1072375000000.0,
+      "carteira_credito_bruta": 1072375000000.0,
+      "provisao_acumulada": 12864000000.0,
+      "npl": 19069000000.0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 0.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2021-06-30",
+    "tipo": "ITR_bpp",
+    "ano": 2021,
+    "contas": {
+      "passivo_total": 2841399000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1366651000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 134606000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2021-06-30",
+    "tipo": "ITR_dfc",
+    "ano": 2021,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2021-06-30",
+    "tipo": "ITR_psd",
+    "ano": 2021,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2021-09-30",
+    "tipo": "ITR_dre",
+    "ano": 2021,
+    "contas": {
+      "receita_liquida": 12012000000.0,
+      "nii": 6610000000.0,
+      "receita_juros": 6610000000.0,
+      "receita_nao_juros": 5402000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 7989000000.0,
+      "provisao_credito": 659000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 5403000000.0,
+      "lucro_antes_ir": 5403000000.0,
+      "ir_csll": 1161000000.0,
+      "lucro_liquido": 4242000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2021-09-30",
+    "tipo": "ITR_bpa",
+    "ano": 2021,
+    "contas": {
+      "ativo_total": 2968791000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 0,
+      "emprestimos_concedidos": 1051186000000.0,
+      "carteira_credito_bruta": 1051186000000.0,
+      "provisao_acumulada": 11509000000.0,
+      "npl": 18558000000.0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 0.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2021-09-30",
+    "tipo": "ITR_bpp",
+    "ano": 2021,
+    "contas": {
+      "passivo_total": 2835596000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1364573000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 133195000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2021-09-30",
+    "tipo": "ITR_dfc",
+    "ano": 2021,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2021-09-30",
+    "tipo": "ITR_psd",
+    "ano": 2021,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2021-12-31",
+    "tipo": "ITR_dre",
+    "ano": 2021,
+    "contas": {
+      "receita_liquida": 11989000000.0,
+      "nii": 6781000000.0,
+      "receita_juros": 6781000000.0,
+      "receita_nao_juros": 5208000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 9544000000.0,
+      "provisao_credito": 450000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 2664000000.0,
+      "lucro_antes_ir": 2664000000.0,
+      "ir_csll": 635000000.0,
+      "lucro_liquido": 2029000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2021-12-31",
+    "tipo": "ITR_bpa",
+    "ano": 2021,
+    "contas": {
+      "ativo_total": 2957939000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 403018000000.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 0,
+      "emprestimos_concedidos": 1057231000000.0,
+      "carteira_credito_bruta": 1057231000000.0,
+      "provisao_acumulada": 11417000000.0,
+      "npl": 18797000000.0,
+      "investimentos_titulos": 446274000000.0,
+      "imobilizado": 0.0,
+      "intangivel": 20622000000.0,
+      "lucros_retidos": 0.0,
+      "hqla_pool": 849292000000.0
+    }
+  },
+  {
+    "periodo": "2021-12-31",
+    "tipo": "ITR_bpp",
+    "ano": 2021,
+    "contas": {
+      "passivo_total": 2825374000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1375321000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 132565000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2021-12-31",
+    "tipo": "ITR_dfc",
+    "ano": 2021,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2021-12-31",
+    "tipo": "ITR_psd",
+    "ano": 2021,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2022-03-31",
+    "tipo": "ITR_dre",
+    "ano": 2022,
+    "contas": {
+      "receita_liquida": 12305000000.0,
+      "nii": 6475000000.0,
+      "receita_juros": 6475000000.0,
+      "receita_nao_juros": 5830000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 8178000000.0,
+      "provisao_credito": 639000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 4144000000.0,
+      "lucro_antes_ir": 4144000000.0,
+      "ir_csll": 712000000.0,
+      "lucro_liquido": 3432000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2022-03-31",
+    "tipo": "ITR_bpa",
+    "ano": 2022,
+    "contas": {
+      "ativo_total": 3011587000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 0,
+      "emprestimos_concedidos": 1066604000000.0,
+      "carteira_credito_bruta": 1066604000000.0,
+      "provisao_acumulada": 11297000000.0,
+      "npl": 19690000000.0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 20622000000.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2022-03-31",
+    "tipo": "ITR_bpp",
+    "ano": 2022,
+    "contas": {
+      "passivo_total": 2890140000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1375811000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 121447000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2022-03-31",
+    "tipo": "ITR_dfc",
+    "ano": 2022,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2022-03-31",
+    "tipo": "ITR_psd",
+    "ano": 2022,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2022-06-30",
+    "tipo": "ITR_dre",
+    "ano": 2022,
+    "contas": {
+      "receita_liquida": 12240000000.0,
+      "nii": 6910000000.0,
+      "receita_juros": 6910000000.0,
+      "receita_nao_juros": 5330000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 7949000000.0,
+      "provisao_credito": 447000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 4636000000.0,
+      "lucro_antes_ir": 4636000000.0,
+      "ir_csll": -863000000.0,
+      "lucro_liquido": 5499000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2022-06-30",
+    "tipo": "ITR_bpa",
+    "ano": 2022,
+    "contas": {
+      "ativo_total": 2970481000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 0,
+      "emprestimos_concedidos": 1039130000000.0,
+      "carteira_credito_bruta": 1039130000000.0,
+      "provisao_acumulada": 10774000000.0,
+      "npl": 19086000000.0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 20622000000.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2022-06-30",
+    "tipo": "ITR_bpp",
+    "ano": 2022,
+    "contas": {
+      "passivo_total": 2854701000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1362440000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 115780000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2022-06-30",
+    "tipo": "ITR_dfc",
+    "ano": 2022,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2022-06-30",
+    "tipo": "ITR_psd",
+    "ano": 2022,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2022-09-30",
+    "tipo": "ITR_dre",
+    "ano": 2022,
+    "contas": {
+      "receita_liquida": 11508000000.0,
+      "nii": 8006000000.0,
+      "receita_juros": 8006000000.0,
+      "receita_nao_juros": 3502000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 7793000000.0,
+      "provisao_credito": 1068000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 3229000000.0,
+      "lucro_antes_ir": 3229000000.0,
+      "ir_csll": 572000000.0,
+      "lucro_liquido": 2657000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2022-09-30",
+    "tipo": "ITR_bpa",
+    "ano": 2022,
+    "contas": {
+      "ativo_total": 2974581000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 0,
+      "emprestimos_concedidos": 977955000000.0,
+      "carteira_credito_bruta": 977955000000.0,
+      "provisao_acumulada": 10433000000.0,
+      "npl": 17279000000.0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 20622000000.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2022-09-30",
+    "tipo": "ITR_bpp",
+    "ano": 2022,
+    "contas": {
+      "passivo_total": 2863824000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1327890000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 110757000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2022-09-30",
+    "tipo": "ITR_dfc",
+    "ano": 2022,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2022-09-30",
+    "tipo": "ITR_psd",
+    "ano": 2022,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2022-12-31",
+    "tipo": "ITR_dre",
+    "ano": 2022,
+    "contas": {
+      "receita_liquida": 14567000000.0,
+      "nii": 8986000000.0,
+      "receita_juros": 8986000000.0,
+      "receita_nao_juros": 5581000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 8781000000.0,
+      "provisao_credito": 1430000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 5049000000.0,
+      "lucro_antes_ir": 5049000000.0,
+      "ir_csll": 388000000.0,
+      "lucro_liquido": 4661000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2022-12-31",
+    "tipo": "ITR_bpa",
+    "ano": 2022,
+    "contas": {
+      "ativo_total": 2949286000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 327002000000.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 0,
+      "emprestimos_concedidos": 936307000000.0,
+      "carteira_credito_bruta": 936307000000.0,
+      "provisao_acumulada": 11453000000.0,
+      "npl": 19505000000.0,
+      "investimentos_titulos": 425564000000.0,
+      "imobilizado": 0.0,
+      "intangivel": 21321000000.0,
+      "lucros_retidos": 0.0,
+      "hqla_pool": 752566000000.0
+    }
+  },
+  {
+    "periodo": "2022-12-31",
+    "tipo": "ITR_bpp",
+    "ano": 2022,
+    "contas": {
+      "passivo_total": 2829995000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1304172000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 119291000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2022-12-31",
+    "tipo": "ITR_dfc",
+    "ano": 2022,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2022-12-31",
+    "tipo": "ITR_psd",
+    "ano": 2022,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2023-03-31",
+    "tipo": "ITR_dre",
+    "ano": 2023,
+    "contas": {
+      "receita_liquida": 20171000000.0,
+      "nii": 8959000000.0,
+      "receita_juros": 8959000000.0,
+      "receita_nao_juros": 11212000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 7586000000.0,
+      "provisao_credito": 432000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 12886000000.0,
+      "lucro_antes_ir": 12886000000.0,
+      "ir_csll": 1860000000.0,
+      "lucro_liquido": 11026000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2023-03-31",
+    "tipo": "ITR_bpa",
+    "ano": 2023,
+    "contas": {
+      "ativo_total": 2989696000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 0,
+      "emprestimos_concedidos": 975052000000.0,
+      "carteira_credito_bruta": 975052000000.0,
+      "provisao_acumulada": 11658000000.0,
+      "npl": 19959000000.0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 21321000000.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2023-03-31",
+    "tipo": "ITR_bpp",
+    "ano": 2023,
+    "contas": {
+      "passivo_total": 2864010000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1298675000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 125686000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2023-03-31",
+    "tipo": "ITR_dfc",
+    "ano": 2023,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2023-03-31",
+    "tipo": "ITR_psd",
+    "ano": 2023,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2023-06-30",
+    "tipo": "ITR_dre",
+    "ano": 2023,
+    "contas": {
+      "receita_liquida": 16705000000.0,
+      "nii": 9305000000.0,
+      "receita_juros": 9305000000.0,
+      "receita_nao_juros": 7400000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 7871000000.0,
+      "provisao_credito": 913000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 8771000000.0,
+      "lucro_antes_ir": 8771000000.0,
+      "ir_csll": 1726000000.0,
+      "lucro_liquido": 7045000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2023-06-30",
+    "tipo": "ITR_bpa",
+    "ano": 2023,
+    "contas": {
+      "ativo_total": 3041476000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 0,
+      "emprestimos_concedidos": 971296000000.0,
+      "carteira_credito_bruta": 971296000000.0,
+      "provisao_acumulada": 11738000000.0,
+      "npl": 20016000000.0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 21321000000.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2023-06-30",
+    "tipo": "ITR_bpp",
+    "ano": 2023,
+    "contas": {
+      "passivo_total": 2915058000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1336190000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 126418000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2023-06-30",
+    "tipo": "ITR_dfc",
+    "ano": 2023,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2023-06-30",
+    "tipo": "ITR_psd",
+    "ano": 2023,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2023-09-30",
+    "tipo": "ITR_dre",
+    "ano": 2023,
+    "contas": {
+      "receita_liquida": 16161000000.0,
+      "nii": 9248000000.0,
+      "receita_juros": 9248000000.0,
+      "receita_nao_juros": 6913000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 7968000000.0,
+      "provisao_credito": 1071000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 7714000000.0,
+      "lucro_antes_ir": 7714000000.0,
+      "ir_csll": 1448000000.0,
+      "lucro_liquido": 6266000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2023-09-30",
+    "tipo": "ITR_bpa",
+    "ano": 2023,
+    "contas": {
+      "ativo_total": 3020611000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 0,
+      "emprestimos_concedidos": 946961000000.0,
+      "carteira_credito_bruta": 946961000000.0,
+      "provisao_acumulada": 11211000000.0,
+      "npl": 19251000000.0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 21321000000.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2023-09-30",
+    "tipo": "ITR_bpp",
+    "ano": 2023,
+    "contas": {
+      "passivo_total": 2895783000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1341840000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 124828000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2023-09-30",
+    "tipo": "ITR_dfc",
+    "ano": 2023,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2023-09-30",
+    "tipo": "ITR_psd",
+    "ano": 2023,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2023-12-31",
+    "tipo": "ITR_dre",
+    "ano": 2023,
+    "contas": {
+      "receita_liquida": 13021000000.0,
+      "nii": 8284000000.0,
+      "receita_juros": 8284000000.0,
+      "receita_nao_juros": 4737000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 8645000000.0,
+      "provisao_credito": 1031000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 977000000.0,
+      "lucro_antes_ir": 977000000.0,
+      "ir_csll": 755000000.0,
+      "lucro_liquido": 222000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2023-12-31",
+    "tipo": "ITR_bpa",
+    "ano": 2023,
+    "contas": {
+      "ativo_total": 3038677000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 285868000000.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 0,
+      "emprestimos_concedidos": 949609000000.0,
+      "carteira_credito_bruta": 949609000000.0,
+      "provisao_acumulada": 11074000000.0,
+      "npl": 19273000000.0,
+      "investimentos_titulos": 442763000000.0,
+      "imobilizado": 0.0,
+      "intangivel": 12487000000.0,
+      "lucros_retidos": 0.0,
+      "hqla_pool": 728631000000.0
+    }
+  },
+  {
+    "periodo": "2023-12-31",
+    "tipo": "ITR_bpp",
+    "ano": 2023,
+    "contas": {
+      "passivo_total": 2912176000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1361737000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 126501000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2023-12-31",
+    "tipo": "ITR_dfc",
+    "ano": 2023,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2023-12-31",
+    "tipo": "ITR_psd",
+    "ano": 2023,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2024-03-31",
+    "tipo": "ITR_dre",
+    "ano": 2024,
+    "contas": {
+      "receita_liquida": 20752000000.0,
+      "nii": 8653000000.0,
+      "receita_juros": 8653000000.0,
+      "receita_nao_juros": 12099000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 8151000000.0,
+      "provisao_credito": 720000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 12650000000.0,
+      "lucro_antes_ir": 12650000000.0,
+      "ir_csll": 1813000000.0,
+      "lucro_liquido": 10837000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2024-03-31",
+    "tipo": "ITR_bpa",
+    "ano": 2024,
+    "contas": {
+      "ativo_total": 3000517000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 2140446000000.0,
+      "emprestimos_concedidos": 944061000000.0,
+      "carteira_credito_bruta": 944061000000.0,
+      "provisao_acumulada": 10936000000.0,
+      "npl": 21253000000.0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 12487000000.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2024-03-31",
+    "tipo": "ITR_bpp",
+    "ano": 2024,
+    "contas": {
+      "passivo_total": 2874245000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1350136000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 126272000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2024-03-31",
+    "tipo": "ITR_dfc",
+    "ano": 2024,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2024-03-31",
+    "tipo": "ITR_psd",
+    "ano": 2024,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2024-06-30",
+    "tipo": "ITR_dre",
+    "ano": 2024,
+    "contas": {
+      "receita_liquida": 16540000000.0,
+      "nii": 8258000000.0,
+      "receita_juros": 8258000000.0,
+      "receita_nao_juros": 8282000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 8145000000.0,
+      "provisao_credito": 346000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 8906000000.0,
+      "lucro_antes_ir": 8906000000.0,
+      "ir_csll": 2078000000.0,
+      "lucro_liquido": 6828000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2024-06-30",
+    "tipo": "ITR_bpa",
+    "ano": 2024,
+    "contas": {
+      "ativo_total": 2975003000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 2055283000000.0,
+      "emprestimos_concedidos": 948767000000.0,
+      "carteira_credito_bruta": 948767000000.0,
+      "provisao_acumulada": 10510000000.0,
+      "npl": 22662000000.0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 12487000000.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2024-06-30",
+    "tipo": "ITR_bpp",
+    "ano": 2024,
+    "contas": {
+      "passivo_total": 2849710000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1356306000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 125293000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2024-06-30",
+    "tipo": "ITR_dfc",
+    "ano": 2024,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2024-06-30",
+    "tipo": "ITR_psd",
+    "ano": 2024,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2024-09-30",
+    "tipo": "ITR_dre",
+    "ano": 2024,
+    "contas": {
+      "receita_liquida": 16998000000.0,
+      "nii": 7637000000.0,
+      "receita_juros": 7637000000.0,
+      "receita_nao_juros": 9361000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 8143000000.0,
+      "provisao_credito": 986000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 8476000000.0,
+      "lucro_antes_ir": 8476000000.0,
+      "ir_csll": 1727000000.0,
+      "lucro_liquido": 6749000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2024-09-30",
+    "tipo": "ITR_bpa",
+    "ano": 2024,
+    "contas": {
+      "ativo_total": 3098621000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 2088100000000.0,
+      "emprestimos_concedidos": 979612000000.0,
+      "carteira_credito_bruta": 979612000000.0,
+      "provisao_acumulada": 10959000000.0,
+      "npl": 24064000000.0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 12487000000.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2024-09-30",
+    "tipo": "ITR_bpp",
+    "ano": 2024,
+    "contas": {
+      "passivo_total": 2967193000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1398788000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 131428000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2024-09-30",
+    "tipo": "ITR_dfc",
+    "ano": 2024,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2024-09-30",
+    "tipo": "ITR_psd",
+    "ano": 2024,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2024-12-31",
+    "tipo": "ITR_dre",
+    "ano": 2024,
+    "contas": {
+      "receita_liquida": 11564000000.0,
+      "nii": 8185000000.0,
+      "receita_juros": 8185000000.0,
+      "receita_nao_juros": 3379000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 8604000000.0,
+      "provisao_credito": 1362000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 2277000000.0,
+      "lucro_antes_ir": 2277000000.0,
+      "ir_csll": 1692000000.0,
+      "lucro_liquido": 585000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2024-12-31",
+    "tipo": "ITR_bpa",
+    "ano": 2024,
+    "contas": {
+      "ativo_total": 3017048000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 267674000000.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 2113276000000.0,
+      "emprestimos_concedidos": 940373000000.0,
+      "carteira_credito_bruta": 940373000000.0,
+      "provisao_acumulada": 9715000000.0,
+      "npl": 22615000000.0,
+      "investimentos_titulos": 493166000000.0,
+      "imobilizado": 0.0,
+      "intangivel": 12384000000.0,
+      "lucros_retidos": 0.0,
+      "hqla_pool": 760840000000.0
+    }
+  },
+  {
+    "periodo": "2024-12-31",
+    "tipo": "ITR_bpp",
+    "ano": 2024,
+    "contas": {
+      "passivo_total": 2892137000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1437420000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 124911000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2024-12-31",
+    "tipo": "ITR_dfc",
+    "ano": 2024,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2024-12-31",
+    "tipo": "ITR_psd",
+    "ano": 2024,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2025-03-31",
+    "tipo": "ITR_dre",
+    "ano": 2025,
+    "contas": {
+      "receita_liquida": 17649000000.0,
+      "nii": 8302000000.0,
+      "receita_juros": 8302000000.0,
+      "receita_nao_juros": 9347000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 8102000000.0,
+      "provisao_credito": 876000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 9484000000.0,
+      "lucro_antes_ir": 9484000000.0,
+      "ir_csll": 1914000000.0,
+      "lucro_liquido": 7570000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2025-03-31",
+    "tipo": "ITR_bpa",
+    "ano": 2025,
+    "contas": {
+      "ativo_total": 3054361000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 2124161000000.0,
+      "emprestimos_concedidos": 954802000000.0,
+      "carteira_credito_bruta": 954802000000.0,
+      "provisao_acumulada": 10094000000.0,
+      "npl": 23211000000.0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 12384000000.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2025-03-31",
+    "tipo": "ITR_bpp",
+    "ano": 2025,
+    "contas": {
+      "passivo_total": 2928884000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1437508000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 125477000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2025-03-31",
+    "tipo": "ITR_dfc",
+    "ano": 2025,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2025-03-31",
+    "tipo": "ITR_psd",
+    "ano": 2025,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2025-06-30",
+    "tipo": "ITR_dre",
+    "ano": 2025,
+    "contas": {
+      "receita_liquida": 16473000000.0,
+      "nii": 8519000000.0,
+      "receita_juros": 8519000000.0,
+      "receita_nao_juros": 7954000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 8920000000.0,
+      "provisao_credito": 1065000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 6326000000.0,
+      "lucro_antes_ir": 6326000000.0,
+      "ir_csll": 1455000000.0,
+      "lucro_liquido": 4871000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2025-06-30",
+    "tipo": "ITR_bpa",
+    "ano": 2025,
+    "contas": {
+      "ativo_total": 3214371000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 2195244000000.0,
+      "emprestimos_concedidos": 991865000000.0,
+      "carteira_credito_bruta": 991865000000.0,
+      "provisao_acumulada": 10143000000.0,
+      "npl": 23550000000.0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 12384000000.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2025-06-30",
+    "tipo": "ITR_bpp",
+    "ano": 2025,
+    "contas": {
+      "passivo_total": 3084552000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1490291000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 129819000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2025-06-30",
+    "tipo": "ITR_dfc",
+    "ano": 2025,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2025-06-30",
+    "tipo": "ITR_psd",
+    "ano": 2025,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2025-09-30",
+    "tipo": "ITR_dre",
+    "ano": 2025,
+    "contas": {
+      "receita_liquida": 17788000000.0,
+      "nii": 8777000000.0,
+      "receita_juros": 8777000000.0,
+      "receita_nao_juros": 9011000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 10076000000.0,
+      "provisao_credito": 1008000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 7295000000.0,
+      "lucro_antes_ir": 7295000000.0,
+      "ir_csll": 1792000000.0,
+      "lucro_liquido": 5503000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2025-09-30",
+    "tipo": "ITR_bpa",
+    "ano": 2025,
+    "contas": {
+      "ativo_total": 3234223000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 0.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 2218472000000.0,
+      "emprestimos_concedidos": 993394000000.0,
+      "carteira_credito_bruta": 993394000000.0,
+      "provisao_acumulada": 10508000000.0,
+      "npl": 24563000000.0,
+      "investimentos_titulos": 0.0,
+      "imobilizado": 0.0,
+      "intangivel": 12384000000.0,
+      "lucros_retidos": 0.0
+    }
+  },
+  {
+    "periodo": "2025-09-30",
+    "tipo": "ITR_bpp",
+    "ano": 2025,
+    "contas": {
+      "passivo_total": 3106458000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1503972000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 127765000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2025-09-30",
+    "tipo": "ITR_dfc",
+    "ano": 2025,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2025-09-30",
+    "tipo": "ITR_psd",
+    "ano": 2025,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2025-12-31",
+    "tipo": "ITR_dre",
+    "ano": 2025,
+    "contas": {
+      "receita_liquida": 16364000000.0,
+      "nii": 9196000000.0,
+      "receita_juros": 9196000000.0,
+      "receita_nao_juros": 7168000000.0,
+      "despesa_juros": 0.0,
+      "despesas_operacionais": 9330000000.0,
+      "provisao_credito": 901000000.0,
+      "compensacao": 0.0,
+      "marketing": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "ebit": 6802000000.0,
+      "lucro_antes_ir": 6802000000.0,
+      "ir_csll": 1615000000.0,
+      "lucro_liquido": 5187000000.0,
+      "resultado_equivalencia": 0.0
+    }
+  },
+  {
+    "periodo": "2025-12-31",
+    "tipo": "ITR_bpa",
+    "ano": 2025,
+    "contas": {
+      "ativo_total": 3233034000000.0,
+      "ativo_circulante": 0.0,
+      "ativo_nao_circulante": 0.0,
+      "caixa": 242859000000.0,
+      "contas_a_receber": 0.0,
+      "depositos_em_bancos": 0.0,
+      "earning_assets": 2221054000000.0,
+      "emprestimos_concedidos": 999091000000.0,
+      "carteira_credito_bruta": 999091000000.0,
+      "provisao_acumulada": 10692000000.0,
+      "npl": 24389000000.0,
+      "investimentos_titulos": 567211000000.0,
+      "imobilizado": 0.0,
+      "intangivel": 13107000000.0,
+      "lucros_retidos": 0.0,
+      "hqla_pool": 810070000000.0
+    }
+  },
+  {
+    "periodo": "2025-12-31",
+    "tipo": "ITR_bpp",
+    "ano": 2025,
+    "contas": {
+      "passivo_total": 3100441000000.0,
+      "passivo_circulante": 0.0,
+      "passivo_nao_circulante": 0.0,
+      "depositos": 1515315000000.0,
+      "depositos_interest_bearing_domestic": 0.0,
+      "depositos_interest_bearing_foreign": 0.0,
+      "depositos_noninterest_bearing": 0.0,
+      "short_term_borrowings": 0.0,
+      "emprestimos_cp": 0.0,
+      "emprestimos_lp": 0.0,
+      "outras_obrigacoes_cp": 0.0,
+      "outras_obrigacoes_lp": 0.0,
+      "provisoes_cp": 0.0,
+      "provisoes_lp": 0.0,
+      "patrimonio_liquido": 132593000000.0,
+      "capital_social": 0.0
+    }
+  },
+  {
+    "periodo": "2025-12-31",
+    "tipo": "ITR_dfc",
+    "ano": 2025,
+    "contas": {
+      "caixa_gerado_operacoes": 0.0,
+      "capex": 0.0,
+      "fco": 0.0,
+      "fci": 0.0,
+      "fcf": 0.0,
+      "dividendos_pagos": 0.0,
+      "recompra_acoes": 0.0,
+      "juros_pagos": 0.0,
+      "juros_emprestimos_dfc": 0.0,
+      "captacao_divida": 0.0,
+      "amortizacao_divida": 0.0,
+      "depreciacao_amortizacao": 0.0,
+      "var_ativos_passivos": 0.0
+    }
+  },
+  {
+    "periodo": "2025-12-31",
+    "tipo": "ITR_psd",
+    "ano": 2025,
+    "contas": {
+      "acoes_diluidas": 0.0,
+      "acoes_outstanding": 0.0,
+      "dividendo_por_acao": 0.0,
+      "lpa_diluido": 0.0
+    }
+  },
+  {
+    "periodo": "2020-03-31",
+    "tipo": "ITR_reg",
+    "ano": 2020,
+    "contas": {
+      "cet1_ratio": 0.146,
+      "total_capital_ratio": 0.203,
+      "slr": 0.053,
+      "tier1_ratio": 0.1825
+    }
+  },
+  {
+    "periodo": "2020-06-30",
+    "tipo": "ITR_reg",
+    "ano": 2020,
+    "contas": {
+      "cet1_ratio": 0.15,
+      "total_capital_ratio": 0.207,
+      "slr": 0.053,
+      "tier1_ratio": 0.1875
+    }
+  },
+  {
+    "periodo": "2020-09-30",
+    "tipo": "ITR_reg",
+    "ano": 2020,
+    "contas": {
+      "cet1_ratio": 0.156,
+      "total_capital_ratio": 0.212,
+      "slr": 0.054000000000000006,
+      "tier1_ratio": 0.195
+    }
+  },
+  {
+    "periodo": "2020-12-31",
+    "tipo": "ITR_reg",
+    "ano": 2020,
+    "contas": {
+      "cet1_ratio": 0.159,
+      "total_capital_ratio": 0.215,
+      "slr": 0.055,
+      "tier1_ratio": 0.19875
+    }
+  },
+  {
+    "periodo": "2021-06-30",
+    "tipo": "ITR_reg",
+    "ano": 2021,
+    "contas": {
+      "cet1_ratio": 0.156,
+      "total_capital_ratio": 0.21,
+      "slr": 0.053,
+      "tier1_ratio": 0.195
+    }
+  },
+  {
+    "periodo": "2021-09-30",
+    "tipo": "ITR_reg",
+    "ano": 2021,
+    "contas": {
+      "cet1_ratio": 0.159,
+      "total_capital_ratio": 0.21300000000000002,
+      "slr": 0.052000000000000005,
+      "tier1_ratio": 0.19875
+    }
+  },
+  {
+    "periodo": "2021-12-31",
+    "tipo": "ITR_reg",
+    "ano": 2021,
+    "contas": {
+      "cet1_ratio": 0.158,
+      "total_capital_ratio": 0.212,
+      "slr": 0.052000000000000005,
+      "tier1_ratio": 0.1975
+    }
+  },
+  {
+    "periodo": "2022-03-31",
+    "tipo": "ITR_reg",
+    "ano": 2022,
+    "contas": {
+      "cet1_ratio": 0.141,
+      "total_capital_ratio": 0.192,
+      "slr": 0.057,
+      "tier1_ratio": 0.17625
+    }
+  },
+  {
+    "periodo": "2022-06-30",
+    "tipo": "ITR_reg",
+    "ano": 2022,
+    "contas": {
+      "cet1_ratio": 0.136,
+      "total_capital_ratio": 0.18600000000000003,
+      "slr": 0.055,
+      "tier1_ratio": 0.17
+    }
+  },
+  {
+    "periodo": "2022-09-30",
+    "tipo": "ITR_reg",
+    "ano": 2022,
+    "contas": {
+      "cet1_ratio": 0.134,
+      "total_capital_ratio": 0.18100000000000002,
+      "slr": 0.054000000000000006,
+      "tier1_ratio": 0.1675
+    }
+  },
+  {
+    "periodo": "2022-12-31",
+    "tipo": "ITR_reg",
+    "ano": 2022,
+    "contas": {
+      "cet1_ratio": 0.142,
+      "total_capital_ratio": 0.193,
+      "slr": 0.057999999999999996,
+      "tier1_ratio": 0.1775
+    }
+  },
+  {
+    "periodo": "2023-03-31",
+    "tipo": "ITR_reg",
+    "ano": 2023,
+    "contas": {
+      "cet1_ratio": 0.147,
+      "total_capital_ratio": 0.198,
+      "slr": 0.057999999999999996,
+      "tier1_ratio": 0.18375
+    }
+  },
+  {
+    "periodo": "2023-06-30",
+    "tipo": "ITR_reg",
+    "ano": 2023,
+    "contas": {
+      "cet1_ratio": 0.147,
+      "total_capital_ratio": 0.198,
+      "slr": 0.057999999999999996,
+      "tier1_ratio": 0.18375
+    }
+  },
+  {
+    "periodo": "2023-09-30",
+    "tipo": "ITR_reg",
+    "ano": 2023,
+    "contas": {
+      "cet1_ratio": 0.149,
+      "total_capital_ratio": 0.197,
+      "slr": 0.057,
+      "tier1_ratio": 0.18625
+    }
+  },
+  {
+    "periodo": "2023-12-31",
+    "tipo": "ITR_reg",
+    "ano": 2023,
+    "contas": {
+      "cet1_ratio": 0.14800000000000002,
+      "total_capital_ratio": 0.2,
+      "slr": 0.055999999999999994,
+      "tier1_ratio": 0.18500000000000003
+    }
+  },
+  {
+    "periodo": "2024-03-31",
+    "tipo": "ITR_reg",
+    "ano": 2024,
+    "contas": {
+      "cet1_ratio": 0.152,
+      "total_capital_ratio": 0.20199999999999999,
+      "slr": 0.057,
+      "tier1_ratio": 0.19
+    }
+  },
+  {
+    "periodo": "2024-06-30",
+    "tipo": "ITR_reg",
+    "ano": 2024,
+    "contas": {
+      "cet1_ratio": 0.15,
+      "total_capital_ratio": 0.201,
+      "slr": 0.057,
+      "tier1_ratio": 0.1875
+    }
+  },
+  {
+    "periodo": "2024-09-30",
+    "tipo": "ITR_reg",
+    "ano": 2024,
+    "contas": {
+      "cet1_ratio": 0.152,
+      "total_capital_ratio": 0.203,
+      "slr": 0.057,
+      "tier1_ratio": 0.19
+    }
+  },
+  {
+    "periodo": "2024-12-31",
+    "tipo": "ITR_reg",
+    "ano": 2024,
+    "contas": {
+      "cet1_ratio": 0.149,
+      "total_capital_ratio": 0.201,
+      "slr": 0.055999999999999994,
+      "tier1_ratio": 0.18625
+    }
+  },
+  {
+    "periodo": "2025-03-31",
+    "tipo": "ITR_reg",
+    "ano": 2025,
+    "contas": {
+      "cet1_ratio": 0.147,
+      "total_capital_ratio": 0.19899999999999998,
+      "slr": 0.054000000000000006,
+      "tier1_ratio": 0.18375
+    }
+  },
+  {
+    "periodo": "2025-06-30",
+    "tipo": "ITR_reg",
+    "ano": 2025,
+    "contas": {
+      "cet1_ratio": 0.146,
+      "total_capital_ratio": 0.201,
+      "slr": 0.054000000000000006,
+      "tier1_ratio": 0.1825
+    }
+  },
+  {
+    "periodo": "2025-09-30",
+    "tipo": "ITR_reg",
+    "ano": 2025,
+    "contas": {
+      "cet1_ratio": 0.145,
+      "total_capital_ratio": 0.20199999999999999,
+      "slr": 0.052000000000000005,
+      "tier1_ratio": 0.18125
+    }
+  },
+  {
+    "periodo": "2025-12-31",
+    "tipo": "ITR_reg",
+    "ano": 2025,
+    "contas": {
+      "cet1_ratio": 0.149,
+      "total_capital_ratio": 0.20500000000000002,
+      "slr": 0.053,
+      "tier1_ratio": 0.18625
+    }
+  }
+]

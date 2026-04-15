@@ -1,0 +1,15 @@
+[
+  {
+    "data_referencia": "2025-12-31",
+    "caixa": null,
+    "vencimentos": {
+      "2031": 750000000.0,
+      "2033": 750000000.0,
+      "2035": 750000000.0,
+      "2053": 750000000.0,
+      "2054": 750000000.0
+    },
+    "divida_total": 3750000000.0,
+    "arquivo": "10-K 2025 - Apollo Corporate Notes (public data)"
+  }
+]

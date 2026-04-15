@@ -1,0 +1,1050 @@
+[
+  {
+    "periodo": "2020-03-31",
+    "trimestre": "1Q20",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-Q1-2021.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 2917810.0,
+      "avg_earning_assets": null,
+      "avg_loans": 1036554.0,
+      "avg_total_deposits": 1178914.0
+    },
+    "yields_rates": {
+      "nim": null,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.146,
+      "cet1_capital": 125218.0,
+      "rwa_standardized": null,
+      "leverage_ratio": 0.053,
+      "lcr": null,
+      "nsfr": null,
+      "total_capital_ratio": 0.203,
+      "tier1_ratio": 0.1752
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 1050667.0,
+      "provisao_acumulada": null,
+      "npl": null,
+      "coverage_ratio": null,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 13686.0,
+      "nii": 7612.0,
+      "total_opex": null,
+      "credit_impairment": -3026.0,
+      "profit_before_tax": 3229.0,
+      "net_income": 2508.0
+    }
+  },
+  {
+    "periodo": "2020-06-30",
+    "trimestre": "2Q20",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-H1-2021.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 2922798.0,
+      "avg_earning_assets": null,
+      "avg_loans": 1047307.0,
+      "avg_total_deposits": 1228367.0
+    },
+    "yields_rates": {
+      "nim": null,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.15,
+      "cet1_capital": 128446.0,
+      "rwa_standardized": null,
+      "leverage_ratio": 0.053,
+      "lcr": null,
+      "nsfr": null,
+      "total_capital_ratio": 0.207,
+      "tier1_ratio": 0.18
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 1031908.0,
+      "provisao_acumulada": null,
+      "npl": null,
+      "coverage_ratio": null,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 13059.0,
+      "nii": 6897.0,
+      "total_opex": null,
+      "credit_impairment": -3832.0,
+      "profit_before_tax": 1089.0,
+      "net_income": 617.0
+    }
+  },
+  {
+    "periodo": "2020-09-30",
+    "trimestre": "3Q20",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-Q3-2021.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 2955935.0,
+      "avg_earning_assets": null,
+      "avg_loans": 1051522.0,
+      "avg_total_deposits": 1289726.0
+    },
+    "yields_rates": {
+      "nim": null,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.156,
+      "cet1_capital": 133383.0,
+      "rwa_standardized": null,
+      "leverage_ratio": 0.054000000000000006,
+      "lcr": null,
+      "nsfr": null,
+      "total_capital_ratio": 0.212,
+      "tier1_ratio": 0.1872
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 1055043.0,
+      "provisao_acumulada": null,
+      "npl": null,
+      "coverage_ratio": null,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 11927.0,
+      "nii": 6450.0,
+      "total_opex": null,
+      "credit_impairment": -785.0,
+      "profit_before_tax": 3074.0,
+      "net_income": 2039.0
+    }
+  },
+  {
+    "periodo": "2020-12-31",
+    "trimestre": "4Q20",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-FY-2021.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 2984164.0,
+      "avg_earning_assets": null,
+      "avg_loans": 1051692.0,
+      "avg_total_deposits": 1318889.0
+    },
+    "yields_rates": {
+      "nim": null,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.159,
+      "cet1_capital": 136050.0,
+      "rwa_standardized": null,
+      "leverage_ratio": 0.055,
+      "lcr": null,
+      "nsfr": null,
+      "total_capital_ratio": 0.215,
+      "tier1_ratio": 0.1908
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 1052478.0,
+      "provisao_acumulada": null,
+      "npl": null,
+      "coverage_ratio": null,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 11757.0,
+      "nii": 6619.0,
+      "total_opex": -9864.0,
+      "credit_impairment": -1174.0,
+      "profit_before_tax": 1385.0,
+      "net_income": 935.0
+    }
+  },
+  {
+    "periodo": "2021-03-31",
+    "trimestre": "1Q21",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-Q1-2022.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 2958629.0,
+      "avg_earning_assets": null,
+      "avg_loans": 1062715.0,
+      "avg_total_deposits": 1343405.0
+    },
+    "yields_rates": {
+      "nim": 0.0121,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": null,
+      "cet1_capital": 134481.0,
+      "rwa_standardized": null,
+      "leverage_ratio": null,
+      "lcr": null,
+      "nsfr": null,
+      "total_capital_ratio": null
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 1053790.0,
+      "provisao_acumulada": 13583.0,
+      "npl": 19248.0,
+      "coverage_ratio": 0.381494,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 12986.0,
+      "nii": 6514.0,
+      "total_opex": -8527.0,
+      "credit_impairment": 435.0,
+      "profit_before_tax": 5779.0,
+      "net_income": 4568.0
+    }
+  },
+  {
+    "periodo": "2021-06-30",
+    "trimestre": "2Q21",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-H1-2022.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 2976005.0,
+      "avg_earning_assets": null,
+      "avg_loans": 1065218.0,
+      "avg_total_deposits": 1366651.0
+    },
+    "yields_rates": {
+      "nim": 0.012,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.156,
+      "cet1_capital": 134606.0,
+      "rwa_standardized": null,
+      "leverage_ratio": 0.053,
+      "lcr": null,
+      "nsfr": null,
+      "total_capital_ratio": 0.21,
+      "tier1_ratio": 0.1872
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 1072375.0,
+      "provisao_acumulada": 12864.0,
+      "npl": 19069.0,
+      "coverage_ratio": 0.373958,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 12565.0,
+      "nii": 6584.0,
+      "total_opex": -8560.0,
+      "credit_impairment": 284.0,
+      "profit_before_tax": 5060.0,
+      "net_income": 3854.0
+    }
+  },
+  {
+    "periodo": "2021-09-30",
+    "trimestre": "3Q21",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-Q3-2022.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 2968791.0,
+      "avg_earning_assets": null,
+      "avg_loans": 1057515.0,
+      "avg_total_deposits": 1364573.0
+    },
+    "yields_rates": {
+      "nim": 0.011899999999999999,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.159,
+      "cet1_capital": 133195.0,
+      "rwa_standardized": null,
+      "leverage_ratio": 0.052000000000000005,
+      "lcr": null,
+      "nsfr": null,
+      "total_capital_ratio": 0.21300000000000002,
+      "tier1_ratio": 0.1908
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 1051186.0,
+      "provisao_acumulada": 11509.0,
+      "npl": 18558.0,
+      "coverage_ratio": 0.3717,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 12012.0,
+      "nii": 6610.0,
+      "total_opex": -7989.0,
+      "credit_impairment": 659.0,
+      "profit_before_tax": 5403.0,
+      "net_income": 4242.0
+    }
+  },
+  {
+    "periodo": "2021-12-31",
+    "trimestre": "4Q21",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-FY-2022.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 2957939.0,
+      "avg_earning_assets": null,
+      "avg_loans": 1057277.0,
+      "avg_total_deposits": 1375321.0
+    },
+    "yields_rates": {
+      "nim": 0.011899999999999999,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.158,
+      "cet1_capital": 132565.0,
+      "rwa_standardized": null,
+      "leverage_ratio": 0.052000000000000005,
+      "lcr": 1.38,
+      "nsfr": null,
+      "total_capital_ratio": 0.212,
+      "tier1_ratio": 0.1896,
+      "hqla_pool": 849292.0
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 1057231.0,
+      "provisao_acumulada": 11417.0,
+      "npl": 18797.0,
+      "coverage_ratio": 0.365324,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 11989.0,
+      "nii": 6781.0,
+      "total_opex": -9544.0,
+      "credit_impairment": -450.0,
+      "profit_before_tax": 2664.0,
+      "net_income": 2029.0
+    }
+  },
+  {
+    "periodo": "2022-03-31",
+    "trimestre": "1Q22",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-Q1-2023.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 3011587.0,
+      "avg_earning_assets": null,
+      "avg_loans": 1062777.0,
+      "avg_total_deposits": 1375811.0
+    },
+    "yields_rates": {
+      "nim": 0.011899999999999999,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.141,
+      "cet1_capital": 121447.0,
+      "rwa_standardized": 862318.0,
+      "leverage_ratio": 0.057,
+      "lcr": 1.38,
+      "nsfr": null,
+      "total_capital_ratio": 0.192,
+      "tier1_ratio": 0.1692,
+      "hqla_pool": 849292.0
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 1066604.0,
+      "provisao_acumulada": 11297.0,
+      "npl": 19690.0,
+      "coverage_ratio": 0.350533,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 12305.0,
+      "nii": 6475.0,
+      "total_opex": -8178.0,
+      "credit_impairment": -639.0,
+      "profit_before_tax": 4144.0,
+      "net_income": 3432.0
+    }
+  },
+  {
+    "periodo": "2022-06-30",
+    "trimestre": "2Q22",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-H1-2023.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 2970481.0,
+      "avg_earning_assets": null,
+      "avg_loans": 1046627.0,
+      "avg_total_deposits": 1362440.0
+    },
+    "yields_rates": {
+      "nim": 0.0129,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.136,
+      "cet1_capital": 115780.0,
+      "rwa_standardized": 851743.0,
+      "leverage_ratio": 0.055,
+      "lcr": 1.38,
+      "nsfr": null,
+      "total_capital_ratio": 0.18600000000000003,
+      "tier1_ratio": 0.1632,
+      "hqla_pool": 849292.0
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 1039130.0,
+      "provisao_acumulada": 10774.0,
+      "npl": 19086.0,
+      "coverage_ratio": 0.346694,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 12240.0,
+      "nii": 6910.0,
+      "total_opex": -7949.0,
+      "credit_impairment": -447.0,
+      "profit_before_tax": 4636.0,
+      "net_income": 5499.0
+    }
+  },
+  {
+    "periodo": "2022-09-30",
+    "trimestre": "3Q22",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-Q3-2023.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 2974581.0,
+      "avg_earning_assets": null,
+      "avg_loans": 1017659.0,
+      "avg_total_deposits": 1327890.0
+    },
+    "yields_rates": {
+      "nim": 0.0151,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.134,
+      "cet1_capital": 110757.0,
+      "rwa_standardized": 828315.0,
+      "leverage_ratio": 0.054000000000000006,
+      "lcr": 1.38,
+      "nsfr": null,
+      "total_capital_ratio": 0.18100000000000002,
+      "tier1_ratio": 0.1608,
+      "hqla_pool": 849292.0
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 977955.0,
+      "provisao_acumulada": 10433.0,
+      "npl": 17279.0,
+      "coverage_ratio": 0.34076,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 11508.0,
+      "nii": 8006.0,
+      "total_opex": -7793.0,
+      "credit_impairment": -1068.0,
+      "profit_before_tax": 3229.0,
+      "net_income": 2657.0
+    }
+  },
+  {
+    "periodo": "2022-12-31",
+    "trimestre": "4Q22",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-FY-2023.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 2949286.0,
+      "avg_earning_assets": null,
+      "avg_loans": 963360.0,
+      "avg_total_deposits": 1304172.0
+    },
+    "yields_rates": {
+      "nim": 0.0168,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.142,
+      "cet1_capital": 119291.0,
+      "rwa_standardized": 839720.0,
+      "leverage_ratio": 0.057999999999999996,
+      "lcr": 1.32,
+      "nsfr": 1.36,
+      "total_capital_ratio": 0.193,
+      "tier1_ratio": 0.17039999999999997,
+      "hqla_pool": 752566.0
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 936307.0,
+      "provisao_acumulada": 11453.0,
+      "npl": 19505.0,
+      "coverage_ratio": 0.350115,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 14567.0,
+      "nii": 8986.0,
+      "total_opex": -8781.0,
+      "credit_impairment": -1430.0,
+      "profit_before_tax": 5049.0,
+      "net_income": 4661.0
+    }
+  },
+  {
+    "periodo": "2023-03-31",
+    "trimestre": "1Q23",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-Q1-2024.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 2989696.0,
+      "avg_earning_assets": null,
+      "avg_loans": 939461.0,
+      "avg_total_deposits": 1298675.0
+    },
+    "yields_rates": {
+      "nim": 0.0169,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.147,
+      "cet1_capital": 125686.0,
+      "rwa_standardized": 854434.0,
+      "leverage_ratio": 0.057999999999999996,
+      "lcr": 1.32,
+      "nsfr": 1.36,
+      "total_capital_ratio": 0.198,
+      "tier1_ratio": 0.17639999999999997,
+      "hqla_pool": 752566.0
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 975052.0,
+      "provisao_acumulada": 11658.0,
+      "npl": 19959.0,
+      "coverage_ratio": 0.353074,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 20171.0,
+      "nii": 8959.0,
+      "total_opex": -7586.0,
+      "credit_impairment": -432.0,
+      "profit_before_tax": 12886.0,
+      "net_income": 11026.0
+    }
+  },
+  {
+    "periodo": "2023-06-30",
+    "trimestre": "2Q23",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-H1-2024.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 3041476.0,
+      "avg_earning_assets": null,
+      "avg_loans": 968720.0,
+      "avg_total_deposits": 1336190.0
+    },
+    "yields_rates": {
+      "nim": 0.0172,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.147,
+      "cet1_capital": 126418.0,
+      "rwa_standardized": 859545.0,
+      "leverage_ratio": 0.057999999999999996,
+      "lcr": 1.32,
+      "nsfr": 1.36,
+      "total_capital_ratio": 0.198,
+      "tier1_ratio": 0.17639999999999997,
+      "hqla_pool": 752566.0
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 971296.0,
+      "provisao_acumulada": 11738.0,
+      "npl": 20016.0,
+      "coverage_ratio": 0.366607,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 16705.0,
+      "nii": 9305.0,
+      "total_opex": -7871.0,
+      "credit_impairment": -913.0,
+      "profit_before_tax": 8771.0,
+      "net_income": 7045.0
+    }
+  },
+  {
+    "periodo": "2023-09-30",
+    "trimestre": "3Q23",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-Q3-2024.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 3020611.0,
+      "avg_earning_assets": null,
+      "avg_loans": 971505.0,
+      "avg_total_deposits": 1341840.0
+    },
+    "yields_rates": {
+      "nim": 0.017,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.149,
+      "cet1_capital": 124828.0,
+      "rwa_standardized": 840049.0,
+      "leverage_ratio": 0.057,
+      "lcr": 1.32,
+      "nsfr": 1.36,
+      "total_capital_ratio": 0.197,
+      "tier1_ratio": 0.1788,
+      "hqla_pool": 752566.0
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 946961.0,
+      "provisao_acumulada": 11211.0,
+      "npl": 19251.0,
+      "coverage_ratio": 0.362163,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 16161.0,
+      "nii": 9248.0,
+      "total_opex": -7968.0,
+      "credit_impairment": -1071.0,
+      "profit_before_tax": 7714.0,
+      "net_income": 6266.0
+    }
+  },
+  {
+    "periodo": "2023-12-31",
+    "trimestre": "4Q23",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-FY-2024.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 3038677.0,
+      "avg_earning_assets": null,
+      "avg_loans": 950906.0,
+      "avg_total_deposits": 1361737.0
+    },
+    "yields_rates": {
+      "nim": 0.0152,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.14800000000000002,
+      "cet1_capital": 126501.0,
+      "rwa_standardized": 854114.0,
+      "leverage_ratio": 0.055999999999999994,
+      "lcr": 1.36,
+      "nsfr": 1.33,
+      "total_capital_ratio": 0.2,
+      "tier1_ratio": 0.1776,
+      "hqla_pool": 728631.0
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 949609.0,
+      "provisao_acumulada": 11074.0,
+      "npl": 19273.0,
+      "coverage_ratio": 0.360608,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 13021.0,
+      "nii": 8284.0,
+      "total_opex": -8645.0,
+      "credit_impairment": -1031.0,
+      "profit_before_tax": 977.0,
+      "net_income": 222.0
+    }
+  },
+  {
+    "periodo": "2024-03-31",
+    "trimestre": "1Q24",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-Q1-2025.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 3000517.0,
+      "avg_earning_assets": 2140446.0,
+      "avg_loans": 943471.0,
+      "avg_total_deposits": 1350136.0
+    },
+    "yields_rates": {
+      "nim": 0.0163,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.152,
+      "cet1_capital": 126272.0,
+      "rwa_standardized": 832633.0,
+      "leverage_ratio": 0.057,
+      "lcr": 1.36,
+      "nsfr": 1.33,
+      "total_capital_ratio": 0.20199999999999999,
+      "tier1_ratio": 0.18239999999999998,
+      "hqla_pool": 728631.0
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 944061.0,
+      "provisao_acumulada": 10936.0,
+      "npl": 21253.0,
+      "coverage_ratio": 0.331436,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 20752.0,
+      "nii": 8653.0,
+      "total_opex": -8151.0,
+      "credit_impairment": -720.0,
+      "profit_before_tax": 12650.0,
+      "net_income": 10837.0
+    }
+  },
+  {
+    "periodo": "2024-06-30",
+    "trimestre": "2Q24",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-H1-2025.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 2975003.0,
+      "avg_earning_assets": 2055283.0,
+      "avg_loans": 944200.0,
+      "avg_total_deposits": 1356306.0
+    },
+    "yields_rates": {
+      "nim": 0.016200000000000003,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.15,
+      "cet1_capital": 125293.0,
+      "rwa_standardized": 835118.0,
+      "leverage_ratio": 0.057,
+      "lcr": 1.36,
+      "nsfr": 1.33,
+      "total_capital_ratio": 0.201,
+      "tier1_ratio": 0.18,
+      "hqla_pool": 728631.0
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 948767.0,
+      "provisao_acumulada": 10510.0,
+      "npl": 22662.0,
+      "coverage_ratio": 0.307299,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 16540.0,
+      "nii": 8258.0,
+      "total_opex": -8145.0,
+      "credit_impairment": -346.0,
+      "profit_before_tax": 8906.0,
+      "net_income": 6828.0
+    }
+  },
+  {
+    "periodo": "2024-09-30",
+    "trimestre": "3Q24",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-Q3-2025.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 3098621.0,
+      "avg_earning_assets": 2088100.0,
+      "avg_loans": 959140.0,
+      "avg_total_deposits": 1398788.0
+    },
+    "yields_rates": {
+      "nim": 0.0146,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.152,
+      "cet1_capital": 131428.0,
+      "rwa_standardized": 863923.0,
+      "leverage_ratio": 0.057,
+      "lcr": 1.36,
+      "nsfr": 1.33,
+      "total_capital_ratio": 0.203,
+      "tier1_ratio": 0.18239999999999998,
+      "hqla_pool": 728631.0
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 979612.0,
+      "provisao_acumulada": 10959.0,
+      "npl": 24064.0,
+      "coverage_ratio": 0.306017,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 16998.0,
+      "nii": 7637.0,
+      "total_opex": -8143.0,
+      "credit_impairment": -986.0,
+      "profit_before_tax": 8476.0,
+      "net_income": 6749.0
+    }
+  },
+  {
+    "periodo": "2024-12-31",
+    "trimestre": "4Q24",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-FY-2025.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 3017048.0,
+      "avg_earning_assets": 2113276.0,
+      "avg_loans": 952357.0,
+      "avg_total_deposits": 1437420.0
+    },
+    "yields_rates": {
+      "nim": 0.0154,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.149,
+      "cet1_capital": 124911.0,
+      "rwa_standardized": 838254.0,
+      "leverage_ratio": 0.055999999999999994,
+      "lcr": 1.38,
+      "nsfr": 1.43,
+      "total_capital_ratio": 0.201,
+      "tier1_ratio": 0.1788,
+      "hqla_pool": 760840.0
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 940373.0,
+      "provisao_acumulada": 9715.0,
+      "npl": 22615.0,
+      "coverage_ratio": 0.267079,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 11564.0,
+      "nii": 8185.0,
+      "total_opex": -8604.0,
+      "credit_impairment": -1362.0,
+      "profit_before_tax": 2277.0,
+      "net_income": 585.0
+    }
+  },
+  {
+    "periodo": "2025-03-31",
+    "trimestre": "1Q25",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-FY-2025.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 3054361.0,
+      "avg_earning_assets": 2124161.0,
+      "avg_loans": 939779.0,
+      "avg_total_deposits": 1437508.0
+    },
+    "yields_rates": {
+      "nim": 0.0159,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.147,
+      "cet1_capital": 125477.0,
+      "rwa_standardized": 853257.0,
+      "leverage_ratio": 0.054000000000000006,
+      "lcr": 1.39,
+      "nsfr": 1.43,
+      "total_capital_ratio": 0.19899999999999998,
+      "tier1_ratio": 0.17639999999999997,
+      "hqla_pool": 760840.0
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 954802.0,
+      "provisao_acumulada": 10094.0,
+      "npl": 23211.0,
+      "coverage_ratio": 0.267761,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 17649.0,
+      "nii": 8302.0,
+      "total_opex": -8102.0,
+      "credit_impairment": -876.0,
+      "profit_before_tax": 9484.0,
+      "net_income": 7570.0
+    }
+  },
+  {
+    "periodo": "2025-06-30",
+    "trimestre": "2Q25",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-FY-2025.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 3214371.0,
+      "avg_earning_assets": 2195244.0,
+      "avg_loans": 974198.0,
+      "avg_total_deposits": 1490291.0
+    },
+    "yields_rates": {
+      "nim": 0.015600000000000001,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.146,
+      "cet1_capital": 129819.0,
+      "rwa_standardized": 886860.0,
+      "leverage_ratio": 0.054000000000000006,
+      "lcr": 1.4,
+      "nsfr": 1.43,
+      "total_capital_ratio": 0.201,
+      "tier1_ratio": 0.1752,
+      "hqla_pool": 760840.0
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 991865.0,
+      "provisao_acumulada": 10143.0,
+      "npl": 23550.0,
+      "coverage_ratio": 0.260892,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 16473.0,
+      "nii": 8519.0,
+      "total_opex": -8920.0,
+      "credit_impairment": -1065.0,
+      "profit_before_tax": 6326.0,
+      "net_income": 4871.0
+    }
+  },
+  {
+    "periodo": "2025-09-30",
+    "trimestre": "3Q25",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-FY-2025.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 3234223.0,
+      "avg_earning_assets": 2218472.0,
+      "avg_loans": 983604.0,
+      "avg_total_deposits": 1503972.0
+    },
+    "yields_rates": {
+      "nim": 0.015700000000000002,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.145,
+      "cet1_capital": 127765.0,
+      "rwa_standardized": 878793.0,
+      "leverage_ratio": 0.052000000000000005,
+      "lcr": 1.39,
+      "nsfr": 1.43,
+      "total_capital_ratio": 0.20199999999999999,
+      "tier1_ratio": 0.174,
+      "hqla_pool": 760840.0
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 993394.0,
+      "provisao_acumulada": 10508.0,
+      "npl": 24563.0,
+      "coverage_ratio": 0.271099,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 17788.0,
+      "nii": 8777.0,
+      "total_opex": -10076.0,
+      "credit_impairment": -1008.0,
+      "profit_before_tax": 7295.0,
+      "net_income": 5503.0
+    }
+  },
+  {
+    "periodo": "2025-12-31",
+    "trimestre": "4Q25",
+    "moeda_original": "USD",
+    "fx_rate": 1.0,
+    "fonte": "data-pack-FY-2025.xlsx",
+    "avg_balances": {
+      "avg_total_assets": 3233034.0,
+      "avg_earning_assets": 2221054.0,
+      "avg_loans": 988965.0,
+      "avg_total_deposits": 1515315.0
+    },
+    "yields_rates": {
+      "nim": 0.016399999999999998,
+      "asset_yield": null,
+      "interest_spread": null
+    },
+    "capital": {
+      "cet1_ratio": 0.149,
+      "cet1_capital": 132593.0,
+      "rwa_standardized": 888647.0,
+      "leverage_ratio": 0.053,
+      "lcr": 1.37,
+      "nsfr": 1.43,
+      "total_capital_ratio": 0.20500000000000002,
+      "tier1_ratio": 0.1788,
+      "hqla_pool": 810070.0
+    },
+    "credit_quality": {
+      "carteira_credito_bruta": 999091.0,
+      "provisao_acumulada": 10692.0,
+      "npl": 24389.0,
+      "coverage_ratio": 0.290992,
+      "nco_total": null
+    },
+    "income_statement": {
+      "total_income": 16364.0,
+      "nii": 9196.0,
+      "total_opex": -9330.0,
+      "credit_impairment": -901.0,
+      "profit_before_tax": 6802.0,
+      "net_income": 5187.0
+    }
+  }
+]

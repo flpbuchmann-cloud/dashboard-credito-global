@@ -1,0 +1,686 @@
+[
+  {
+    "periodo": "2021-06-30",
+    "trimestre": "2Q21",
+    "moeda_original": "EUR",
+    "fx_rate": 1.21,
+    "fonte": "fact-sheet-Q2-2022.pdf",
+    "income_statement": {
+      "total_income": 52613.22,
+      "custo": -31728.62,
+      "resultado_bruto": 9561.42,
+      "ebit": 6273.85,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": null
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 31677.8,
+      "gross_debt": 171821.21,
+      "net_debt": 133066.12,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": null,
+      "capex": null,
+      "fcf": 3129.06,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 30218.54,
+      "cars_ebit": null,
+      "vans_revenue": 4439.49,
+      "vans_ebit": null,
+      "mobility_revenue": 8317.54,
+      "mobility_ebit": null
+    }
+  },
+  {
+    "periodo": "2021-09-30",
+    "trimestre": "3Q21",
+    "moeda_original": "EUR",
+    "fx_rate": 1.18,
+    "fonte": "fact-sheet-Q3-2022.pdf",
+    "income_statement": {
+      "total_income": 47297.94,
+      "custo": -29420.94,
+      "resultado_bruto": 7922.52,
+      "ebit": 4223.22,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": null
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 29920.08,
+      "gross_debt": 160232.2,
+      "net_debt": 122924.14,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": null,
+      "capex": null,
+      "fcf": 2653.82,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 26472.12,
+      "cars_ebit": null,
+      "vans_revenue": 4184.28,
+      "vans_ebit": null,
+      "mobility_revenue": 8088.9,
+      "mobility_ebit": null
+    }
+  },
+  {
+    "periodo": "2021-12-31",
+    "trimestre": "4Q21",
+    "moeda_original": "EUR",
+    "fx_rate": 1.14,
+    "fonte": "fact-sheet-Q3-2022.pdf",
+    "income_statement": {
+      "total_income": 49463.46,
+      "custo": -30286.38,
+      "resultado_bruto": 9887.22,
+      "ebit": 16594.98,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": null
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 26427.48,
+      "gross_debt": 143158.92,
+      "net_debt": 108091.38,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": null,
+      "capex": null,
+      "fcf": 2235.54,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 28933.2,
+      "cars_ebit": null,
+      "vans_revenue": 4699.08,
+      "vans_ebit": null,
+      "mobility_revenue": 8260.44,
+      "mobility_ebit": null
+    }
+  },
+  {
+    "periodo": "2022-03-31",
+    "trimestre": "1Q22",
+    "moeda_original": "EUR",
+    "fx_rate": 1.12,
+    "fonte": "fact-sheet-Q3-2022.pdf",
+    "income_statement": {
+      "total_income": 39040.96,
+      "custo": -30121.28,
+      "resultado_bruto": 8919.68,
+      "ebit": 5856.48,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": null
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 20442.24,
+      "gross_debt": 133288.96,
+      "net_debt": 104980.96,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": null,
+      "capex": null,
+      "fcf": 1361.92,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 28936.32,
+      "cars_ebit": null,
+      "vans_revenue": 4129.44,
+      "vans_ebit": null,
+      "mobility_revenue": 7595.84,
+      "mobility_ebit": null
+    }
+  },
+  {
+    "periodo": "2022-06-30",
+    "trimestre": "2Q22",
+    "moeda_original": "EUR",
+    "fx_rate": 1.06,
+    "fonte": "fact-sheet-Q2-2023.pdf",
+    "income_statement": {
+      "total_income": 38626.4,
+      "custo": -29614.28,
+      "resultado_bruto": 9012.12,
+      "ebit": 4899.32,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": 3389.88
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 15192.98,
+      "gross_debt": 124309.38,
+      "net_debt": 102575.14,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": null,
+      "capex": null,
+      "fcf": 1502.02,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 28618.94,
+      "cars_ebit": 4019.52,
+      "vans_revenue": 4353.42,
+      "vans_ebit": 404.92,
+      "mobility_revenue": 7117.9,
+      "mobility_ebit": 661.44
+    }
+  },
+  {
+    "periodo": "2022-09-30",
+    "trimestre": "3Q22",
+    "moeda_original": "EUR",
+    "fx_rate": 1.01,
+    "fonte": "fact-sheet-Q3-2023.pdf",
+    "income_statement": {
+      "total_income": 38093.16,
+      "custo": -29223.34,
+      "resultado_bruto": 8869.82,
+      "ebit": 5247.96,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": 4037.98
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 15547.94,
+      "gross_debt": 115571.27,
+      "net_debt": 94315.82,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": null,
+      "capex": null,
+      "fcf": 3046.16,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 28491.09,
+      "cars_ebit": 4074.34,
+      "vans_revenue": 4352.09,
+      "vans_ebit": 501.97,
+      "mobility_revenue": 6664.99,
+      "mobility_ebit": 582.77
+    }
+  },
+  {
+    "periodo": "2022-12-31",
+    "trimestre": "4Q22",
+    "moeda_original": "EUR",
+    "fx_rate": 1.03,
+    "fonte": "fact-sheet-Q4-2023.pdf",
+    "income_statement": {
+      "total_income": 42233.09,
+      "custo": -33197.93,
+      "resultado_bruto": 9035.16,
+      "ebit": 5573.33,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": 4147.81
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 18209.37,
+      "gross_debt": 116271.55,
+      "net_debt": 90790.38,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": null,
+      "capex": null,
+      "fcf": 2553.37,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 31473.71,
+      "cars_ebit": 4370.29,
+      "vans_revenue": 5267.42,
+      "vans_ebit": 690.1,
+      "mobility_revenue": 7063.74,
+      "mobility_ebit": 508.82
+    }
+  },
+  {
+    "periodo": "2023-03-31",
+    "trimestre": "1Q23",
+    "moeda_original": "EUR",
+    "fx_rate": 1.08,
+    "fonte": "fact-sheet-Q4-2023.pdf",
+    "income_statement": {
+      "total_income": 40517.28,
+      "custo": -30357.72,
+      "resultado_bruto": 10159.56,
+      "ebit": 5944.32,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": 4331.88
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 18889.2,
+      "gross_debt": 119851.92,
+      "net_debt": 91780.56,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": null,
+      "capex": null,
+      "fcf": 2337.12,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 30036.96,
+      "cars_ebit": 4479.84,
+      "vans_revenue": 4984.2,
+      "vans_ebit": 822.96,
+      "mobility_revenue": 7170.12,
+      "mobility_ebit": 582.12
+    }
+  },
+  {
+    "periodo": "2023-06-30",
+    "trimestre": "2Q23",
+    "moeda_original": "EUR",
+    "fx_rate": 1.09,
+    "fonte": "fact-sheet-Q2-2024.pdf",
+    "income_statement": {
+      "total_income": 41682.69,
+      "custo": -31882.5,
+      "resultado_bruto": 9800.19,
+      "ebit": 5436.92,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": 3968.69
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 16816.52,
+      "gross_debt": 120490.78,
+      "net_debt": 96369.08,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": null,
+      "capex": null,
+      "fcf": 3665.67,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 30785.96,
+      "cars_ebit": 4198.68,
+      "vans_revenue": 5584.07,
+      "vans_ebit": 878.54,
+      "mobility_revenue": 7091.54,
+      "mobility_ebit": 187.48
+    }
+  },
+  {
+    "periodo": "2023-09-30",
+    "trimestre": "3Q23",
+    "moeda_original": "EUR",
+    "fx_rate": 1.07,
+    "fonte": "fact-sheet-Q3-2024.pdf",
+    "income_statement": {
+      "total_income": 29030.17,
+      "custo": -1.07,
+      "resultado_bruto": 8609.22,
+      "ebit": 5180.94,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": 3979.33
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 16197.66,
+      "gross_debt": 117963.22,
+      "net_debt": 94378.28,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": null,
+      "capex": null,
+      "fcf": 2511.29,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 29030.17,
+      "cars_ebit": 3543.84,
+      "vans_revenue": 5284.73,
+      "vans_ebit": 765.05,
+      "mobility_revenue": 1.07,
+      "mobility_ebit": 388.41
+    }
+  },
+  {
+    "periodo": "2023-12-31",
+    "trimestre": "4Q23",
+    "moeda_original": "EUR",
+    "fx_rate": 1.08,
+    "fonte": "fact-sheet-Q4-2024.pdf",
+    "income_statement": {
+      "total_income": 31934.52,
+      "custo": -1.08,
+      "resultado_bruto": 2.16,
+      "ebit": 4672.08,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": 3412.8
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 17249.76,
+      "gross_debt": 119000,
+      "net_debt": 95000,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": 3719.52,
+      "capex": -2.16,
+      "fcf": 3717.36,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 31934.52,
+      "cars_ebit": 3144.96,
+      "vans_revenue": 6059.88,
+      "vans_ebit": 923.4,
+      "mobility_revenue": 1.08,
+      "mobility_ebit": 246.24
+    }
+  },
+  {
+    "periodo": "2024-03-31",
+    "trimestre": "1Q24",
+    "moeda_original": "EUR",
+    "fx_rate": 1.08,
+    "fonte": "fact-sheet-Q1-2025.pdf",
+    "income_statement": {
+      "total_income": 38742.84,
+      "custo": -1.08,
+      "resultado_bruto": 1.08,
+      "ebit": 4172.04,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": 3267.0
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 18584.64,
+      "gross_debt": 117446.76,
+      "net_debt": 90866.88,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": 2412.72,
+      "capex": -1.08,
+      "fcf": 2411.64,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 27770.04,
+      "cars_ebit": 2652.48,
+      "vans_revenue": 5284.44,
+      "vans_ebit": 1007.64,
+      "mobility_revenue": 7403.4,
+      "mobility_ebit": 301.32
+    }
+  },
+  {
+    "periodo": "2024-06-30",
+    "trimestre": "2Q24",
+    "moeda_original": "EUR",
+    "fx_rate": 1.08,
+    "fonte": "fact-sheet-Q2-2025.pdf",
+    "income_statement": {
+      "total_income": 39682.44,
+      "custo": -1.08,
+      "resultado_bruto": 1.08,
+      "ebit": 4359.96,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": 3306.96
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 13890.96,
+      "gross_debt": 120611.16,
+      "net_debt": 99142.92,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": 1760.4,
+      "capex": -1.08,
+      "fcf": 1759.32,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 29343.6,
+      "cars_ebit": 2976.48,
+      "vans_revenue": 5155.92,
+      "vans_ebit": 896.4,
+      "mobility_revenue": 6854.76,
+      "mobility_ebit": 292.68
+    }
+  },
+  {
+    "periodo": "2024-09-30",
+    "trimestre": "3Q24",
+    "moeda_original": "EUR",
+    "fx_rate": 1.1,
+    "fonte": "fact-sheet-Q3-2025.pdf",
+    "income_statement": {
+      "total_income": 37980.8,
+      "custo": -1.1,
+      "resultado_bruto": 1.1,
+      "ebit": 2768.7,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": 1890.9
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 15435.2,
+      "gross_debt": 121200.2,
+      "net_debt": 98132.1,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": 2634.5,
+      "capex": -1.1,
+      "fcf": 2633.4,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 28162.2,
+      "cars_ebit": 1317.8,
+      "vans_revenue": 5122.7,
+      "vans_ebit": 679.8,
+      "mobility_revenue": 6607.7,
+      "mobility_ebit": 313.5
+    }
+  },
+  {
+    "periodo": "2024-12-31",
+    "trimestre": "4Q24",
+    "moeda_original": "EUR",
+    "fx_rate": 1.06,
+    "fonte": "fact-sheet-Q3-2025.pdf",
+    "income_statement": {
+      "total_income": 40757.0,
+      "custo": -29860.2,
+      "resultado_bruto": 6739.48,
+      "ebit": 3372.92,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": 2759.18
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 15386.96,
+      "gross_debt": 119975.04,
+      "net_debt": 96394.28,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": 4191.24,
+      "capex": -1121.48,
+      "fcf": 3069.76,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 31032.56,
+      "cars_ebit": 2173.0,
+      "vans_revenue": 5295.76,
+      "vans_ebit": 584.06,
+      "mobility_revenue": 6226.44,
+      "mobility_ebit": 316.94
+    }
+  },
+  {
+    "periodo": "2025-03-31",
+    "trimestre": "1Q25",
+    "moeda_original": "EUR",
+    "fx_rate": 1.07,
+    "fonte": "fact-sheet-Q3-2025.pdf",
+    "income_statement": {
+      "total_income": 35549.68,
+      "custo": -33562.69,
+      "resultado_bruto": 7578.81,
+      "ebit": 2449.23,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": 1852.17
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 12574.64,
+      "gross_debt": 114018.13,
+      "net_debt": 90122.89,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": 4008.22,
+      "capex": -1486.23,
+      "fcf": 2521.99,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 25934.66,
+      "cars_ebit": 1881.06,
+      "vans_revenue": 4365.6,
+      "vans_ebit": 245.03,
+      "mobility_revenue": 6871.54,
+      "mobility_ebit": 307.09
+    }
+  },
+  {
+    "periodo": "2025-06-30",
+    "trimestre": "2Q25",
+    "moeda_original": "EUR",
+    "fx_rate": 1.13,
+    "fonte": "fact-sheet-Q3-2025.pdf",
+    "income_statement": {
+      "total_income": 37462.89,
+      "custo": -30125.8,
+      "resultado_bruto": 7417.32,
+      "ebit": 1438.49,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": 1081.41
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 15751.07,
+      "gross_debt": 119972.1,
+      "net_debt": 93240.82,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": 2881.5,
+      "capex": -774.05,
+      "fcf": 2107.45,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 27303.06,
+      "cars_ebit": 884.79,
+      "vans_revenue": 4787.81,
+      "vans_ebit": 309.62,
+      "mobility_revenue": 7060.24,
+      "mobility_ebit": 279.11
+    }
+  },
+  {
+    "periodo": "2025-09-30",
+    "trimestre": "3Q25",
+    "moeda_original": "EUR",
+    "fx_rate": 1.17,
+    "fonte": "fact-sheet-Q3-2025.pdf",
+    "income_statement": {
+      "total_income": 37611.99,
+      "custo": -32421.87,
+      "resultado_bruto": 6367.14,
+      "ebit": 877.5,
+      "depreciacao_amortizacao": null,
+      "ebitda": null,
+      "net_income": 1392.3
+    },
+    "balance_sheet": {
+      "total_assets": null,
+      "total_equity": null,
+      "cash": 15989.22,
+      "gross_debt": 119891.07,
+      "net_debt": 92843.01,
+      "net_industrial_liquidity": null
+    },
+    "cash_flow": {
+      "fco": 2673.45,
+      "capex": -1074.06,
+      "fcf": 1599.39,
+      "dividends_paid": null
+    },
+    "segments": {
+      "cars_revenue": 27778.14,
+      "cars_ebit": 503.1,
+      "vans_revenue": 4731.48,
+      "vans_ebit": 418.86,
+      "mobility_revenue": 6791.85,
+      "mobility_ebit": -210.6
+    }
+  }
+]

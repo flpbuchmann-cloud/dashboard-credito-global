@@ -1,0 +1,132 @@
+[
+  {
+    "data_referencia": "2025-12-31",
+    "caixa": null,
+    "vencimentos": {
+      "2026": 1000000,
+      "2027": 0,
+      "2028": 219000000,
+      "2029": 500000000,
+      "2030": 500000000,
+      "longo_prazo": 1219000000
+    },
+    "divida_total": 2439000000,
+    "arquivo": "XBRL 10-K (2025-12-31)"
+  },
+  {
+    "data_referencia": "2024-12-31",
+    "caixa": null,
+    "vencimentos": {
+      "2025": 75000000,
+      "2026": 1000000,
+      "2027": 750000000,
+      "2028": 500000000,
+      "2029": 500000000,
+      "longo_prazo": 719000000
+    },
+    "divida_total": 2545000000,
+    "arquivo": "XBRL 10-K (2024-12-31)"
+  },
+  {
+    "data_referencia": "2023-12-31",
+    "caixa": null,
+    "vencimentos": {
+      "2024": 79000000,
+      "2025": 1000000,
+      "2026": 1000000,
+      "2027": 750000000,
+      "2028": 500000000,
+      "longo_prazo": 480000000
+    },
+    "divida_total": 1811000000,
+    "arquivo": "XBRL 10-K (2023-12-31)"
+  },
+  {
+    "data_referencia": "2022-12-31",
+    "caixa": null,
+    "vencimentos": {
+      "2023": 1000000,
+      "2024": 80000000,
+      "2025": 1000000,
+      "2026": 1000000,
+      "2027": 750000000,
+      "longo_prazo": 974000000
+    },
+    "divida_total": 1807000000,
+    "arquivo": "XBRL 10-K (2022-12-31)"
+  },
+  {
+    "data_referencia": "2021-12-31",
+    "caixa": null,
+    "vencimentos": {
+      "2022": 1000000,
+      "2023": 1000000,
+      "2024": 1000000,
+      "2025": 1000000,
+      "2026": 0,
+      "longo_prazo": 1723000000
+    },
+    "divida_total": 1727000000,
+    "arquivo": "XBRL 10-K (2021-12-31)"
+  },
+  {
+    "data_referencia": "2020-12-31",
+    "caixa": null,
+    "vencimentos": {
+      "2021": 2000000,
+      "2022": 1000000,
+      "2023": 1000000,
+      "2024": 751000000,
+      "2025": 1000000,
+      "longo_prazo": 1709000000
+    },
+    "divida_total": 2465000000,
+    "arquivo": "XBRL 10-K (2020-12-31)"
+  },
+  {
+    "data_referencia": "2025-12-31",
+    "caixa": 1597000000.0,
+    "vencimentos": {
+      "2026": 10000000.0
+    },
+    "divida_total": 10000000.0,
+    "arquivo": "Extraído de AA_2026-01-22_8-K_aa_ex99_1.htm via Gemini"
+  },
+  {
+    "data_referencia": "2024-06-30",
+    "caixa": 1396000000.0,
+    "vencimentos": {
+      "2025": 79000000.0
+    },
+    "divida_total": 79000000.0,
+    "arquivo": "Extraído de AA_2024-07-17_8-K_aa_ex99_1.htm via Gemini"
+  },
+  {
+    "data_referencia": "2024-03-31",
+    "caixa": 1400000000.0,
+    "vencimentos": {
+      "2025": 131000000.0,
+      "2031": 750000000.0
+    },
+    "divida_total": 881000000.0,
+    "arquivo": "Extraído de AA_2024-04-17_8-K_aa_ex99_1.htm via Gemini"
+  },
+  {
+    "data_referencia": "2023-12-31",
+    "caixa": 944000000.0,
+    "vencimentos": {
+      "2024": 135000000.0
+    },
+    "divida_total": 135000000.0,
+    "arquivo": "Extraído de AA_2024-01-17_8-K_a53881096ex99_1.htm via Gemini"
+  },
+  {
+    "data_referencia": "2023-06-30",
+    "caixa": 990000000.0,
+    "vencimentos": {
+      "2024": 11000000.0
+    },
+    "divida_total": 11000000.0,
+    "arquivo": "Extraído de AA_2023-07-19_8-K_a53454342ex99_1.htm via Gemini"
+  }
+]

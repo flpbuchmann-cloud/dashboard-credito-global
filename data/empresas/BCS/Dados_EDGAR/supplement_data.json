@@ -1,0 +1,1251 @@
+[
+  {
+    "periodo": "2021-03-31",
+    "trimestre": "1Q21",
+    "moeda_original": "GBP",
+    "fx_rate": 1.38,
+    "fonte": "results-announcement-Q3-2022.pdf",
+    "income_statement": {
+      "total_income": 8142.0,
+      "nii": 2554.4,
+      "operating_costs": -4892.1,
+      "total_opex": -4937.6,
+      "credit_impairment": -75.9,
+      "profit_before_tax": 3310.6,
+      "net_income": 2351.5
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 688344.0,
+      "avg_customer_loans": 477204.0,
+      "avg_total_assets": 1903986.0,
+      "avg_total_deposits": 688344.0,
+      "avg_loans": 477204.0,
+      "loan_to_deposit": 0.6900000000000001,
+      "deposits_at_amortised_cost_gbp_bn": 498.8,
+      "customer_loans_gbp_bn": 306.9,
+      "total_assets_gbp_bn": 1379.7
+    },
+    "yields_rates": {
+      "nim": 0.0292,
+      "rote": 0.147,
+      "efficiency_ratio": 0.61,
+      "loan_loss_rate": 0.0006,
+      "nco_ratio": 0.0006
+    },
+    "capital": {
+      "cet1_ratio": 0.146,
+      "cet1_capital": 63342.0,
+      "rwa_standardized": 432492.0,
+      "leverage_ratio": 0.05,
+      "lcr": 1.61,
+      "nsfr": null,
+      "hqla_pool": 400200.0,
+      "hqla_pool_gbp_bn": 290
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 6
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 290,
+      "liquidity_pool_usd_m": 400200.0,
+      "lcr": 1.61,
+      "loan_deposit_ratio": 0.6900000000000001
+    }
+  },
+  {
+    "periodo": "2021-06-30",
+    "trimestre": "2Q21",
+    "moeda_original": "GBP",
+    "fx_rate": 1.4,
+    "fonte": "results-announcement-Q3-2022.pdf",
+    "income_statement": {
+      "total_income": 7581.0,
+      "nii": 2872.8,
+      "operating_costs": -5021.8,
+      "total_opex": -5222.0,
+      "credit_impairment": 1115.8,
+      "profit_before_tax": 3504.2,
+      "net_income": 2867.2
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 701260.0,
+      "avg_customer_loans": 487900.0,
+      "avg_total_assets": 1926820.0,
+      "avg_total_deposits": 701260.0,
+      "avg_loans": 487900.0,
+      "loan_to_deposit": 0.7000000000000001,
+      "deposits_at_amortised_cost_gbp_bn": 500.9,
+      "customer_loans_gbp_bn": 309.2,
+      "total_assets_gbp_bn": 1376.3
+    },
+    "yields_rates": {
+      "nim": 0.0294,
+      "rote": 0.17600000000000002,
+      "efficiency_ratio": 0.6900000000000001,
+      "loan_loss_rate": -0.009,
+      "nco_ratio": -0.009
+    },
+    "capital": {
+      "cet1_ratio": 0.15,
+      "cet1_capital": 64680.0,
+      "rwa_standardized": 430360.0,
+      "leverage_ratio": 0.05,
+      "lcr": 1.62,
+      "nsfr": null,
+      "hqla_pool": 407400.0,
+      "hqla_pool_gbp_bn": 291
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": -90
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 291,
+      "liquidity_pool_usd_m": 407400.0,
+      "lcr": 1.62,
+      "loan_deposit_ratio": 0.7000000000000001
+    }
+  },
+  {
+    "periodo": "2021-09-30",
+    "trimestre": "3Q21",
+    "moeda_original": "GBP",
+    "fx_rate": 1.37,
+    "fonte": "results-announcement-Q3-2022.pdf",
+    "income_statement": {
+      "total_income": 7487.1,
+      "nii": 2657.8,
+      "operating_costs": -4721.0,
+      "total_opex": -4897.8,
+      "credit_impairment": -164.4,
+      "profit_before_tax": 2553.7,
+      "net_income": 1882.4
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 698974.0,
+      "avg_customer_loans": 483610.0,
+      "avg_total_assets": 1926905.0,
+      "avg_total_deposits": 698974.0,
+      "avg_loans": 483610.0,
+      "loan_to_deposit": 0.6900000000000001,
+      "deposits_at_amortised_cost_gbp_bn": 510.2,
+      "customer_loans_gbp_bn": 313.5,
+      "total_assets_gbp_bn": 1406.5
+    },
+    "yields_rates": {
+      "nim": 0.028999999999999998,
+      "rote": 0.114,
+      "efficiency_ratio": 0.65,
+      "loan_loss_rate": 0.0013,
+      "nco_ratio": 0.0013
+    },
+    "capital": {
+      "cet1_ratio": 0.153,
+      "cet1_capital": 64664.0,
+      "rwa_standardized": 421549.0,
+      "leverage_ratio": 0.051,
+      "lcr": 1.61,
+      "nsfr": null,
+      "hqla_pool": 401410.0,
+      "hqla_pool_gbp_bn": 293
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 13
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 293,
+      "liquidity_pool_usd_m": 401410.0,
+      "lcr": 1.61,
+      "loan_deposit_ratio": 0.6900000000000001
+    }
+  },
+  {
+    "periodo": "2021-12-31",
+    "trimestre": "4Q21",
+    "moeda_original": "GBP",
+    "fx_rate": 1.35,
+    "fonte": "results-announcement-Q3-2023.pdf",
+    "income_statement": {
+      "total_income": 6966.0,
+      "nii": 3010.5,
+      "operating_costs": -4743.9,
+      "total_opex": -5097.6,
+      "credit_impairment": 41.9,
+      "profit_before_tax": 1927.8,
+      "net_income": 1456.7
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 701190.0,
+      "avg_customer_loans": 488025.0,
+      "avg_total_assets": 1868805.0,
+      "avg_total_deposits": 701190.0,
+      "avg_loans": 488025.0,
+      "loan_to_deposit": 0.7000000000000001,
+      "deposits_at_amortised_cost_gbp_bn": 519.4,
+      "customer_loans_gbp_bn": 319.9,
+      "total_assets_gbp_bn": 1384.3
+    },
+    "yields_rates": {
+      "nim": 0.029500000000000002,
+      "rote": 0.09,
+      "efficiency_ratio": 0.73,
+      "loan_loss_rate": -0.0003,
+      "nco_ratio": -0.0003
+    },
+    "capital": {
+      "cet1_ratio": 0.151,
+      "cet1_capital": 63855.0,
+      "rwa_standardized": 424035.0,
+      "leverage_ratio": 0.052000000000000005,
+      "lcr": 1.68,
+      "nsfr": 1.37,
+      "total_capital_ratio": 0.223,
+      "hqla_pool": 392850.0,
+      "hqla_pool_gbp_bn": 291
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": -3,
+      "carteira_credito_bruta": 495710.6,
+      "provisao_acumulada": 7751.7,
+      "npl": 9767.2,
+      "npl_ratio": 0.0197,
+      "coverage_ratio": 0.7936,
+      "reserve_ratio": 0.0156
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 291,
+      "liquidity_pool_usd_m": 392850.0,
+      "lcr": 1.68,
+      "loan_deposit_ratio": 0.7000000000000001
+    }
+  },
+  {
+    "periodo": "2022-03-31",
+    "trimestre": "1Q22",
+    "moeda_original": "GBP",
+    "fx_rate": 1.34,
+    "fonte": "results-announcement-Q3-2023.pdf",
+    "income_statement": {
+      "total_income": 8704.6,
+      "nii": 3136.9,
+      "operating_costs": -4807.9,
+      "total_opex": -5508.7,
+      "credit_impairment": -188.9,
+      "profit_before_tax": 2993.6,
+      "net_income": 1881.4
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 732310.0,
+      "avg_customer_loans": 498078.0,
+      "avg_total_assets": 2004774.0,
+      "avg_total_deposits": 732310.0,
+      "avg_loans": 498078.0,
+      "loan_to_deposit": 0.68,
+      "deposits_at_amortised_cost_gbp_bn": 546.5,
+      "customer_loans_gbp_bn": 325.8,
+      "total_assets_gbp_bn": 1496.1
+    },
+    "yields_rates": {
+      "nim": 0.030600000000000002,
+      "rote": 0.115,
+      "efficiency_ratio": 0.63,
+      "loan_loss_rate": 0.0015,
+      "nco_ratio": 0.0015
+    },
+    "capital": {
+      "cet1_ratio": 0.138,
+      "cet1_capital": 60702.0,
+      "rwa_standardized": 440592.0,
+      "leverage_ratio": 0.05,
+      "lcr": 1.59,
+      "nsfr": 1.39,
+      "total_capital_ratio": 0.223,
+      "hqla_pool": 428532.0,
+      "hqla_pool_gbp_bn": 319.8
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 15,
+      "carteira_credito_bruta": 492038.6,
+      "provisao_acumulada": 7694.3,
+      "npl": 9694.9,
+      "npl_ratio": 0.0197,
+      "coverage_ratio": 0.7936,
+      "reserve_ratio": 0.0156
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 319.8,
+      "liquidity_pool_usd_m": 428532.0,
+      "lcr": 1.59,
+      "loan_deposit_ratio": 0.68
+    }
+  },
+  {
+    "periodo": "2022-06-30",
+    "trimestre": "2Q22",
+    "moeda_original": "GBP",
+    "fx_rate": 1.26,
+    "fonte": "results-announcement-Q3-2023.pdf",
+    "income_statement": {
+      "total_income": 8452.1,
+      "nii": 3051.7,
+      "operating_costs": -4639.3,
+      "total_opex": -6320.2,
+      "credit_impairment": -252.0,
+      "profit_before_tax": 1888.7,
+      "net_income": 1349.5
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 716562.0,
+      "avg_customer_loans": 498708.0,
+      "avg_total_assets": 2002392.0,
+      "avg_total_deposits": 716562.0,
+      "avg_loans": 498708.0,
+      "loan_to_deposit": 0.7000000000000001,
+      "deposits_at_amortised_cost_gbp_bn": 568.7,
+      "customer_loans_gbp_bn": 337.2,
+      "total_assets_gbp_bn": 1589.2
+    },
+    "yields_rates": {
+      "nim": 0.032400000000000005,
+      "rote": 0.087,
+      "efficiency_ratio": 0.75,
+      "loan_loss_rate": 0.002,
+      "nco_ratio": 0.002
+    },
+    "capital": {
+      "cet1_ratio": 0.136,
+      "cet1_capital": 58842.0,
+      "rwa_standardized": 434070.0,
+      "leverage_ratio": 0.051,
+      "lcr": 1.57,
+      "nsfr": 1.39,
+      "total_capital_ratio": 0.223,
+      "hqla_pool": 431550.0,
+      "hqla_pool_gbp_bn": 342.5
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 20,
+      "carteira_credito_bruta": 462663.2,
+      "provisao_acumulada": 7234.9,
+      "npl": 9116.1,
+      "npl_ratio": 0.0197,
+      "coverage_ratio": 0.7936,
+      "reserve_ratio": 0.0156
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 342.5,
+      "liquidity_pool_usd_m": 431550.0,
+      "lcr": 1.57,
+      "loan_deposit_ratio": 0.7000000000000001
+    }
+  },
+  {
+    "periodo": "2022-09-30",
+    "trimestre": "3Q22",
+    "moeda_original": "GBP",
+    "fx_rate": 1.17,
+    "fonte": "results-announcement-Q3-2023.pdf",
+    "income_statement": {
+      "total_income": 6962.7,
+      "nii": 3589.6,
+      "operating_costs": -4608.6,
+      "total_opex": -4212.0,
+      "credit_impairment": -445.8,
+      "profit_before_tax": 2303.7,
+      "net_income": 1769.0
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 672048.0,
+      "avg_customer_loans": 484029.0,
+      "avg_total_assets": 2020473.0,
+      "avg_total_deposits": 672048.0,
+      "avg_loans": 484029.0,
+      "loan_to_deposit": 0.72,
+      "deposits_at_amortised_cost_gbp_bn": 574.4,
+      "customer_loans_gbp_bn": 346.3,
+      "total_assets_gbp_bn": 1726.9
+    },
+    "yields_rates": {
+      "nim": 0.0385,
+      "rote": 0.125,
+      "efficiency_ratio": 0.6,
+      "loan_loss_rate": 0.0036,
+      "nco_ratio": 0.0036
+    },
+    "capital": {
+      "cet1_ratio": 0.138,
+      "cet1_capital": 56862.0,
+      "rwa_standardized": 410436.0,
+      "leverage_ratio": 0.05,
+      "lcr": 1.56,
+      "nsfr": 1.38,
+      "total_capital_ratio": 0.223,
+      "hqla_pool": 381186.0,
+      "hqla_pool_gbp_bn": 325.8
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 36,
+      "carteira_credito_bruta": 429615.8,
+      "provisao_acumulada": 6718.1,
+      "npl": 8464.9,
+      "npl_ratio": 0.0197,
+      "coverage_ratio": 0.7936,
+      "reserve_ratio": 0.0156
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 325.8,
+      "liquidity_pool_usd_m": 381186.0,
+      "lcr": 1.56,
+      "loan_deposit_ratio": 0.72
+    }
+  },
+  {
+    "periodo": "2022-12-31",
+    "trimestre": "4Q22",
+    "moeda_original": "GBP",
+    "fx_rate": 1.21,
+    "fonte": "results-announcement-Q3-2024.pdf",
+    "income_statement": {
+      "total_income": 7019.2,
+      "nii": 3316.6,
+      "operating_costs": -4535.1,
+      "total_opex": -4843.6,
+      "credit_impairment": -602.6,
+      "profit_before_tax": 1585.1,
+      "net_income": 1253.6
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 660418.0,
+      "avg_customer_loans": 482548.0,
+      "avg_total_assets": 1831577.0,
+      "avg_total_deposits": 660418.0,
+      "avg_loans": 482548.0,
+      "loan_to_deposit": 0.73,
+      "deposits_at_amortised_cost_gbp_bn": 545.8,
+      "customer_loans_gbp_bn": 343.3,
+      "total_assets_gbp_bn": 1513.7
+    },
+    "yields_rates": {
+      "nim": 0.0397,
+      "rote": 0.08900000000000001,
+      "efficiency_ratio": 0.6900000000000001,
+      "loan_loss_rate": 0.0049,
+      "nco_ratio": 0.0049
+    },
+    "capital": {
+      "cet1_ratio": 0.139,
+      "cet1_capital": 56749.0,
+      "rwa_standardized": 407165.0,
+      "leverage_ratio": 0.053,
+      "lcr": 1.56,
+      "nsfr": 1.37,
+      "total_capital_ratio": 0.208,
+      "hqla_pool": 384780.0,
+      "hqla_pool_gbp_bn": 318
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 49,
+      "carteira_credito_bruta": 434198.8,
+      "provisao_acumulada": 6715.5,
+      "npl": 8574.1,
+      "npl_ratio": 0.0197,
+      "coverage_ratio": 0.7832,
+      "reserve_ratio": 0.0155
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 318,
+      "liquidity_pool_usd_m": 384780.0,
+      "lcr": 1.56,
+      "nsfr": 1.37,
+      "loan_deposit_ratio": 0.73
+    }
+  },
+  {
+    "periodo": "2023-03-31",
+    "trimestre": "1Q23",
+    "moeda_original": "GBP",
+    "fx_rate": 1.22,
+    "fonte": "results-announcement-Q3-2024.pdf",
+    "income_statement": {
+      "total_income": 8829.1,
+      "nii": 3724.7,
+      "operating_costs": -5015.4,
+      "total_opex": -5014.2,
+      "credit_impairment": -639.3,
+      "profit_before_tax": 3169.6,
+      "net_income": 2175.3
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 677954.0,
+      "avg_customer_loans": 492270.0,
+      "avg_total_assets": 1877702.0,
+      "avg_total_deposits": 677954.0,
+      "avg_loans": 492270.0,
+      "loan_to_deposit": 0.73,
+      "deposits_at_amortised_cost_gbp_bn": 555.7,
+      "customer_loans_gbp_bn": 343.6,
+      "total_assets_gbp_bn": 1539.1
+    },
+    "yields_rates": {
+      "nim": 0.0416,
+      "rote": 0.15,
+      "efficiency_ratio": 0.5700000000000001,
+      "loan_loss_rate": 0.0052,
+      "nco_ratio": 0.0052
+    },
+    "capital": {
+      "cet1_ratio": 0.136,
+      "cet1_capital": 56120.0,
+      "rwa_standardized": 412848.0,
+      "leverage_ratio": 0.051,
+      "lcr": 1.566,
+      "nsfr": 1.392,
+      "total_capital_ratio": 0.208,
+      "hqla_pool": 406260.0,
+      "hqla_pool_gbp_bn": 333
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 52,
+      "carteira_credito_bruta": 437787.2,
+      "provisao_acumulada": 6771.0,
+      "npl": 8644.9,
+      "npl_ratio": 0.0197,
+      "coverage_ratio": 0.7832,
+      "reserve_ratio": 0.0155
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 333,
+      "liquidity_pool_usd_m": 406260.0,
+      "lcr": 1.566,
+      "nsfr": 1.392,
+      "loan_deposit_ratio": 0.73
+    }
+  },
+  {
+    "periodo": "2023-06-30",
+    "trimestre": "2Q23",
+    "moeda_original": "GBP",
+    "fx_rate": 1.26,
+    "fonte": "results-announcement-Q3-2024.pdf",
+    "income_statement": {
+      "total_income": 7919.1,
+      "nii": 4120.2,
+      "operating_costs": -4937.9,
+      "total_opex": -4979.5,
+      "credit_impairment": -468.7,
+      "profit_before_tax": 2474.6,
+      "net_income": 1673.3
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 698922.0,
+      "avg_customer_loans": 505764.0,
+      "avg_total_assets": 1952622.0,
+      "avg_total_deposits": 698922.0,
+      "avg_loans": 505764.0,
+      "loan_to_deposit": 0.72,
+      "deposits_at_amortised_cost_gbp_bn": 554.7,
+      "customer_loans_gbp_bn": 337.4,
+      "total_assets_gbp_bn": 1549.7
+    },
+    "yields_rates": {
+      "nim": 0.0415,
+      "rote": 0.114,
+      "efficiency_ratio": 0.63,
+      "loan_loss_rate": 0.0037,
+      "nco_ratio": 0.0037
+    },
+    "capital": {
+      "cet1_ratio": 0.138,
+      "cet1_capital": 58716.0,
+      "rwa_standardized": 424494.0,
+      "leverage_ratio": 0.051,
+      "lcr": 1.5719999999999998,
+      "nsfr": 1.3880000000000001,
+      "total_capital_ratio": 0.208,
+      "hqla_pool": 416682.0,
+      "hqla_pool_gbp_bn": 330.7
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 37,
+      "carteira_credito_bruta": 452140.9,
+      "provisao_acumulada": 6993.0,
+      "npl": 8928.4,
+      "npl_ratio": 0.0197,
+      "coverage_ratio": 0.7832,
+      "reserve_ratio": 0.0155
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 330.7,
+      "liquidity_pool_usd_m": 416682.0,
+      "lcr": 1.5719999999999998,
+      "nsfr": 1.3880000000000001,
+      "loan_deposit_ratio": 0.72
+    }
+  },
+  {
+    "periodo": "2023-09-30",
+    "trimestre": "3Q23",
+    "moeda_original": "GBP",
+    "fx_rate": 1.26,
+    "fonte": "results-announcement-Q3-2024.pdf",
+    "income_statement": {
+      "total_income": 7885.1,
+      "nii": 4091.2,
+      "operating_costs": -4975.7,
+      "total_opex": -4975.7,
+      "credit_impairment": -545.6,
+      "profit_before_tax": 2375.1,
+      "net_income": 1605.2
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 707238.0,
+      "avg_customer_loans": 510804.0,
+      "avg_total_assets": 2005542.0,
+      "avg_total_deposits": 707238.0,
+      "avg_loans": 510804.0,
+      "loan_to_deposit": 0.72,
+      "deposits_at_amortised_cost_gbp_bn": 561.3,
+      "customer_loans_gbp_bn": 339.6,
+      "total_assets_gbp_bn": 1591.7
+    },
+    "yields_rates": {
+      "nim": 0.041100000000000005,
+      "rote": 0.11,
+      "efficiency_ratio": 0.63,
+      "loan_loss_rate": 0.0042,
+      "nco_ratio": 0.0042
+    },
+    "capital": {
+      "cet1_ratio": 0.14,
+      "cet1_capital": 60480.0,
+      "rwa_standardized": 430794.0,
+      "leverage_ratio": 0.05,
+      "lcr": 1.587,
+      "nsfr": 1.382,
+      "total_capital_ratio": 0.208,
+      "hqla_pool": 422100.0,
+      "hqla_pool_gbp_bn": 335
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 42,
+      "carteira_credito_bruta": 452140.9,
+      "provisao_acumulada": 6993.0,
+      "npl": 8928.4,
+      "npl_ratio": 0.0197,
+      "coverage_ratio": 0.7832,
+      "reserve_ratio": 0.0155
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 335,
+      "liquidity_pool_usd_m": 422100.0,
+      "lcr": 1.587,
+      "nsfr": 1.382,
+      "loan_deposit_ratio": 0.72
+    }
+  },
+  {
+    "periodo": "2023-12-31",
+    "trimestre": "4Q23",
+    "moeda_original": "GBP",
+    "fx_rate": 1.27,
+    "fonte": "results-announcement-Q3-2025.pdf",
+    "income_statement": {
+      "total_income": 7109.5,
+      "nii": 3986.5,
+      "operating_costs": -6013.4,
+      "total_opex": -6248.4,
+      "credit_impairment": -701.0,
+      "profit_before_tax": 139.7,
+      "net_income": -141.0
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 684276.0,
+      "avg_customer_loans": 507365.0,
+      "avg_total_assets": 1876425.0,
+      "avg_total_deposits": 684276.0,
+      "avg_loans": 507365.0,
+      "loan_to_deposit": 0.74,
+      "deposits_at_amortised_cost_gbp_bn": 538.8,
+      "customer_loans_gbp_bn": 333.3,
+      "total_assets_gbp_bn": 1477.5
+    },
+    "yields_rates": {
+      "nim": 0.04019999999999999,
+      "rote": -0.009000000000000001,
+      "efficiency_ratio": 0.88,
+      "loan_loss_rate": 0.0054,
+      "nco_ratio": 0.0054
+    },
+    "capital": {
+      "cet1_ratio": 0.138,
+      "cet1_capital": 60071.0,
+      "rwa_standardized": 435229.0,
+      "leverage_ratio": 0.052000000000000005,
+      "lcr": 1.614,
+      "nsfr": 1.3800000000000001,
+      "total_capital_ratio": 0.201,
+      "hqla_pool": 378587.0,
+      "hqla_pool_gbp_bn": 298.1
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 54,
+      "carteira_credito_bruta": 442554.4,
+      "provisao_acumulada": 7265.7,
+      "npl": 9132.6,
+      "npl_ratio": 0.0206,
+      "coverage_ratio": 0.7956,
+      "reserve_ratio": 0.0164
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 298.1,
+      "liquidity_pool_usd_m": 378587.0,
+      "lcr": 1.614,
+      "nsfr": 1.3800000000000001,
+      "loan_deposit_ratio": 0.74
+    }
+  },
+  {
+    "periodo": "2024-03-31",
+    "trimestre": "1Q24",
+    "moeda_original": "GBP",
+    "fx_rate": 1.27,
+    "fonte": "results-announcement-Q3-2025.pdf",
+    "income_statement": {
+      "total_income": 8830.3,
+      "nii": 3901.4,
+      "operating_costs": -5077.5,
+      "total_opex": -5302.2,
+      "credit_impairment": -651.5,
+      "profit_before_tax": 2891.8,
+      "net_income": 1968.5
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 701421.0,
+      "avg_customer_loans": 505333.0,
+      "avg_total_assets": 2002917.0,
+      "avg_total_deposits": 701421.0,
+      "avg_loans": 505333.0,
+      "loan_to_deposit": 0.72,
+      "deposits_at_amortised_cost_gbp_bn": 552.3,
+      "customer_loans_gbp_bn": 332.1,
+      "total_assets_gbp_bn": 1577.1
+    },
+    "yields_rates": {
+      "nim": 0.0412,
+      "rote": 0.12300000000000001,
+      "efficiency_ratio": 0.6,
+      "loan_loss_rate": 0.0051,
+      "nco_ratio": 0.0051
+    },
+    "capital": {
+      "cet1_ratio": 0.135,
+      "cet1_capital": 59817.0,
+      "rwa_standardized": 443992.0,
+      "leverage_ratio": 0.049,
+      "lcr": 1.632,
+      "nsfr": 1.357,
+      "total_capital_ratio": 0.201,
+      "hqla_pool": 410845.0,
+      "hqla_pool_gbp_bn": 323.5
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 51,
+      "carteira_credito_bruta": 442554.4,
+      "provisao_acumulada": 7265.7,
+      "npl": 9132.6,
+      "npl_ratio": 0.0206,
+      "coverage_ratio": 0.7956,
+      "reserve_ratio": 0.0164
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 323.5,
+      "liquidity_pool_usd_m": 410845.0,
+      "lcr": 1.632,
+      "nsfr": 1.357,
+      "loan_deposit_ratio": 0.72
+    }
+  },
+  {
+    "periodo": "2024-06-30",
+    "trimestre": "2Q24",
+    "moeda_original": "GBP",
+    "fx_rate": 1.27,
+    "fonte": "results-announcement-Q3-2025.pdf",
+    "income_statement": {
+      "total_income": 8031.5,
+      "nii": 3881.1,
+      "operating_costs": -5078.7,
+      "total_opex": -5087.6,
+      "credit_impairment": -487.7,
+      "profit_before_tax": 2461.3,
+      "net_income": 1571.0
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 708025.0,
+      "avg_customer_loans": 507365.0,
+      "avg_total_assets": 2002282.0,
+      "avg_total_deposits": 708025.0,
+      "avg_loans": 507365.0,
+      "loan_to_deposit": 0.72,
+      "deposits_at_amortised_cost_gbp_bn": 557.5,
+      "customer_loans_gbp_bn": 329.8,
+      "total_assets_gbp_bn": 1576.6
+    },
+    "yields_rates": {
+      "nim": 0.042,
+      "rote": 0.099,
+      "efficiency_ratio": 0.63,
+      "loan_loss_rate": 0.0038,
+      "nco_ratio": 0.0038
+    },
+    "capital": {
+      "cet1_ratio": 0.136,
+      "cet1_capital": 60579.0,
+      "rwa_standardized": 446278.0,
+      "leverage_ratio": 0.05,
+      "lcr": 1.67,
+      "nsfr": 1.364,
+      "total_capital_ratio": 0.201,
+      "hqla_pool": 417449.0,
+      "hqla_pool_gbp_bn": 328.7
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 38,
+      "carteira_credito_bruta": 442554.4,
+      "provisao_acumulada": 7265.7,
+      "npl": 9132.6,
+      "npl_ratio": 0.0206,
+      "coverage_ratio": 0.7956,
+      "reserve_ratio": 0.0164
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 328.7,
+      "liquidity_pool_usd_m": 417449.0,
+      "lcr": 1.67,
+      "nsfr": 1.364,
+      "loan_deposit_ratio": 0.72
+    }
+  },
+  {
+    "periodo": "2024-09-30",
+    "trimestre": "3Q24",
+    "moeda_original": "GBP",
+    "fx_rate": 1.3,
+    "fonte": "results-announcement-Q3-2025.pdf",
+    "income_statement": {
+      "total_income": 8511.1,
+      "nii": 4300.4,
+      "operating_costs": -5140.2,
+      "total_opex": -5150.6,
+      "credit_impairment": -486.2,
+      "profit_before_tax": 2901.6,
+      "net_income": 2033.2
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 705640.0,
+      "avg_customer_loans": 518960.0,
+      "avg_total_assets": 1990430.0,
+      "avg_total_deposits": 705640.0,
+      "avg_loans": 518960.0,
+      "loan_to_deposit": 0.74,
+      "deposits_at_amortised_cost_gbp_bn": 542.8,
+      "customer_loans_gbp_bn": 326.5,
+      "total_assets_gbp_bn": 1531.1
+    },
+    "yields_rates": {
+      "nim": 0.0429,
+      "rote": 0.12300000000000001,
+      "efficiency_ratio": 0.61,
+      "loan_loss_rate": 0.0037,
+      "nco_ratio": 0.0037
+    },
+    "capital": {
+      "cet1_ratio": 0.138,
+      "cet1_capital": 61100.0,
+      "rwa_standardized": 442520.0,
+      "leverage_ratio": 0.049,
+      "lcr": 1.701,
+      "nsfr": 1.3559999999999999,
+      "total_capital_ratio": 0.201,
+      "hqla_pool": 405210.0,
+      "hqla_pool_gbp_bn": 311.7
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 37,
+      "carteira_credito_bruta": 453008.4,
+      "provisao_acumulada": 7437.3,
+      "npl": 9348.3,
+      "npl_ratio": 0.0206,
+      "coverage_ratio": 0.7956,
+      "reserve_ratio": 0.0164
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 311.7,
+      "liquidity_pool_usd_m": 405210.0,
+      "lcr": 1.701,
+      "nsfr": 1.3559999999999999,
+      "loan_deposit_ratio": 0.74
+    }
+  },
+  {
+    "periodo": "2024-12-31",
+    "trimestre": "4Q24",
+    "moeda_original": "GBP",
+    "fx_rate": 1.26,
+    "fonte": "results-announcement-Q3-2025.pdf",
+    "income_statement": {
+      "total_income": 8774.6,
+      "nii": 4410.0,
+      "operating_costs": -5347.4,
+      "total_opex": -5785.9,
+      "credit_impairment": -895.9,
+      "profit_before_tax": 2092.9,
+      "net_income": 1215.9
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 706482.0,
+      "avg_customer_loans": 522270.0,
+      "avg_total_assets": 1912932.0,
+      "avg_total_deposits": 706482.0,
+      "avg_loans": 522270.0,
+      "loan_to_deposit": 0.74,
+      "deposits_at_amortised_cost_gbp_bn": 560.7,
+      "customer_loans_gbp_bn": 337.9,
+      "total_assets_gbp_bn": 1518.2
+    },
+    "yields_rates": {
+      "nim": 0.045,
+      "rote": 0.075,
+      "efficiency_ratio": 0.66,
+      "loan_loss_rate": 0.0066,
+      "nco_ratio": 0.0066,
+      "nim_ex_ib_pct": 4.5
+    },
+    "capital": {
+      "cet1_ratio": 0.136,
+      "cet1_capital": 61236.0,
+      "rwa_standardized": 451206.0,
+      "leverage_ratio": 0.05,
+      "lcr": 1.7240000000000002,
+      "nsfr": 1.349,
+      "total_capital_ratio": 0.196,
+      "hqla_pool": 374094.0,
+      "hqla_pool_gbp_bn": 296.9
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 66,
+      "carteira_credito_bruta": 442692.2,
+      "provisao_acumulada": 6388.2,
+      "npl": 9272.3,
+      "npl_ratio": 0.0209,
+      "coverage_ratio": 0.689,
+      "reserve_ratio": 0.0144
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 296.9,
+      "liquidity_pool_usd_m": 374094.0,
+      "lcr": 1.7240000000000002,
+      "nsfr": 1.349,
+      "loan_deposit_ratio": 0.74
+    }
+  },
+  {
+    "periodo": "2025-03-31",
+    "trimestre": "1Q25",
+    "moeda_original": "GBP",
+    "fx_rate": 1.29,
+    "fonte": "results-announcement-Q3-2025.pdf",
+    "income_statement": {
+      "total_income": 9944.6,
+      "nii": 4536.9,
+      "operating_costs": -5492.8,
+      "total_opex": -5630.9,
+      "credit_impairment": -829.5,
+      "profit_before_tax": 3507.5,
+      "net_income": 2404.6
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 740847.0,
+      "avg_customer_loans": 541026.0,
+      "avg_total_assets": 2055615.0,
+      "avg_total_deposits": 740847.0,
+      "avg_loans": 541026.0,
+      "loan_to_deposit": 0.73,
+      "deposits_at_amortised_cost_gbp_bn": 574.3,
+      "customer_loans_gbp_bn": 338.6,
+      "total_assets_gbp_bn": 1593.5
+    },
+    "yields_rates": {
+      "nim": 0.0451,
+      "rote": 0.14,
+      "efficiency_ratio": 0.5700000000000001,
+      "loan_loss_rate": 0.0061,
+      "nco_ratio": 0.0061,
+      "nim_ex_ib_pct": 4.51
+    },
+    "capital": {
+      "cet1_ratio": 0.139,
+      "cet1_capital": 62952.0,
+      "rwa_standardized": 453177.0,
+      "leverage_ratio": 0.05,
+      "lcr": 1.7530000000000001,
+      "nsfr": 1.3619999999999999,
+      "total_capital_ratio": 0.196,
+      "hqla_pool": 433827.0,
+      "hqla_pool_gbp_bn": 336.3
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 61,
+      "carteira_credito_bruta": 453232.5,
+      "provisao_acumulada": 6540.3,
+      "npl": 9493.1,
+      "npl_ratio": 0.0209,
+      "coverage_ratio": 0.689,
+      "reserve_ratio": 0.0144
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 336.3,
+      "liquidity_pool_usd_m": 433827.0,
+      "lcr": 1.7530000000000001,
+      "nsfr": 1.3619999999999999,
+      "loan_deposit_ratio": 0.73
+    }
+  },
+  {
+    "periodo": "2025-06-30",
+    "trimestre": "2Q25",
+    "moeda_original": "GBP",
+    "fx_rate": 1.33,
+    "fonte": "results-announcement-Q3-2025.pdf",
+    "income_statement": {
+      "total_income": 9558.7,
+      "nii": 4661.7,
+      "operating_costs": -5518.2,
+      "total_opex": -5619.2,
+      "credit_impairment": -623.8,
+      "profit_before_tax": 3303.7,
+      "net_income": 2206.5
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 750785.0,
+      "avg_customer_loans": 555674.0,
+      "avg_total_assets": 2126271.0,
+      "avg_total_deposits": 750785.0,
+      "avg_loans": 555674.0,
+      "loan_to_deposit": 0.74,
+      "deposits_at_amortised_cost_gbp_bn": 564.5,
+      "customer_loans_gbp_bn": 339.2,
+      "total_assets_gbp_bn": 1598.7
+    },
+    "yields_rates": {
+      "nim": 0.044800000000000006,
+      "rote": 0.12300000000000001,
+      "efficiency_ratio": 0.59,
+      "loan_loss_rate": 0.0044,
+      "nco_ratio": 0.0044,
+      "nim_ex_ib_pct": 4.48
+    },
+    "capital": {
+      "cet1_ratio": 0.14,
+      "cet1_capital": 65835.0,
+      "rwa_standardized": 469490.0,
+      "leverage_ratio": 0.05,
+      "lcr": 1.777,
+      "nsfr": 1.3559999999999999,
+      "total_capital_ratio": 0.196,
+      "hqla_pool": 443821.0,
+      "hqla_pool_gbp_bn": 333.7
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 44,
+      "carteira_credito_bruta": 467286.2,
+      "provisao_acumulada": 6743.1,
+      "npl": 9787.5,
+      "npl_ratio": 0.0209,
+      "coverage_ratio": 0.689,
+      "reserve_ratio": 0.0144
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 333.7,
+      "liquidity_pool_usd_m": 443821.0,
+      "lcr": 1.777,
+      "nsfr": 1.3559999999999999,
+      "loan_deposit_ratio": 0.74
+    }
+  },
+  {
+    "periodo": "2025-09-30",
+    "trimestre": "3Q25",
+    "moeda_original": "GBP",
+    "fx_rate": 1.32,
+    "fonte": "results-announcement-Q3-2025.pdf",
+    "income_statement": {
+      "total_income": 9460.4,
+      "nii": 4943.4,
+      "operating_costs": -5615.3,
+      "total_opex": -5936.0,
+      "credit_impairment": -834.2,
+      "profit_before_tax": 2741.6,
+      "net_income": 1923.2
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 759396.0,
+      "avg_customer_loans": 562980.0,
+      "avg_total_assets": 2150544.0,
+      "avg_total_deposits": 759396.0,
+      "avg_loans": 562980.0,
+      "loan_to_deposit": 0.74,
+      "deposits_at_amortised_cost_gbp_bn": 575.3,
+      "customer_loans_gbp_bn": 346.4,
+      "total_assets_gbp_bn": 1629.2
+    },
+    "yields_rates": {
+      "nim": 0.04650000000000001,
+      "rote": 0.106,
+      "efficiency_ratio": 0.63,
+      "loan_loss_rate": 0.0057,
+      "nco_ratio": 0.0057,
+      "nim_ex_ib_pct": 4.65
+    },
+    "capital": {
+      "cet1_ratio": 0.141,
+      "cet1_capital": 66396.0,
+      "rwa_standardized": 471768.0,
+      "leverage_ratio": 0.049,
+      "lcr": 1.746,
+      "nsfr": 1.3530000000000002,
+      "total_capital_ratio": 0.196,
+      "hqla_pool": 439428.0,
+      "hqla_pool_gbp_bn": 332.9
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 57,
+      "carteira_credito_bruta": 463772.8,
+      "provisao_acumulada": 6692.4,
+      "npl": 9713.9,
+      "npl_ratio": 0.0209,
+      "coverage_ratio": 0.689,
+      "reserve_ratio": 0.0144
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 332.9,
+      "liquidity_pool_usd_m": 439428.0,
+      "lcr": 1.746,
+      "nsfr": 1.3530000000000002,
+      "loan_deposit_ratio": 0.74
+    }
+  },
+  {
+    "periodo": "2025-12-31",
+    "trimestre": "4Q25",
+    "moeda_original": "GBP",
+    "fx_rate": 1.26,
+    "fonte": "results-announcement-FY-2025.pdf",
+    "income_statement": {
+      "total_income": 8917.0,
+      "nii": 4704.8,
+      "operating_costs": -5517.5,
+      "total_opex": -5869.1,
+      "credit_impairment": -674.1,
+      "profit_before_tax": 2342.3,
+      "net_income": 1505.7
+    },
+    "avg_balances": {
+      "avg_customer_deposits": 737856.0,
+      "avg_customer_loans": 541800.0,
+      "avg_total_assets": 1945692.0,
+      "avg_total_deposits": 737856.0,
+      "avg_loans": 541800.0,
+      "loan_to_deposit": 0.73,
+      "deposits_at_amortised_cost_gbp_bn": 585.6,
+      "customer_loans_gbp_bn": 352.8,
+      "total_assets_gbp_bn": 1544.2
+    },
+    "yields_rates": {
+      "nim": 0.0473,
+      "rote": 0.085,
+      "efficiency_ratio": 0.66,
+      "loan_loss_rate": 0.0048,
+      "nco_ratio": 0.0048,
+      "nim_ex_ib_pct": 4.73
+    },
+    "capital": {
+      "cet1_ratio": 0.14300000000000002,
+      "cet1_capital": 64386.0,
+      "rwa_standardized": 449568.0,
+      "leverage_ratio": 0.051,
+      "lcr": 1.7,
+      "nsfr": 1.3519999999999999,
+      "total_capital_ratio": 0.204,
+      "hqla_pool": 425628.0,
+      "hqla_pool_gbp_bn": 337.8
+    },
+    "credit_quality": {
+      "loan_loss_rate_bps": 48,
+      "carteira_credito_bruta": 462183.1,
+      "provisao_acumulada": 6664.1,
+      "npl": 9487.8,
+      "npl_ratio": 0.0205,
+      "coverage_ratio": 0.7024,
+      "reserve_ratio": 0.0144
+    },
+    "cronograma_divida": {
+      "as_at": "2025-12-31",
+      "total_usd_m": 277326.0,
+      "total_gbp_bn": 220.1,
+      "faixas": [
+        {
+          "faixa": "<1 month",
+          "valor_usd_m": 13104.0,
+          "valor_gbp_bn": 10.4
+        },
+        {
+          "faixa": "1-3 months",
+          "valor_usd_m": 21420.0,
+          "valor_gbp_bn": 17.0
+        },
+        {
+          "faixa": "3-6 months",
+          "valor_usd_m": 39690.0,
+          "valor_gbp_bn": 31.5
+        },
+        {
+          "faixa": "6-12 months",
+          "valor_usd_m": 31500.0,
+          "valor_gbp_bn": 25.0
+        },
+        {
+          "faixa": "1-2 years",
+          "valor_usd_m": 26712.0,
+          "valor_gbp_bn": 21.2
+        },
+        {
+          "faixa": "2-3 years",
+          "valor_usd_m": 28602.0,
+          "valor_gbp_bn": 22.7
+        },
+        {
+          "faixa": "3-4 years",
+          "valor_usd_m": 24318.0,
+          "valor_gbp_bn": 19.3
+        },
+        {
+          "faixa": "4-5 years",
+          "valor_usd_m": 17388.0,
+          "valor_gbp_bn": 13.8
+        },
+        {
+          "faixa": ">5 years",
+          "valor_usd_m": 74592.0,
+          "valor_gbp_bn": 59.2
+        }
+      ]
+    },
+    "funding_liquidity": {
+      "liquidity_pool_gbp_bn": 337.8,
+      "liquidity_pool_usd_m": 425628.0,
+      "lcr": 1.7,
+      "nsfr": 1.3519999999999999,
+      "loan_deposit_ratio": 0.73
+    }
+  }
+]

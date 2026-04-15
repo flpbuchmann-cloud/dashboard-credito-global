@@ -1,0 +1,19 @@
+{
+  "empresa": "ArcelorMittal",
+  "ticker": "MT",
+  "ratings_atuais": {
+    "Moodys": {
+      "rating": "Baa3",
+      "outlook": "Stable"
+    },
+    "SP": {
+      "rating": "BBB-",
+      "outlook": "Stable"
+    },
+    "Fitch": {
+      "rating": "BBB-",
+      "outlook": "Stable"
+    }
+  },
+  "fonte": "Public ratings agencies"
+}
