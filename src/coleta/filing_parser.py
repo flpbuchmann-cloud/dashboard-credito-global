@@ -65,11 +65,18 @@ def _limpar_numero(s: str) -> float | None:
 def _detectar_escala(html_text: str) -> float:
     """Detecta se valores estão em thousands, millions, etc."""
     lower = html_text.lower()
-    if "in millions" in lower or "(in millions)" in lower or "$ in millions" in lower:
+    # Check various patterns for "millions"
+    if any(p in lower for p in [
+        "in millions", "(in millions)", "$ in millions",
+        "millions except", "millions,", "millions\n",
+    ]):
         return 1_000_000
-    elif "in thousands" in lower or "(in thousands)" in lower:
+    # Simple word match at start of text (common in inline XBRL tables)
+    if lower.strip().startswith("millions"):
+        return 1_000_000
+    if "in thousands" in lower or "(in thousands)" in lower:
         return 1_000
-    elif "in billions" in lower:
+    if "in billions" in lower:
         return 1_000_000_000
     return 1  # assume unidade
 
@@ -159,6 +166,9 @@ def _buscar_filing_url(cik: str, form_type: str = "10-K",
     dates = filings.get("filingDate", [])
     primary_docs = filings.get("primaryDocument", [])
 
+    # Get the entity CIK (numeric, no leading zeros) from the JSON
+    entity_cik = str(data.get("cik", cik)).lstrip("0")
+
     results = []
     for i, form in enumerate(forms):
         if form.replace("/A", "") == form_type:
@@ -167,20 +177,91 @@ def _buscar_filing_url(cik: str, form_type: str = "10-K",
             results.append({
                 "accession": accessions[i],
                 "date": dates[i],
-                "url": f"https://www.sec.gov/Archives/edgar/data/{cik.lstrip('0')}/{accn}/{doc}",
+                "url": f"https://www.sec.gov/Archives/edgar/data/{entity_cik}/{accn}/{doc}",
             })
 
     return results
 
 
-def extrair_cronograma_edgar(cik: str, n_recentes: int = 3,
-                              cache_dir: str = "data/raw/edgar_api") -> list[dict]:
+def _encontrar_tabela_maturidade_global(html: str, escala: float) -> dict | None:
+    """
+    Searches entire filing for debt maturity schedule tables.
+
+    Strategy: find all tables containing year numbers AND 'thereafter',
+    then pick the one that looks like a debt maturity schedule
+    (has Fixed/Variable rate columns or debt-related labels).
+    """
+    import warnings
+    from bs4 import XMLParsedAsHTMLWarning
+    warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
+
+    soup = BeautifulSoup(html, "lxml")
+    all_tables = soup.find_all("table")
+    year_pattern = re.compile(r"^20[2-4]\d$")
+
+    melhor = None
+    melhor_score = 0
+
+    for table in all_tables:
+        text = table.get_text(" ", strip=True).lower()
+
+        # Must have 'thereafter' or 'after year' and year numbers
+        has_thereafter = "thereafter" in text or "after year" in text
+        if not has_thereafter:
+            continue
+
+        rows = table.find_all("tr")
+        if len(rows) < 4:
+            continue
+
+        # Count year-like entries in first column
+        year_count = 0
+        for row in rows:
+            cells = row.find_all(["td", "th"])
+            if cells:
+                first_cell = cells[0].get_text(strip=True)
+                if year_pattern.match(first_cell):
+                    year_count += 1
+
+        if year_count < 3:
+            continue
+
+        # Score: prefer tables with debt-related keywords
+        score = year_count
+        debt_keywords = ["debt", "rate", "fixed", "variable", "interest",
+                         "notes", "principal", "maturity", "maturies"]
+        for kw in debt_keywords:
+            if kw in text:
+                score += 2
+
+        # Penalize lease-only tables
+        if "operating lease" in text and "debt" not in text and "note" not in text:
+            score -= 10
+
+        # Detect scale from the table itself (inline XBRL often has it inside)
+        table_text = table.get_text()
+        table_escala = _detectar_escala(table_text)
+        if table_escala == 1:
+            table_escala = escala  # fallback to global scale
+
+        resultado = _extrair_tabela_maturidade(str(table), table_escala)
+        if resultado and resultado["divida_total"] > 0 and score > melhor_score:
+            melhor = resultado
+            melhor_score = score
+
+    return melhor
+
+
+def extrair_cronograma_edgar(cik: str, n_recentes: int = 6,
+                              cache_dir: str = "data/raw/edgar_api",
+                              incluir_10q: bool = True) -> list[dict]:
     """
     Extrai cronogramas de amortização dos filings mais recentes.
 
     Args:
         cik: CIK da empresa (com zeros à esquerda)
         n_recentes: número de filings recentes a processar
+        incluir_10q: se True, inclui 10-Q (trimestrais) além de 10-K
 
     Returns:
         Lista de cronogramas no formato padrão
@@ -190,7 +271,7 @@ def extrair_cronograma_edgar(cik: str, n_recentes: int = 3,
 
     # Buscar filings 10-K e 10-Q
     filings_10k = _buscar_filing_url(cik, "10-K", session)
-    filings_10q = _buscar_filing_url(cik, "10-Q", session)
+    filings_10q = _buscar_filing_url(cik, "10-Q", session) if incluir_10q else []
 
     # Combinar e ordenar por data
     all_filings = filings_10k + filings_10q
@@ -206,53 +287,80 @@ def extrair_cronograma_edgar(cik: str, n_recentes: int = 3,
 
             # Download filing HTML
             time.sleep(0.12)
-            resp = session.get(filing["url"], timeout=60)
+            resp = session.get(filing["url"], timeout=120)
             if resp.status_code != 200:
                 print(f"ERRO ({resp.status_code})")
                 continue
 
             html = resp.text
-            escala = _detectar_escala(html[:5000])  # Checar cabeçalho
+            if len(html) < 1000:
+                print("Filing stub (too short)")
+                continue
 
-            # Buscar tabelas de maturidade
-            soup = BeautifulSoup(html, "lxml")
-            text_lower = html.lower()
+            escala = _detectar_escala(html[:10000])
 
-            melhor = None
-            melhor_total = 0
+            # Strategy 1: Global table search (works for inline XBRL)
+            melhor = _encontrar_tabela_maturidade_global(html, escala)
 
-            # Estratégia 1: Buscar keywords de maturidade
-            for keyword in DEBT_KEYWORDS:
-                pos = text_lower.find(keyword)
-                if pos == -1:
-                    continue
-
-                # Encontrar tabelas próximas (dentro de 3000 chars)
-                region = html[max(0, pos - 500):pos + 3000]
-                region_soup = BeautifulSoup(region, "lxml")
-                tables = region_soup.find_all("table")
-
-                for table in tables:
-                    resultado = _extrair_tabela_maturidade(str(table), escala)
-                    if resultado and resultado["divida_total"] > melhor_total:
-                        melhor = resultado
-                        melhor_total = resultado["divida_total"]
+            # Strategy 2: Keyword-proximity search (fallback for traditional HTML)
+            if not melhor:
+                text_lower = html.lower()
+                melhor_total = 0
+                for keyword in DEBT_KEYWORDS:
+                    pos = text_lower.find(keyword)
+                    if pos == -1:
+                        continue
+                    region = html[max(0, pos - 500):pos + 10000]
+                    region_soup = BeautifulSoup(region, "lxml")
+                    tables = region_soup.find_all("table")
+                    for table in tables:
+                        resultado = _extrair_tabela_maturidade(str(table), escala)
+                        if resultado and resultado["divida_total"] > melhor_total:
+                            melhor = resultado
+                            melhor_total = resultado["divida_total"]
 
             if melhor:
-                # Inferir data de referência do filing
+                # Inferir data de referência (período, não data de filing)
                 date_str = filing["date"]
-                # O período do filing é geralmente ~2-3 meses antes do filing date
-                # Usar a data do período do filing (end date), não a data de filing
-                # Tentar extrair do HTML
-                period_match = re.search(
-                    r"(?:period of report|as of|ended)\s*:?\s*(\w+ \d{1,2},? \d{4})",
-                    html[:10000], re.IGNORECASE
-                )
-                if period_match:
+                # Try multiple patterns to find the period end date
+                period_patterns = [
+                    r"(?:period of report|as of|ended|ending)\s*:?\s*(\w+ \d{1,2},? \d{4})",
+                    r"(?:September|June|March|December)\s+\d{1,2},?\s+\d{4}",
+                    r"for the (?:quarterly |)period ended\s+(\w+ \d{1,2},? \d{4})",
+                ]
+                for pattern in period_patterns:
+                    period_match = re.search(pattern, html[:15000], re.IGNORECASE)
+                    if period_match:
+                        try:
+                            from dateutil import parser as dateparser
+                            match_text = period_match.group(1) if period_match.lastindex else period_match.group(0)
+                            dt = dateparser.parse(match_text)
+                            date_str = dt.strftime("%Y-%m-%d")
+                            break
+                        except Exception:
+                            pass
+
+                # Infer period date from filing date (filings are filed AFTER period end)
+                if date_str == filing["date"]:
+                    from datetime import datetime as dt_cls
                     try:
-                        from dateutil import parser as dateparser
-                        dt = dateparser.parse(period_match.group(1))
-                        date_str = dt.strftime("%Y-%m-%d")
+                        fd = dt_cls.strptime(filing["date"], "%Y-%m-%d")
+                        # Quarter ends BEFORE the filing date
+                        quarter_ends = [
+                            dt_cls(fd.year, 3, 31),
+                            dt_cls(fd.year, 6, 30),
+                            dt_cls(fd.year, 9, 30),
+                            dt_cls(fd.year, 12, 31),
+                            dt_cls(fd.year - 1, 12, 31),
+                            dt_cls(fd.year - 1, 9, 30),
+                            dt_cls(fd.year - 1, 6, 30),
+                        ]
+                        # Only consider quarter ends BEFORE the filing date
+                        past_ends = [d for d in quarter_ends if d < fd]
+                        if past_ends:
+                            nearest = max(past_ends)  # most recent quarter end before filing
+                            if (fd - nearest).days < 120:
+                                date_str = nearest.strftime("%Y-%m-%d")
                     except Exception:
                         pass
 

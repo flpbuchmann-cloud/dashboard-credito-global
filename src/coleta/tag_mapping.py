@@ -20,6 +20,10 @@ DRE_TAGS = {
         "CostOfGoodsAndServicesSold",
         "CostOfGoodsSold",
         "CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortization",
+        # E&P / Oil & Gas specific cost tags
+        "ExplorationExpense",
+        "ProductionRelatedExpenses",
+        "OilAndGasProductionExpense",
     ],
     "resultado_bruto": [
         "GrossProfit",
@@ -49,6 +53,7 @@ DRE_TAGS = {
         "InterestExpenseDebt",
         "InterestAndDebtExpense",
         "InterestExpenseBorrowings",
+        "InterestExpenseNonoperating",
         "InterestIncomeExpenseNet",
     ],
     "lucro_antes_ir": [
@@ -60,9 +65,9 @@ DRE_TAGS = {
         "IncomeTaxExpenseBenefit",
     ],
     "lucro_liquido": [
+        "NetIncomeLossAvailableToCommonStockholdersBasic",
         "NetIncomeLoss",
         "ProfitLoss",
-        "NetIncomeLossAvailableToCommonStockholdersBasic",
     ],
 }
 
@@ -105,11 +110,15 @@ BPA_TAGS = {
     ],
     "imobilizado": [
         "PropertyPlantAndEquipmentNet",
+        "PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization",
+        "PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetNet",
+        "OilAndGasPropertyFullCostMethodNet",
     ],
     "intangivel": [
         "IntangibleAssetsNetExcludingGoodwill",
         "IntangibleAssetsNetIncludingGoodwill",
         "Goodwill",
+        "GoodwillAndIntangibleAssetsNet",
     ],
 }
 
@@ -127,9 +136,13 @@ BPP_TAGS = {
         "AccruedIncomeTaxesCurrent",
     ],
     "emprestimos_cp": [
-        "DebtCurrent",
-        "LongTermDebtCurrent",
+        # Porção corrente de dívida de longo prazo
         "LongTermDebtAndCapitalLeaseObligationsCurrent",
+        "LongTermDebtCurrent",
+        "DebtCurrent",
+    ],
+    "short_term_borrowings": [
+        # Empréstimos de curto prazo separados (commercial paper, linhas de crédito)
         "ShortTermBorrowings",
         "CommercialPaper",
         "LinesOfCreditCurrent",
@@ -138,9 +151,20 @@ BPP_TAGS = {
         "LiabilitiesNoncurrent",
     ],
     "emprestimos_lp": [
+        # Prefer tags that include finance/capital leases
+        "LongTermDebtAndCapitalLeaseObligations",
+        "LongTermDebtAndFinanceLeaseLiabilityNoncurrent",
         "LongTermDebtNoncurrent",
         "LongTermDebt",
-        "LongTermDebtAndCapitalLeaseObligations",
+    ],
+    # Tags adicionais para cálculo de dívida total (finance leases LP)
+    "finance_lease_lp": [
+        "FinanceLeaseLiabilityNoncurrent",
+        "CapitalLeaseObligationsNoncurrent",
+    ],
+    "finance_lease_cp": [
+        "FinanceLeaseLiabilityCurrent",
+        "CapitalLeaseObligationsCurrent",
     ],
     "patrimonio_liquido": [
         "StockholdersEquity",
@@ -186,9 +210,10 @@ DFC_TAGS = {
         "ProceedsFromIssuanceOfDebt",
     ],
     "dividendos_pagos": [
+        "PaymentsOfOrdinaryDividends",
         "PaymentsOfDividends",
         "PaymentsOfDividendsCommonStock",
-        "PaymentsOfOrdinaryDividends",
+        "PaymentsOfDividendsPreferredStockAndPreferenceStock",
     ],
     "juros_pagos": [
         "InterestPaidNet",
@@ -201,24 +226,60 @@ DFC_TAGS = {
 MATURITY_TAGS = {
     "next_12_months": [
         "LongTermDebtMaturitiesRepaymentsOfPrincipalInNextTwelveMonths",
+        "LongTermDebtMaturitiesRepaymentsOfPrincipalInNextRollingTwelveMonths",
+        "FinanceLeaseLiabilityPaymentsDueNextTwelveMonths",
     ],
     "year_two": [
         "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearTwo",
+        "LongTermDebtMaturitiesRepaymentsOfPrincipalInRollingYearTwo",
+        "FinanceLeaseLiabilityPaymentsDueInTwoYears",
     ],
     "year_three": [
         "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearThree",
+        "LongTermDebtMaturitiesRepaymentsOfPrincipalInRollingYearThree",
+        "FinanceLeaseLiabilityPaymentsDueInThreeYears",
     ],
     "year_four": [
         "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFour",
+        "LongTermDebtMaturitiesRepaymentsOfPrincipalInRollingYearFour",
+        "FinanceLeaseLiabilityPaymentsDueInFourYears",
     ],
     "year_five": [
         "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFive",
+        "LongTermDebtMaturitiesRepaymentsOfPrincipalInRollingYearFive",
+        "FinanceLeaseLiabilityPaymentsDueInFiveYears",
     ],
     "thereafter": [
         "LongTermDebtMaturitiesRepaymentsOfPrincipalAfterYearFive",
+        "LongTermDebtMaturitiesRepaymentsOfPrincipalInRollingAfterYearFive",
+        "FinanceLeaseLiabilityPaymentsDueAfterYearFive",
         "LongTermDebtMaturitiesRepaymentsOfPrincipalRemainderOfFiscalYear",
     ],
 }
+
+
+def _pick_best_entry(matches: list[dict]) -> dict | None:
+    """
+    Desambigua múltiplos entries XBRL para o mesmo período.
+
+    Prefere entries do filing original (fy == ano do end) sobre
+    comparativos de filings futuros (restatements).
+    Em empate, prefere entry com 'frame' (canônico EDGAR).
+    """
+    if not matches:
+        return None
+    if len(matches) == 1:
+        return matches[0]
+
+    end_year = int(matches[0]["end"][:4])
+    original = [m for m in matches if m.get("fy", 0) == end_year]
+    restated = [m for m in matches if m.get("fy", 0) != end_year]
+
+    pool = original if original else restated
+    with_frame = [m for m in pool if m.get("frame")]
+    if with_frame:
+        return with_frame[0]
+    return pool[0]
 
 
 def resolve_tag(facts_usgaap: dict, candidates: list[str],
@@ -228,6 +289,9 @@ def resolve_tag(facts_usgaap: dict, candidates: list[str],
     """
     Dado o dicionário us-gaap dos company facts, tenta resolver
     o valor para uma lista de tags candidatas.
+
+    Desambigua filings duplicados (original vs restatement) preferindo
+    entries do filing original do período.
 
     Args:
         facts_usgaap: facts["us-gaap"] do JSON da SEC
@@ -264,10 +328,9 @@ def resolve_tag(facts_usgaap: dict, candidates: list[str],
             # Para itens de duration (DRE, DFC), verificar start date
             if period_start and "start" in entry:
                 if prefer_quarterly:
-                    # Preferir dados trimestrais (start próximo do end)
                     entry_start = entry.get("start", "")
                     if entry_start == period_start:
-                        matches.insert(0, entry)  # Prioridade
+                        matches.insert(0, entry)
                     else:
                         matches.append(entry)
                 else:
@@ -277,6 +340,8 @@ def resolve_tag(facts_usgaap: dict, candidates: list[str],
                 matches.append(entry)
 
         if matches:
-            return matches[0]["val"]
+            best = _pick_best_entry(matches)
+            if best:
+                return best["val"]
 
     return None

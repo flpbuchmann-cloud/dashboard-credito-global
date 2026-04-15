@@ -15,8 +15,10 @@ import json
 import time
 import requests
 from datetime import datetime, timedelta
-from .tag_mapping import (
-    DRE_TAGS, BPA_TAGS, BPP_TAGS, DFC_TAGS, MATURITY_TAGS, resolve_tag
+from .tag_mapping_fin import (
+    DRE_TAGS, BPA_TAGS, BPP_TAGS, DFC_TAGS, MATURITY_TAGS,
+    PER_SHARE_TAGS, SHARES_TAGS, REGULATORY_TAGS,
+    resolve_tag, resolve_tag_any_unit, resolve_tag_pure,
 )
 
 
@@ -214,8 +216,9 @@ class ColetorEDGAR:
             if not matches:
                 continue
 
-            if form == "10-Q" and len(matches) > 1:
-                # Agrupar por duração e escolher YTD (maior duração)
+            if len(matches) > 1:
+                # Filtrar por maior duração (YTD para 10-Q, full year para 10-K)
+                # Evita pegar entries de Q4 isolado quando existe o acumulado anual
                 from datetime import datetime
                 for m in matches:
                     try:
@@ -225,10 +228,9 @@ class ColetorEDGAR:
                     except (ValueError, KeyError):
                         m["_duration"] = 0
 
-                # Agrupar por duração, pegar os de maior duração (YTD)
                 max_dur = max(m.get("_duration", 0) for m in matches)
-                ytd_matches = [m for m in matches if m.get("_duration", 0) == max_dur]
-                best = self._pick_best_entry(ytd_matches)
+                longest_matches = [m for m in matches if m.get("_duration", 0) == max_dur]
+                best = self._pick_best_entry(longest_matches)
                 return best["val"] if best else matches[0]["val"]
             else:
                 best = self._pick_best_entry(matches)
@@ -318,25 +320,35 @@ class ColetorEDGAR:
                 val = self._resolve_flow_item(usgaap, tags, form, end, fp)
                 dre[conta] = val * 1.0 if val is not None else 0.0
 
+            # Receita fallback: se nenhuma tag direta (Revenues, RevenuesNetOfInterestExpense)
+            # existir, calcular como NII + NoninterestIncome (consistente entre 10-K e 10-Q)
+            if dre.get("receita_liquida", 0) == 0:
+                nii_val = dre.get("nii", 0)
+                rnj_val = dre.get("receita_nao_juros", 0)
+                if nii_val != 0 and rnj_val != 0:
+                    dre["receita_liquida"] = nii_val + rnj_val
+                    self._log(f"  Receita via NII+NonInterest: {dre['receita_liquida']/1e6:,.0f}M ({end})")
+
             # Garantir custo negativo (XBRL CostOfRevenue vem positivo)
-            if dre.get("custo", 0) > 0:
+            if "custo" in dre and dre.get("custo", 0) > 0:
                 dre["custo"] = -abs(dre["custo"])
 
-            # COGS fallback: some companies (e.g. E&P) don't report COGS in 10-K
-            # but have it in 10-Q. When COGS=0 but revenue exists, try 10-Q tags
-            if dre.get("custo", 0) == 0 and dre.get("receita_liquida", 0) != 0 and form == "10-K":
-                for cogs_tag in DRE_TAGS["custo"]:
-                    val_10q = self._resolve_flow_item(
-                        usgaap, [cogs_tag], "10-Q", end, fp
-                    )
-                    if val_10q is not None and val_10q != 0:
-                        dre["custo"] = -abs(val_10q)
-                        self._log(f"  COGS via 10-Q fallback: {cogs_tag} = {val_10q/1e6:,.0f}M ({end})")
-                        break
+            # COGS fallback (apenas se tag "custo" existe no mapping)
+            if "custo" in DRE_TAGS:
+                if dre.get("custo", 0) == 0 and dre.get("receita_liquida", 0) != 0 and form == "10-K":
+                    for cogs_tag in DRE_TAGS["custo"]:
+                        val_10q = self._resolve_flow_item(
+                            usgaap, [cogs_tag], "10-Q", end, fp
+                        )
+                        if val_10q is not None and val_10q != 0:
+                            dre["custo"] = -abs(val_10q)
+                            self._log(f"  COGS via 10-Q fallback: {cogs_tag} = {val_10q/1e6:,.0f}M ({end})")
+                            break
 
             # Calcular resultado_bruto se não disponível
-            if dre.get("resultado_bruto", 0) == 0 and dre.get("receita_liquida", 0) != 0:
-                dre["resultado_bruto"] = dre["receita_liquida"] + dre.get("custo", 0)
+            if "resultado_bruto" in DRE_TAGS:
+                if dre.get("resultado_bruto", 0) == 0 and dre.get("receita_liquida", 0) != 0:
+                    dre["resultado_bruto"] = dre["receita_liquida"] + dre.get("custo", 0)
 
             # EBIT fallback: some 10-K filings omit OperatingIncomeLoss
             if dre.get("ebit", 0) == 0 and form == "10-K":
@@ -355,10 +367,11 @@ class ColetorEDGAR:
                 rec_fin = dre.get("receitas_financeiras", 0)
                 dre["ebit"] = dre["lucro_antes_ir"] + desp_fin - rec_fin
 
-            # Calcular despesas_operacionais
-            dre["despesas_operacionais"] = (
-                dre.get("despesas_vendas", 0) + dre.get("despesas_ga", 0)
-            )
+            # Calcular despesas_operacionais (apenas se XBRL não retornou valor)
+            if dre.get("despesas_operacionais", 0) == 0:
+                fallback = dre.get("despesas_vendas", 0) + dre.get("despesas_ga", 0)
+                if fallback != 0:
+                    dre["despesas_operacionais"] = fallback
             dre["resultado_equivalencia"] = 0.0
 
             if dre.get("receita_liquida", 0) != 0:
@@ -440,7 +453,7 @@ class ColetorEDGAR:
             bpp["outras_obrigacoes_lp"] = 0.0
             bpp["provisoes_lp"] = 0.0
 
-            if bpp.get("passivo_circulante", 0) != 0 or bpp.get("patrimonio_liquido", 0) != 0:
+            if bpp.get("passivo_circulante", 0) != 0 or bpp.get("patrimonio_liquido", 0) != 0 or bpp.get("emprestimos_lp", 0) != 0:
                 entries.append({
                     "periodo": end,
                     "tipo": f"{prefix}_bpp",
@@ -470,6 +483,38 @@ class ColetorEDGAR:
                     "tipo": f"{prefix}_dfc",
                     "ano": ano,
                     "contas": dfc,
+                })
+
+            # ---- Per-Share & Shares Data ----
+            psd = {}
+            for conta, tags in PER_SHARE_TAGS.items():
+                val = resolve_tag_any_unit(usgaap, tags, form, end)
+                if val is not None:
+                    psd[conta] = val
+            for conta, tags in SHARES_TAGS.items():
+                val = resolve_tag_any_unit(usgaap, tags, form, end)
+                if val is not None:
+                    psd[conta] = val
+            if psd:
+                entries.append({
+                    "periodo": end,
+                    "tipo": f"{prefix}_psd",
+                    "ano": ano,
+                    "contas": psd,
+                })
+
+            # ---- Regulatory Capital Ratios (pure units) ----
+            reg = {}
+            for conta, tags in REGULATORY_TAGS.items():
+                val = resolve_tag_pure(usgaap, tags, form, end)
+                if val is not None:
+                    reg[conta] = val
+            if reg:
+                entries.append({
+                    "periodo": end,
+                    "tipo": f"{prefix}_reg",
+                    "ano": ano,
+                    "contas": reg,
                 })
 
         self._log(f"Extraídos {len(entries)} registros de contas")

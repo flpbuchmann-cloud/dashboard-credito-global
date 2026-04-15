@@ -180,9 +180,17 @@ def _check_password(password: str, hashed: str) -> bool:
 
 
 def _load_users() -> dict:
-    """Carrega usuários (Google Sheets ou YAML)."""
+    """Carrega usuários (Google Sheets ou YAML). Fallback para YAML se GSheets falhar."""
     if _use_gsheets():
-        return _gsheets_load_users()
+        try:
+            return _gsheets_load_users()
+        except Exception as e:
+            # Fallback offline: se não conseguir acessar Google Sheets, usar YAML local
+            import streamlit as st
+            st.warning(f"⚠️ Modo offline: usando usuários locais (Google Sheets inacessível: {str(e)[:80]})", icon="🔌")
+            _ensure_users_file()
+            data = _load_yaml(USERS_FILE)
+            return data.get("users", {})
 
     _ensure_users_file()
     data = _load_yaml(USERS_FILE)
@@ -190,11 +198,14 @@ def _load_users() -> dict:
 
 
 def _save_user(username: str, user_data: dict):
-    """Salva um usuário (Google Sheets ou YAML)."""
+    """Salva um usuário (Google Sheets ou YAML). Fallback para YAML se GSheets falhar."""
     if _use_gsheets():
-        _gsheets_save_user(username, user_data)
-        _get_spreadsheet.clear()  # Limpar cache
-        return
+        try:
+            _gsheets_save_user(username, user_data)
+            _get_spreadsheet.clear()  # Limpar cache
+            return
+        except Exception:
+            pass  # Fallback para YAML
 
     _ensure_users_file()
     data = _load_yaml(USERS_FILE)
@@ -203,9 +214,12 @@ def _save_user(username: str, user_data: dict):
 
 
 def _load_pending() -> list:
-    """Carrega pendentes (Google Sheets ou YAML)."""
+    """Carrega pendentes (Google Sheets ou YAML). Fallback para YAML se GSheets falhar."""
     if _use_gsheets():
-        return _gsheets_load_pending()
+        try:
+            return _gsheets_load_pending()
+        except Exception:
+            pass  # Fallback silencioso (warning já foi exibido em _load_users)
 
     _ensure_pending_file()
     data = _load_yaml(PENDING_FILE)
@@ -215,9 +229,12 @@ def _load_pending() -> list:
 def _add_pending(pending: dict):
     """Adiciona pendente (Google Sheets ou YAML)."""
     if _use_gsheets():
-        _gsheets_add_pending(pending)
-        _get_spreadsheet.clear()
-        return
+        try:
+            _gsheets_add_pending(pending)
+            _get_spreadsheet.clear()
+            return
+        except Exception:
+            pass  # Fallback para YAML
 
     _ensure_pending_file()
     data = _load_yaml(PENDING_FILE)
@@ -228,9 +245,12 @@ def _add_pending(pending: dict):
 def _remove_pending(username: str):
     """Remove pendente (Google Sheets ou YAML)."""
     if _use_gsheets():
-        _gsheets_remove_pending(username)
-        _get_spreadsheet.clear()
-        return
+        try:
+            _gsheets_remove_pending(username)
+            _get_spreadsheet.clear()
+            return
+        except Exception:
+            pass  # Fallback para YAML
 
     _ensure_pending_file()
     data = _load_yaml(PENDING_FILE)

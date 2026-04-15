@@ -35,15 +35,41 @@ def _montar_df_contas(contas: list[dict], prefixo_tipo: str) -> pd.DataFrame:
     return df.set_index("periodo")
 
 
-def _desacumular_dre_dfc(df: pd.DataFrame, colunas_fluxo: list[str]) -> pd.DataFrame:
+def _detectar_fiscal_year(df_dre, df_dfp) -> int:
+    """Detecta o mês de encerramento do fiscal year (ex: 12=dez, 9=set, 6=jun).
+    Retorna o mês do DFP/10-K mais recente."""
+    if df_dfp is not None and not df_dfp.empty:
+        ultimo_dfp = df_dfp.index.max()
+        return ultimo_dfp.month
+    return 12  # default: ano calendário
+
+
+def _desacumular_dre_dfc(
+    df: pd.DataFrame, colunas_fluxo: list[str], alertas: list[dict] | None = None,
+    fy_end_month: int = 12
+) -> pd.DataFrame:
     """
-    ITR da CVM vem acumulado (YTD). Calcula o valor do trimestre isolado.
-    Q1 = valor Q1, Q2 = valor Q2 - valor Q1, Q3 = valor Q3 - valor Q2.
-    Q4 (DFP) já é o acumulado anual, então Q4 = DFP - ITR_Q3.
+    ITR da CVM/SEC vem acumulado (YTD). Calcula o valor do trimestre isolado.
+    Suporta fiscal years não-calendário (ex: Visa FY out-set, fy_end_month=9).
     """
     df = df.copy()
-    df["ano"] = df.index.year
     df["trimestre"] = (df.index.month - 1) // 3 + 1
+
+    # Atribuir "ano fiscal" baseado no mês de encerramento
+    if fy_end_month == 12:
+        df["ano_fiscal"] = df.index.year
+    else:
+        # Ex: FY end=9 (set), then Oct 2024 belongs to FY2025
+        df["ano_fiscal"] = df.index.year
+        mask_next = df.index.month > fy_end_month
+        df.loc[mask_next, "ano_fiscal"] = df.loc[mask_next].index.year + 1
+    df["ano"] = df["ano_fiscal"]
+
+    # Determinar qual trimestre é o "Q1 fiscal" (primeiro do fiscal year)
+    fy_q1_month = (fy_end_month % 12) + 1  # ex: FY end=9 → Q1 starts in Oct (month 10)
+    fy_q1_trimestre = (fy_q1_month - 1) // 3 + 1  # ex: month 10 → trimestre 4
+
+    anomalias_detectadas = set()
 
     for col in colunas_fluxo:
         if col not in df.columns:
@@ -51,17 +77,53 @@ def _desacumular_dre_dfc(df: pd.DataFrame, colunas_fluxo: list[str]) -> pd.DataF
         col_tri = f"{col}_tri"
         df[col_tri] = np.nan
 
-        for ano in df["ano"].unique():
-            mask_ano = df["ano"] == ano
+        for ano_f in df["ano_fiscal"].unique():
+            mask_ano = df["ano_fiscal"] == ano_f
             dados_ano = df.loc[mask_ano].sort_index()
 
+            valores_tri = []
             for i, (idx, row) in enumerate(dados_ano.iterrows()):
                 tri = row["trimestre"]
-                if tri == 1 or i == 0:
-                    df.loc[idx, col_tri] = row[col]
+                if tri == fy_q1_trimestre or i == 0:
+                    val = row[col]
                 else:
                     prev_idx = dados_ano.index[i - 1]
-                    df.loc[idx, col_tri] = row[col] - df.loc[prev_idx, col]
+                    val = row[col] - df.loc[prev_idx, col]
+
+                df.loc[idx, col_tri] = val
+                valores_tri.append((idx, tri, val))
+
+            # Validação: detectar anomalia de discontinued operations no Q4
+            # Se Q4 desacumulado é < 30% da média dos outros trimestres (para receita/fco),
+            # ou se o sinal mudou inesperadamente, a base provavelmente é inconsistente
+            if len(valores_tri) >= 3 and col in ("receita_liquida", "fco"):
+                q4_entries = [(idx, tri, v) for idx, tri, v in valores_tri if tri == 4]
+                outros = [v for _, tri, v in valores_tri if tri != 4 and v != 0 and not np.isnan(v)]
+
+                if q4_entries and outros:
+                    q4_val = q4_entries[-1][2]
+                    media_outros = np.mean(np.abs(outros))
+
+                    if media_outros > 0 and not np.isnan(q4_val):
+                        ratio = abs(q4_val) / media_outros
+                        # Q4 menor que 30% da média ou com sinal trocado
+                        if ratio < 0.30 or (q4_val < 0 and all(v > 0 for v in outros)):
+                            anomalias_detectadas.add((col, ano_f, q4_val, media_outros))
+
+    # Gerar alertas para anomalias detectadas
+    if alertas is not None and anomalias_detectadas:
+        for col, ano_f, q4_val, media in sorted(anomalias_detectadas):
+            nome_col = col.replace("_", " ").title()
+            alertas.append({
+                "tipo": "inconsistente",
+                "indicador": f"{nome_col} (Q4/{ano_f})",
+                "mensagem": (
+                    f"Q4/{ano_f} desacumulado ({q4_val/1e9:.2f}B) é inconsistente com "
+                    f"a média dos outros trimestres ({media/1e9:.2f}B). "
+                    f"Provável reclassificação de discontinued operations entre 10-Q e 10-K. "
+                    f"Recomendado conferir com o Earnings Release."
+                ),
+            })
 
     return df
 
@@ -73,13 +135,16 @@ def _safe_get(df: pd.DataFrame, col: str, default=np.nan):
     return pd.Series(default, index=df.index)
 
 
-def calcular_indicadores(caminho_json: str) -> pd.DataFrame:
+def calcular_indicadores(caminho_json: str) -> tuple[pd.DataFrame, list[dict]]:
     """
     Calcula todos os indicadores do briefing.
 
     Returns:
-        DataFrame com uma linha por trimestre e colunas para cada indicador.
+        (DataFrame com uma linha por trimestre, lista de alertas de qualidade de dados)
+        Cada alerta: {"tipo": "proxy"|"ausente"|"inconsistente",
+                      "indicador": str, "mensagem": str}
     """
+    alertas = []
     contas = carregar_contas(caminho_json)
 
     # Montar DataFrames por tipo (ITR + DFP)
@@ -116,13 +181,36 @@ def calcular_indicadores(caminho_json: str) -> pd.DataFrame:
         "amortizacao_divida", "dividendos_pagos", "captacao_divida",
     ]
 
-    df_dre = _desacumular_dre_dfc(df_dre, colunas_fluxo_dre)
-    df_dfc = _desacumular_dre_dfc(df_dfc, colunas_fluxo_dfc)
+    # Se não há DFP (só ITR), os dados já são trimestrais — pular desacumulação
+    # Isto acontece para empresas non-US cujo parser já entrega dados por trimestre
+    _has_dfp = df_dre_dfp is not None and not df_dre_dfp.empty
+    fy_month = _detectar_fiscal_year(df_dre, df_dre_dfp)
+    if _has_dfp:
+        df_dre = _desacumular_dre_dfc(df_dre, colunas_fluxo_dre, alertas, fy_end_month=fy_month)
+        df_dfc = _desacumular_dre_dfc(df_dfc, colunas_fluxo_dfc, alertas, fy_end_month=fy_month)
+    else:
+        # Dados já trimestrais — criar colunas _tri como cópia direta
+        for col in colunas_fluxo_dre:
+            if col in df_dre.columns:
+                df_dre[f"{col}_tri"] = df_dre[col]
+        for col in colunas_fluxo_dfc:
+            if col in df_dfc.columns:
+                df_dfc[f"{col}_tri"] = df_dfc[col]
 
     # Montar DataFrame consolidado
     resultado = pd.DataFrame(index=df_dre.index)
-    resultado["ano"] = resultado.index.year
-    resultado["trimestre"] = (resultado.index.month - 1) // 3 + 1
+    # Normalizar mês: dias próximos ao início/fim do mês pertencem ao trimestre correto
+    # Ex: Pfizer 2023-10-01 é Q3 2023, não Q4. Se dia <= 15 e mês é início de tri (1,4,7,10), pertence ao anterior
+    def _quarter_from_date(idx):
+        m, d, y = idx.month, idx.day, idx.year
+        if d <= 15 and m in (1, 4, 7, 10):
+            if m == 1:
+                return 4, y - 1
+            return (m - 1) // 3, y  # m=4->1, 7->2, 10->3
+        return (m - 1) // 3 + 1, y
+    quarters = [_quarter_from_date(x) for x in resultado.index]
+    resultado["trimestre"] = [q[0] for q in quarters]
+    resultado["ano"] = [q[1] for q in quarters]
     resultado["label"] = resultado.apply(
         lambda r: f"{int(r['trimestre'])}T{int(r['ano']) % 100:02d}", axis=1
     )
@@ -149,15 +237,75 @@ def calcular_indicadores(caminho_json: str) -> pd.DataFrame:
     resultado["ir_csll"] = _tri("ir_csll")
     resultado["lucro_liquido"] = _tri("lucro_liquido")
 
+    # Validação: Custo e Resultado Bruto podem estar incorretos em empresas E&P
+    # que não reportam CostOfRevenue no XBRL (ex: Oil & Gas Full Cost Method).
+    # Detectar: se margem bruta > 100% ou custo > 0, o custo está errado.
+    # Correção: derivar custo = Receita - EBIT - D&A - Desp.Operacionais (proxy)
+    # ou resultado_bruto = Receita + Custo (custo é negativo)
+    rec = resultado["receita_liquida"]
+    margem_bruta_raw = resultado["resultado_bruto"] / rec.replace(0, np.nan)
+    custo_invalido = (margem_bruta_raw.abs() > 1) | (resultado["custo"] > 0)
+
+    if custo_invalido.any():
+        n_invalidos = custo_invalido.sum()
+        periodos_afetados = resultado.loc[custo_invalido, "label"].tolist()
+        alertas.append({
+            "tipo": "proxy",
+            "indicador": "CPV / Resultado Bruto",
+            "mensagem": (
+                f"CostOfRevenue não encontrado no XBRL para {n_invalidos} período(s) "
+                f"({', '.join(periodos_afetados[-3:])}). "
+                f"CPV calculado como proxy: -(Receita - EBIT - SG&A)."
+            ),
+        })
+        ebit_val = resultado["ebit"].fillna(0)
+        sgna = (_safe_get(resultado, "despesas_vendas", 0).fillna(0).abs() +
+                _safe_get(resultado, "despesas_ga", 0).fillna(0).abs())
+
+        custo_derivado = -(rec - ebit_val - sgna)
+        resultado.loc[custo_invalido, "custo"] = custo_derivado[custo_invalido]
+        resultado.loc[custo_invalido, "resultado_bruto"] = (
+            rec[custo_invalido] + resultado.loc[custo_invalido, "custo"]
+        )
+
     # D&A vem da DFC (ajuste no lucro líquido)
     def _tri_dfc(col):
         return df_dfc.get(f"{col}_tri", df_dfc.get(col))
 
     resultado["depreciacao_amortizacao"] = _tri_dfc("depreciacao_amortizacao")
 
-    # EBITDA = EBIT + D&A
+    if resultado["depreciacao_amortizacao"].isna().all():
+        alertas.append({
+            "tipo": "ausente",
+            "indicador": "D&A (Depreciação e Amortização)",
+            "mensagem": "DepreciationDepletionAndAmortization não encontrado na DFC. EBITDA será igual a EBIT.",
+        })
+
+    # EBITDA — duplo cálculo com reconciliação:
+    # Top-down (padrão): EBIT + D&A
+    # Bottom-up (matriz): LL + Desp.Fin + IR + D&A
+    # Usa top-down como primário; se EBIT não disponível, usa bottom-up
     da = _safe_get(resultado, "depreciacao_amortizacao", 0).fillna(0)
-    resultado["ebitda"] = resultado["ebit"] + da
+    ebitda_topdown = resultado["ebit"] + da
+
+    ll = _safe_get(resultado, "lucro_liquido", 0).fillna(0)
+    desp_fin = _safe_get(resultado, "despesas_financeiras", 0).fillna(0).abs()
+    ir = _safe_get(resultado, "ir_csll", 0).fillna(0).abs()
+    ebitda_bottomup = ll + desp_fin + ir + da
+
+    # Usar top-down quando disponível, fallback para bottom-up
+    ebit_ausente = resultado["ebit"].isna()
+    resultado["ebitda"] = ebitda_topdown.where(~ebit_ausente, ebitda_bottomup)
+
+    if ebit_ausente.any():
+        alertas.append({
+            "tipo": "proxy",
+            "indicador": "EBITDA",
+            "mensagem": (
+                f"OperatingIncomeLoss (EBIT) não disponível em {ebit_ausente.sum()} período(s). "
+                f"EBITDA calculado bottom-up: LL + Desp.Financeiras + IR + D&A."
+            ),
+        })
 
     # Margens
     receita = resultado["receita_liquida"].replace(0, np.nan)
@@ -165,6 +313,11 @@ def calcular_indicadores(caminho_json: str) -> pd.DataFrame:
     resultado["margem_ebitda"] = resultado["ebitda"] / receita
     resultado["margem_ebit"] = resultado["ebit"] / receita
     resultado["margem_liquida"] = resultado["lucro_liquido"] / receita
+
+    # Growth QoQ (comparar com trimestre imediatamente anterior)
+    resultado["receita_qoq"] = resultado["receita_liquida"].pct_change(1)
+    resultado["ebitda_qoq"] = resultado["ebitda"].pct_change(1)
+    resultado["lucro_qoq"] = resultado["lucro_liquido"].pct_change(1)
 
     # Growth YoY (comparar com mesmo trimestre do ano anterior)
     resultado["receita_yoy"] = resultado["receita_liquida"].pct_change(4)
@@ -175,6 +328,12 @@ def calcular_indicadores(caminho_json: str) -> pd.DataFrame:
     # 2. FLUXO DE CAIXA
     # =====================================================================
     resultado["fco"] = _tri_dfc("fco")
+    if resultado["fco"].isna().all():
+        alertas.append({
+            "tipo": "ausente",
+            "indicador": "FCO (Fluxo de Caixa Operacional)",
+            "mensagem": "NetCashProvidedByOperatingActivities não encontrado. Indicadores de fluxo de caixa indisponíveis.",
+        })
     resultado["fci"] = _tri_dfc("fci")
     resultado["fcf_financiamento"] = _tri_dfc("fcf")
 
@@ -203,6 +362,19 @@ def calcular_indicadores(caminho_json: str) -> pd.DataFrame:
     # =====================================================================
     # 3. BALANÇO E ESTRUTURA DE CAPITAL (dados de estoque, não fluxo)
     # =====================================================================
+    if df_bpa.empty:
+        alertas.append({
+            "tipo": "ausente",
+            "indicador": "Balanço Patrimonial (Ativos)",
+            "mensagem": "Nenhum dado de ativo encontrado (BPA). Indicadores de estrutura de capital, liquidez e Fleuriet indisponíveis.",
+        })
+    if df_bpp.empty:
+        alertas.append({
+            "tipo": "ausente",
+            "indicador": "Balanço Patrimonial (Passivos)",
+            "mensagem": "Nenhum dado de passivo/PL encontrado (BPP). Indicadores de alavancagem e Fleuriet indisponíveis.",
+        })
+
     if not df_bpa.empty:
         resultado["ativo_total"] = _safe_get(df_bpa, "ativo_total")
         resultado["ativo_circulante"] = _safe_get(df_bpa, "ativo_circulante")
@@ -219,7 +391,10 @@ def calcular_indicadores(caminho_json: str) -> pd.DataFrame:
         resultado["passivo_circulante"] = _safe_get(df_bpp, "passivo_circulante")
         resultado["fornecedores"] = _safe_get(df_bpp, "fornecedores")
         resultado["obrigacoes_fiscais_cp"] = _safe_get(df_bpp, "obrigacoes_fiscais_cp")
-        resultado["emprestimos_cp"] = _safe_get(df_bpp, "emprestimos_cp")
+        # Dívida CP = LongTermDebtCurrent + ShortTermBorrowings (conforme matriz)
+        ltd_current = _safe_get(df_bpp, "emprestimos_cp", 0).fillna(0)
+        stb = _safe_get(df_bpp, "short_term_borrowings", 0).fillna(0)
+        resultado["emprestimos_cp"] = ltd_current + stb
         resultado["outras_obrigacoes_cp"] = _safe_get(df_bpp, "outras_obrigacoes_cp")
         resultado["provisoes_cp"] = _safe_get(df_bpp, "provisoes_cp")
         resultado["passivo_nao_circulante"] = _safe_get(df_bpp, "passivo_nao_circulante")
@@ -294,10 +469,22 @@ def calcular_indicadores(caminho_json: str) -> pd.DataFrame:
     resultado["liquidez_seca"] = (_safe_get(resultado, "ativo_circulante", 0).fillna(0) - est) / pc
     resultado["cash_ratio"] = resultado["liquidez_total"] / pc
 
-    # Interest Coverage — EBITDA LTM / |Despesas Financeiras LTM|
+    # Interest Coverage
+    # Denominador: despesas_financeiras (InterestExpense) da DRE como primário (conforme matriz),
+    # com fallback para juros_pagos (DFC) quando mais conservador
+    juros_pagos_ltm = _safe_get(resultado, "juros_pagos", 0).fillna(0).abs().rolling(4).sum().replace(0, np.nan)
     desp_fin_ltm = resultado["despesas_financeiras"].abs().rolling(4).sum().replace(0, np.nan)
-    resultado["interest_coverage_ebitda"] = ebitda_ltm / desp_fin_ltm
-    resultado["interest_coverage_ebit"] = resultado["ebit_ltm"] / desp_fin_ltm
+    # Usar o maior entre juros_pagos e despesas_financeiras (o mais conservador)
+    denominador_juros = pd.DataFrame({
+        "juros": juros_pagos_ltm, "desp_fin": desp_fin_ltm
+    }).max(axis=1).replace(0, np.nan)
+
+    # EBITDA / Interest (padrão crédito)
+    resultado["interest_coverage_ebitda"] = ebitda_ltm / denominador_juros
+    # EBIT / Interest (Damodaran / agências de rating)
+    resultado["interest_coverage_ebit"] = resultado["ebit_ltm"] / denominador_juros
+    # Bottom-up conforme matriz: (LL + IR + Interest) / Interest = EBIT / Interest
+    # Já coberto pelo interest_coverage_ebit acima, pois EBIT = LL + IR + Interest
 
     resultado["divida_total_pl"] = resultado["divida_bruta"] / pl
 
@@ -311,12 +498,14 @@ def calcular_indicadores(caminho_json: str) -> pd.DataFrame:
     capex_ltm = _safe_get(resultado, "capex", 0).fillna(0).abs().rolling(4).sum()
     resultado["capex_ebitda"] = capex_ltm / ebitda_ltm
 
-    # Payout (dividendos / lucro líquido)
+    # Payout (dividendos / lucro líquido) — só quando LL > 0
     div_pagos_ltm = _safe_get(resultado, "dividendos_pagos", 0).fillna(0).abs().rolling(4).sum()
-    resultado["payout"] = div_pagos_ltm / resultado["lucro_ltm"].abs().replace(0, np.nan)
+    lucro_ltm_positivo = resultado["lucro_ltm"].where(resultado["lucro_ltm"] > 0, np.nan)
+    resultado["payout"] = div_pagos_ltm / lucro_ltm_positivo
 
-    # Custo da Dívida = |Despesas Financeiras| LTM / Dívida Bruta média
-    resultado["custo_divida"] = desp_fin_ltm / db
+    # Custo da Dívida = |Despesas Financeiras| LTM / Dívida Bruta média (atual + anterior)
+    db_media = resultado["divida_bruta"].rolling(2).mean().replace(0, np.nan)
+    resultado["custo_divida"] = desp_fin_ltm / db_media
 
     # Solvência = Ativo Total / (Passivo Circulante + Passivo Não Circulante)
     pnc = _safe_get(resultado, "passivo_nao_circulante", 0).fillna(0)
@@ -326,6 +515,47 @@ def calcular_indicadores(caminho_json: str) -> pd.DataFrame:
     # Fluxos como % da Receita
     resultado["fco_receita"] = resultado["fco"] / receita
     resultado["fcl_receita"] = resultado["fcl"] / receita
+
+    # =====================================================================
+    # 6. ROIC, WACC e EVA (Assaf Neto / Damodaran)
+    # =====================================================================
+    # Taxa marginal de IR (21% US federal — McKinsey/Assaf Neto: usar taxa marginal,
+    # não efetiva, para NOPAT ser neutro à estrutura de capital)
+    TAXA_MARGINAL_IR = 0.21
+
+    # NOPAT = EBIT LTM × (1 - Taxa Marginal IR)
+    resultado["nopat_ltm"] = resultado["ebit_ltm"] * (1 - TAXA_MARGINAL_IR)
+
+    # Capital Investido = Dívida Líquida + PL (McKinsey: excluir caixa excedente)
+    pl_fill = _safe_get(resultado, "patrimonio_liquido", 0).fillna(0)
+    capital_investido = (resultado["divida_liquida"] + pl_fill).rolling(2).mean().replace(0, np.nan)
+    resultado["capital_investido"] = capital_investido
+
+    # ROIC = NOPAT LTM / Capital Investido médio
+    resultado["roic"] = resultado["nopat_ltm"] / capital_investido
+
+    # WACC simplificado (book value):
+    # Rd = custo_divida (já calculado)
+    # Re = 10% (premissa padrão US large cap — Rf ~4.5% + ERP ~5.5%)
+    # Pesos: D/(D+PL) e PL/(D+PL)
+    RE_PREMISSA = 0.10
+    d_peso = resultado["divida_bruta"] / (resultado["divida_bruta"] + pl_fill).replace(0, np.nan)
+    e_peso = 1 - d_peso
+    rd_after_tax = resultado["custo_divida"] * (1 - TAXA_MARGINAL_IR)
+    resultado["wacc"] = e_peso * RE_PREMISSA + d_peso * rd_after_tax
+
+    alertas.append({
+        "tipo": "proxy",
+        "indicador": "WACC",
+        "mensagem": (
+            f"Custo do equity (Re) fixado em {RE_PREMISSA:.0%} (premissa: Rf ~4.5% + ERP ~5.5%). "
+            f"Pesos calculados a valor contábil (book value), não de mercado. "
+            f"ROIC e EVA são aproximações."
+        ),
+    })
+
+    # EVA = (ROIC - WACC) × Capital Investido
+    resultado["eva"] = (resultado["roic"] - resultado["wacc"]) * capital_investido
 
     # =====================================================================
     # 7. MODELO FLEURIET (Análise Dinâmica de Capital de Giro)
@@ -427,7 +657,7 @@ def calcular_indicadores(caminho_json: str) -> pd.DataFrame:
     resultado["fleuriet_cdg_ncg"] = resultado["fleuriet_cdg"] / ncg_nz  # Cobertura CDG/NCG
     resultado["fleuriet_t_receita"] = resultado["fleuriet_t"] / receita  # T como % da receita
 
-    return resultado
+    return resultado, alertas
 
 
 # =========================================================================
@@ -439,7 +669,6 @@ def formatar_tabela_dre(df: pd.DataFrame) -> pd.DataFrame:
     colunas = {
         "label": "Período",
         "receita_liquida": "Receita Líquida",
-        "receita_yoy": "Growth YoY",
         "custo": "CPV",
         "resultado_bruto": "Resultado Bruto",
         "margem_bruta": "Margem Bruta",
@@ -450,7 +679,6 @@ def formatar_tabela_dre(df: pd.DataFrame) -> pd.DataFrame:
         "depreciacao_amortizacao": "D&A",
         "ebitda": "EBITDA",
         "margem_ebitda": "Margem EBITDA",
-        "ebitda_yoy": "EBITDA YoY",
         "resultado_financeiro": "Resultado Financeiro",
         "receitas_financeiras": "Receitas Financeiras",
         "despesas_financeiras": "Despesas Financeiras",
@@ -500,6 +728,7 @@ def formatar_tabela_estrutura_capital(df: pd.DataFrame) -> pd.DataFrame:
         "patrimonio_liquido": "Patrimônio Líquido",
         "divida_liq_ebitda": "Dív.Líq/EBITDA",
         "divida_liq_fco": "Dív.Líq/FCO",
+        "divida_liq_receita": "Dív.Líq/Receita",
     }
     cols_disponiveis = [c for c in colunas.keys() if c in df.columns]
     tabela = df[cols_disponiveis].copy()
@@ -571,5 +800,9 @@ def formatar_tabela_fleuriet(df: pd.DataFrame) -> pd.DataFrame:
 if __name__ == "__main__":
     import sys
     caminho = sys.argv[1] if len(sys.argv) > 1 else "G:/Meu Drive/Análise de Crédito/CSN Mineração/Dados_CVM/contas_chave.json"
-    df = calcular_indicadores(caminho)
+    df, alertas = calcular_indicadores(caminho)
+    if alertas:
+        print("\n=== ALERTAS ===")
+        for a in alertas:
+            print(f"[{a['tipo'].upper()}] {a['indicador']}: {a['mensagem']}")
     print(df[["label", "receita_liquida", "ebitda", "depreciacao_amortizacao", "lucro_liquido", "divida_liquida", "divida_liq_ebitda"]].to_string())
